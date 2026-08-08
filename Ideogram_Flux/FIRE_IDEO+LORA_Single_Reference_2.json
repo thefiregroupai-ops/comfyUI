@@ -1,0 +1,3015 @@
+{
+  "id": "93048e50-e0ec-4afa-9573-15e6b3737898",
+  "revision": 0,
+  "last_node_id": 102,
+  "last_link_id": 210,
+  "nodes": [
+    {
+      "id": 5,
+      "type": "JsonExtractString",
+      "pos": [
+        7730,
+        2310
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "json_string",
+          "type": "STRING",
+          "widget": {
+            "name": "json_string"
+          },
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "JsonExtractString",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "",
+        "num_steps"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "JsonExtractString",
+      "pos": [
+        7720,
+        2570
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "json_string",
+          "type": "STRING",
+          "widget": {
+            "name": "json_string"
+          },
+          "link": 10
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "JsonExtractString",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "",
+        "mu"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "JsonExtractString",
+      "pos": [
+        7720,
+        2810
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "json_string",
+          "type": "STRING",
+          "widget": {
+            "name": "json_string"
+          },
+          "link": 11
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "JsonExtractString",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "",
+        "std"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "ComfyMathExpression",
+      "pos": [
+        7620,
+        1820
+      ],
+      "size": [
+        230,
+        80
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "a",
+          "name": "values.a",
+          "type": "FLOAT,INT,BOOLEAN",
+          "link": 15
+        },
+        {
+          "label": "b",
+          "name": "values.b",
+          "shape": 7,
+          "type": "FLOAT,INT,BOOLEAN",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            13
+          ]
+        },
+        {
+          "name": "BOOL",
+          "type": "BOOLEAN",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "ComfyMathExpression",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "max(((a + 15) // 16) * 16, 256)"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "StringReplace",
+      "pos": [
+        7320,
+        2850
+      ],
+      "size": [
+        230,
+        40
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 23
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4,
+            10,
+            11
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "StringReplace",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "",
+        "'",
+        "\""
+      ]
+    },
+    {
+      "id": 16,
+      "type": "VAELoader",
+      "pos": [
+        7000,
+        1570
+      ],
+      "size": [
+        470,
+        110
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            31
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.8.2",
+        "Node name for S&R": "VAELoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "models": [
+          {
+            "name": "flux2-vae.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors",
+            "directory": "vae"
+          }
+        ]
+      },
+      "widgets_values": [
+        "smallflux2.safetensors"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "EmptyFlux2LatentImage",
+      "pos": [
+        7600,
+        1490
+      ],
+      "size": [
+        270,
+        170
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 12
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 13
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            29
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.8.2",
+        "Node name for S&R": "EmptyFlux2LatentImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ]
+    },
+    {
+      "id": 13,
+      "type": "JsonExtractString",
+      "pos": [
+        7280,
+        2330
+      ],
+      "size": [
+        410,
+        470
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "key",
+          "type": "STRING",
+          "widget": {
+            "name": "key"
+          },
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            23
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "JsonExtractString",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "{\n  \"Quality\": {\n    \"num_steps\": 48,\n    \"mu\": 0.0,\n    \"std\": 1.5,\n    \"preset_id\": \"V4_QUALITY_48\"\n  },\n  \"Default\": {\n    \"num_steps\": 20,\n    \"mu\": 0.0,\n    \"std\": 1.75,\n    \"preset_id\": \"V4_DEFAULT_20\"\n  },\n  \"Turbo\": {\n    \"num_steps\": 12,\n    \"mu\": 0.5,\n    \"std\": 1.75,\n    \"preset_id\": \"V4_TURBO_12\"\n  }\n}",
+        "Turbo"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "ComfyMathExpression",
+      "pos": [
+        7610,
+        1750
+      ],
+      "size": [
+        230,
+        80
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "a",
+          "name": "values.a",
+          "type": "FLOAT,INT,BOOLEAN",
+          "link": 14
+        },
+        {
+          "label": "b",
+          "name": "values.b",
+          "shape": 7,
+          "type": "FLOAT,INT,BOOLEAN",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            12
+          ]
+        },
+        {
+          "name": "BOOL",
+          "type": "BOOLEAN",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "ComfyMathExpression",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "max(((a + 15) // 16) * 16, 256)"
+      ]
+    },
+    {
+      "id": 28,
+      "type": "PrimitiveInt",
+      "pos": [
+        4160,
+        1830
+      ],
+      "size": [
+        270,
+        110
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "INT",
+          "widget": {
+            "name": "value"
+          },
+          "link": 76
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            15,
+            36
+          ]
+        }
+      ],
+      "title": "Int (Height)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "PrimitiveInt",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        1024,
+        "fixed"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "Ideogram4Scheduler",
+      "pos": [
+        8060,
+        1920
+      ],
+      "size": [
+        270,
+        240
+      ],
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": 134
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 35
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 36
+        },
+        {
+          "name": "mu",
+          "type": "FLOAT",
+          "widget": {
+            "name": "mu"
+          },
+          "link": 135
+        },
+        {
+          "name": "std",
+          "type": "FLOAT",
+          "widget": {
+            "name": "std"
+          },
+          "link": 136
+        }
+      ],
+      "outputs": [
+        {
+          "name": "SIGMAS",
+          "type": "SIGMAS",
+          "links": [
+            51
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "Ideogram4Scheduler",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        12,
+        1024,
+        1024,
+        0.5,
+        1.75
+      ]
+    },
+    {
+      "id": 4,
+      "type": "ComfyNumberConvert",
+      "pos": [
+        8190,
+        2320
+      ],
+      "size": [
+        230,
+        100
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "value",
+          "name": "value",
+          "type": "INT,FLOAT,STRING,BOOLEAN",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": []
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            134
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "ComfyNumberConvert",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 2,
+      "type": "ComfyNumberConvert",
+      "pos": [
+        8190,
+        2570
+      ],
+      "size": [
+        230,
+        100
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "value",
+          "name": "value",
+          "type": "INT,FLOAT,STRING,BOOLEAN",
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            135
+          ]
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "ComfyNumberConvert",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 3,
+      "type": "ComfyNumberConvert",
+      "pos": [
+        8200,
+        2810
+      ],
+      "size": [
+        230,
+        100
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "value",
+          "name": "value",
+          "type": "INT,FLOAT,STRING,BOOLEAN",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            136
+          ]
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "ComfyNumberConvert",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 21,
+      "type": "CustomCombo",
+      "pos": [
+        6990,
+        2330
+      ],
+      "size": [
+        270,
+        280
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            16
+          ]
+        },
+        {
+          "name": "INDEX",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "CustomCombo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "Turbo",
+        2,
+        "Quality",
+        "Default",
+        "Turbo",
+        ""
+      ]
+    },
+    {
+      "id": 20,
+      "type": "UNETLoader",
+      "pos": [
+        7000,
+        1110
+      ],
+      "size": [
+        470,
+        170
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "showAdvanced": true,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            143
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.8.2",
+        "Node name for S&R": "UNETLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "models": [
+          {
+            "name": "ideogram4_unconditional_fp8_scaled.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/Ideogram-4/resolve/main/diffusion_models/ideogram4_unconditional_fp8_scaled.safetensors",
+            "directory": "diffusion_models"
+          }
+        ]
+      },
+      "widgets_values": [
+        "ideogram4_unconditional_fp8_scaled.safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "ConditioningZeroOut",
+      "pos": [
+        7720,
+        1310
+      ],
+      "size": [
+        250,
+        80
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            145
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.9.1",
+        "Node name for S&R": "ConditioningZeroOut",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 15,
+      "type": "DualModelGuider",
+      "pos": [
+        8050,
+        1520
+      ],
+      "size": [
+        270,
+        180
+      ],
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 67
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 131
+        },
+        {
+          "name": "model_negative",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 144
+        },
+        {
+          "name": "negative",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": 145
+        }
+      ],
+      "outputs": [
+        {
+          "name": "GUIDER",
+          "type": "GUIDER",
+          "links": [
+            26
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "DualModelGuider",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        3.5
+      ]
+    },
+    {
+      "id": 10,
+      "type": "KSamplerSelect",
+      "pos": [
+        8060,
+        1760
+      ],
+      "size": [
+        270,
+        110
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "SAMPLER",
+          "type": "SAMPLER",
+          "links": [
+            27
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.8.2",
+        "Node name for S&R": "KSamplerSelect",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "heun"
+      ]
+    },
+    {
+      "id": 70,
+      "type": "ImagePass",
+      "pos": [
+        4200,
+        970
+      ],
+      "size": [
+        230,
+        80
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 210
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            120,
+            121,
+            180
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.3.4",
+        "Node name for S&R": "ImagePass",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 48,
+      "type": "ImageResizeKJv2",
+      "pos": [
+        4160,
+        1110
+      ],
+      "size": [
+        270,
+        480
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 121
+        },
+        {
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 139
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 138
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            75
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            76
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.3.4",
+        "Node name for S&R": "ImageResizeKJv2",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        1440,
+        1440,
+        "lanczos",
+        "resize",
+        "0, 0, 0",
+        "center",
+        2,
+        "cpu"
+      ]
+    },
+    {
+      "id": 27,
+      "type": "PrimitiveInt",
+      "pos": [
+        4160,
+        1640
+      ],
+      "size": [
+        270,
+        110
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "INT",
+          "widget": {
+            "name": "value"
+          },
+          "link": 75
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            14,
+            35
+          ]
+        }
+      ],
+      "title": "Int (Width)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "PrimitiveInt",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        1024,
+        "fixed"
+      ]
+    },
+    {
+      "id": 75,
+      "type": "IdeogramRefSync",
+      "pos": [
+        4160,
+        2000
+      ],
+      "size": [
+        230,
+        40
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 180
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Nynxz/ComfyUI-IdeogramHelper",
+        "ver": "0a414b15b49e897fd08bd50c60ddf27bce5da8bf",
+        "Node name for S&R": "IdeogramRefSync",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        true
+      ]
+    },
+    {
+      "id": 25,
+      "type": "VAEDecode",
+      "pos": [
+        8830,
+        850
+      ],
+      "size": [
+        230,
+        100
+      ],
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 30
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 31
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            34
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.8.2",
+        "Node name for S&R": "VAEDecode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [],
+      "color": "#009933"
+    },
+    {
+      "id": 24,
+      "type": "UNETLoader",
+      "pos": [
+        7010,
+        850
+      ],
+      "size": [
+        470,
+        170
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "showAdvanced": true,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            146
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.8.2",
+        "Node name for S&R": "UNETLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "models": [
+          {
+            "name": "ideogram4_fp8_scaled.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/Ideogram-4/resolve/main/diffusion_models/ideogram4_fp8_scaled.safetensors",
+            "directory": "diffusion_models"
+          }
+        ]
+      },
+      "widgets_values": [
+        "ideogram4_fp8_scaled.safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "CLIPLoader",
+      "pos": [
+        7000,
+        1340
+      ],
+      "size": [
+        470,
+        170
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            22
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.8.2",
+        "Node name for S&R": "CLIPLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "models": [
+          {
+            "name": "qwen3vl_8b_fp8_scaled.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/Qwen3-VL/resolve/main/text_encoders/qwen3vl_8b_fp8_scaled.safetensors",
+            "directory": "text_encoders"
+          }
+        ]
+      },
+      "widgets_values": [
+        "qwen3vl_8b_fp8_scaled.safetensors",
+        "ideogram4",
+        "default"
+      ]
+    },
+    {
+      "id": 17,
+      "type": "CLIPTextEncode",
+      "pos": [
+        7570,
+        860
+      ],
+      "size": [
+        380,
+        350
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 22
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 177
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            17,
+            131
+          ]
+        }
+      ],
+      "title": "CLIP Text Encode (Positive Prompt)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.8.2",
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "{\n    \"high_level_description\":  \"A medium shot portrait of a woman with long brown hair and blue eyes smiling at the camera while seated on a white floor, wearing a white halter top and gold jewelry, with her legs spread to expose her genitalia which she is touching with her hand.\",\n    \"style_description\":  {\n                              \"aesthetics\":  \"Bright, high-key commercial photography, clean, polished, studio lighting.\",\n                              \"lighting\":  \"Strong natural light coming from a large window behind the subject creating a backlit effect; soft fill light on the face and front of the body.\",\n                              \"photo\":  \"Digital photograph with sharp focus on the face and genitalia, shallow depth of field blurring the background view.\",\n                              \"medium\":  \"Digital photograph.\",\n                              \"color_palette\":  [\n                                                    \"#FFFFFF\",\n                                                    \"#F4D0C9\",\n                                                    \"#2C2C2C\",\n                                                    \"#E8A59B\"\n                                                ]\n                          },\n    \"compositional_deconstruction\":  {\n                                         \"background\":  \"Large window with a view of hills and sky; white tiled floor.\",\n                                         \"elements\":  [\n                                                          {\n                                                              \"type\":  \"obj\",\n                                                              \"desc\":  \"Woman with long brown hair, blue eyes, smiling broadly showing teeth. She has a mole on her right shoulder and is wearing a white halter top pulled down to expose breasts.\"\n                                                          },\n                                                          {\n                                                              \"type\":  \"obj\",\n                                                              \"desc\":  \"Multi-layered gold necklace with leaf-shaped pendants resting on the chest.\"\n                                                          },\n                                                          {\n                                                              \"type\":  \"obj\",\n                                                              \"desc\":  \"Exposed female genitalia in the center foreground; pubic hair is visible. A hand with red nail polish is touching the area.\"\n                                                          },\n                                                          {\n                                                              \"type\":  \"text\",\n                                                              \"desc\":  \"Red rectangular stamp logo in white capital letters.\"\n                                                          }\n                                                      ]\n                                     }\n}"
+      ]
+    },
+    {
+      "id": 30,
+      "type": "SaveImage",
+      "pos": [
+        9130,
+        760
+      ],
+      "size": [
+        1610,
+        1910
+      ],
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 34
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.24.0",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 22,
+      "type": "CFGOverride",
+      "pos": [
+        8050,
+        1360
+      ],
+      "size": [
+        290,
+        110
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 71
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            67
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.23.0",
+        "Node name for S&R": "CFGOverride",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        3,
+        0.9,
+        1
+      ]
+    },
+    {
+      "id": 45,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        8030,
+        1130
+      ],
+      "size": [
+        380,
+        140
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 146
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            71
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.24.0",
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "LoraIDEOv2_000000600.safetensors",
+        1
+      ]
+    },
+    {
+      "id": 77,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        8040,
+        890
+      ],
+      "size": [
+        380,
+        140
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 143
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            144
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.24.0",
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "LoraIDEOv2_000000600.safetensors",
+        1
+      ]
+    },
+    {
+      "id": 23,
+      "type": "SamplerCustomAdvanced",
+      "pos": [
+        8460,
+        890
+      ],
+      "size": [
+        290,
+        530
+      ],
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "noise",
+          "type": "NOISE",
+          "link": 130
+        },
+        {
+          "name": "guider",
+          "type": "GUIDER",
+          "link": 26
+        },
+        {
+          "name": "sampler",
+          "type": "SAMPLER",
+          "link": 27
+        },
+        {
+          "name": "sigmas",
+          "type": "SIGMAS",
+          "link": 52
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 29
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "LATENT",
+          "links": [
+            30
+          ]
+        },
+        {
+          "name": "denoised_output",
+          "type": "LATENT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.8.2",
+        "Node name for S&R": "SamplerCustomAdvanced",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        },
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [],
+      "color": "#009933"
+    },
+    {
+      "id": 39,
+      "type": "ExtendIntermediateSigmas",
+      "pos": [
+        8470,
+        1490
+      ],
+      "size": [
+        280,
+        210
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "sigmas",
+          "type": "SIGMAS",
+          "link": 51
+        }
+      ],
+      "outputs": [
+        {
+          "name": "SIGMAS",
+          "type": "SIGMAS",
+          "links": [
+            52
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.24.0",
+        "Node name for S&R": "ExtendIntermediateSigmas",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        2,
+        1,
+        0.98,
+        "linear"
+      ]
+    },
+    {
+      "id": 72,
+      "type": "RandomNoise",
+      "pos": [
+        8440,
+        1780
+      ],
+      "size": [
+        310,
+        100
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "NOISE",
+          "type": "NOISE",
+          "links": [
+            130
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.24.0",
+        "Node name for S&R": "RandomNoise",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        1005700440270884,
+        "randomize"
+      ]
+    },
+    {
+      "id": 34,
+      "type": "ICYLMStudioMultimodalPrompt",
+      "pos": [
+        4510,
+        1050
+      ],
+      "size": [
+        570,
+        900
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 120
+        },
+        {
+          "name": "frames",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": 202
+        }
+      ],
+      "outputs": [
+        {
+          "name": "response_text",
+          "type": "STRING",
+          "links": [
+            41
+          ]
+        },
+        {
+          "name": "debug_json",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ICYLMStudioMultimodalPrompt",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "http://192.168.2.20:1234",
+        "gemma-4-26b-a4b-it-ultra-uncensored-heretic",
+        "",
+        "You are a helpful multimodal assistant.",
+        "she has black hair, grey eyes, young woman, \n",
+        false,
+        4096,
+        -1,
+        0,
+        0.15,
+        0.95,
+        5344,
+        292334519,
+        "fixed",
+        true,
+        false,
+        true,
+        120,
+        "",
+        8,
+        "evenly_spaced",
+        ""
+      ],
+      "color": "#009933"
+    },
+    {
+      "id": 33,
+      "type": "ShowText|pysssss",
+      "pos": [
+        5210,
+        790
+      ],
+      "size": [
+        1680,
+        2130
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 41
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            132,
+            177
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "{\n  \"high_level_description\": \"A candid street photograph of a young woman with long black hair and grey eyes, standing on a city sidewalk at dusk. She is wearing a black beanie, dark sunglasses, and a white sports bra with matching white sweatpants, holding an iced coffee.\",\n  \"style_description\": {\n    \"aesthetics\": \"Candid, urban, street photography, slightly gritty, realistic snapshot.\",\n    \"lighting\": \"Dim evening ambient light; low contrast with soft shadows from nearby city structures; subtle cool tones from the twilight sky.\",\n    \"photo\": \"Digital handheld camera shot, slight motion blur in background, natural skin texture, sharp focus on subject with shallow depth of field.\",\n    \"medium\": \"Photograph.\",\n    \"color_palette\": [\"#000000\", \"#FFFFFF\", \"#8B7D7B\", \"#333333\"]\n  },\n  \"compositional_deconstruction\": {\n    \"background\": \"A city street at dusk; a dark luxury car parked on the left, storefronts with 'George Street' signage in the background, and a black utility vehicle on the right. The pavement is grey concrete.\",\n    \"elements\": [\n      {\n        \"type\": \"person\",\n        \"bbox\": [289, 291, 987, 730],\n        \"desc\": \"A young woman standing centrally; she has long, straight black hair, grey eyes visible behind dark sunglasses, and a neutral expression. She wears a black beanie and a white athletic crop top that shows natural skin folds at the waist. Her right hand holds a plastic cup with an iced coffee and a red-and-white straw.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"bbox\": [365, 80, 517, 420],\n        \"desc\": \"A dark black sedan parked along the curb behind the woman, reflecting the dim street lights.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"bbox\": [321, 830, 429, 1000],\n        \"desc\": \"A small black utility vehicle or van parked on the right side of the frame.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"bbox\": [745, 354, 1000, 662],\n        \"desc\": \"White cotton sweatpants worn by the woman, showing realistic fabric wrinkles and slight sagging around the waistline.\"\n      }\n    ]\n  }\n}",
+        "{\n  \"high_level_description\": \"A candid, low-angle smartphone photo of a young woman with long black hair and grey eyes sitting in the passenger seat of a car, making a peace sign towards the camera.\",\n  \"style_description\": {\n    \"aesthetics\": \"Candid, casual, social media snapshot, raw, unpolished.\",\n    \"lighting\": \"Flat, diffused daylight coming through the car window; low contrast with soft shadows on her face.\",\n    \"photo\": \"Smartphone camera capture, slight digital noise in shadows, wide-angle lens distortion typical of a front-facing camera, vertical orientation.\",\n    \"medium\": \"Photograph.\",\n    \"color_palette\": [\"#000000\", \"#4A4A4A\", \"#D3D3D3\"]\n  },\n  \"compositional_deconstruction\": {\n    \"background\": \"The interior of a car, dark grey upholstery and headrest visible behind the subject; blurred window showing a bright, overcast exterior.\",\n    \"elements\": [\n      {\n        \"type\": \"person\",\n        \"bbox\": [102, 0, 1000, 850],\n        \"desc\": \"A young woman with voluminous black hair parted in the middle, grey eyes looking directly at the lens, wearing a black hooded sweatshirt. Her expression is neutral/pouty.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"bbox\": [389, 25, 724, 356],\n        \"desc\": \"The woman's hand in the foreground making a peace sign, fingers extended with white manicured nails; skin texture shows natural fine lines and knuckles.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"bbox\": [438, 295, 1000, 1000],\n        \"desc\": \"A dark grey seatbelt strap cutting diagonally across the lower right of the frame, showing heavy fabric weave and slight fraying at the edges.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"bbox\": [685, 0, 1000, 1000],\n        \"desc\": \"Black cotton hoodie with visible wrinkles at the sleeve and chest; fabric appears heavy and slightly faded.\"\n      }\n    ]\n  }\n}",
+        "{\n  \"high_level_description\": \"A candid, full-body street photograph of a young woman with long black hair and grey eyes, standing in front of a matte black luxury coupe on a sunlit urban street.\",\n  \"style_description\": {\n    \"aesthetics\": \"Candid, casual, high-contrast, bright daylight.\",\n    \"lighting\": \"Harsh midday sunlight creating sharp shadows; high contrast between the brightly lit subject and the dark car.\",\n    \"photo\": \"Smartphone snapshot style, wide angle, naturalistic color reproduction, slight lens flare from overhead sun.\",\n    \"medium\": \"Photograph.\",\n    \"color_palette\": [\"#FFFFFF\", \"#000000\", \"#D2B48C\", \"#FF8C00\"]\n  },\n  \"compositional_deconstruction\": {\n    \"background\": \"A bright, sun-drenched urban setting with a white delivery truck on the right and low-rise buildings in the distance under a clear sky. The ground is paved with dark grey cobblestones.\",\n    \"elements\": [\n      {\n        \"type\": \"person\",\n        \"bbox\": [160, 403, 965, 758],\n        \"desc\": \"A young woman standing centrally, wearing a black baseball cap and a white ribbed tank top. She has long, straight black hair and grey eyes. Her expression is relaxed as she holds an iced coffee with a straw. She wears baggy, cream-colored patterned trousers that drape heavily over her legs, ending in orange sneakers.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"bbox\": [261, 243, 670, 1000],\n        \"desc\": \"A matte black Mercedes-Benz C63 AMG coupe parked directly behind the woman, its dark surface absorbing much of the light, with a visible chrome emblem and red taillights.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"bbox\": [471, 538, 542, 605],\n        \"desc\": \"A plastic cup containing an iced latte with visible condensation on the surface and a white straw held by the woman.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"bbox\": [671, 0, 1000, 1000],\n        \"desc\": \"Dark grey cobblestone pavement in the foreground, showing texture and shadows cast by the car and the person.\"\n      }\n    ]\n  }\n}",
+        "{\n  \"high_level_description\": \"A candid, low-light smartphone mirror selfie of a young woman with curly black hair and grey eyes, looking into the camera with a neutral expression.\",\n  \"style_description\": {\n    \"aesthetics\": \"Candid, amateur, casual, social media aesthetic.\",\n    \"lighting\": \"Dim indoor ambient lighting; warm, low-contrast, slightly underexposed with soft shadows on the face.\",\n    \"photo\": \"Smartphone camera capture, slight digital noise in shadows, vertical portrait orientation, realistic lens distortion from close proximity to mirror.\",\n    \"medium\": \"Photograph.\",\n    \"color_palette\": [\"#2B2321\", \"#D9C5B2\", \"#4A4540\"]\n  },\n  \"compositional_deconstruction\": {\n    \"background\": \"A dimly lit room with a plain, dark-colored wall and a hint of a dark door frame to the right. The background is out of focus and underexposed.\",\n    \"elements\": [\n      {\n        \"type\": \"person\",\n        \"bbox\": [91, 0, 1000, 682],\n        \"desc\": \"A young woman with voluminous curly black hair pulled into a high ponytail; she has grey eyes and a neutral, slightly pouty expression. Her skin shows natural texture and subtle highlights from the ambient light.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"bbox\": [302, 476, 515, 621],\n        \"desc\": \"A smartphone with a white case decorated with black star patterns, held in her right hand to capture the reflection.\"\n      },\n      {\n        \"type\": \"clothing\",\n        \"bbox\": [394, 0, 895, 621],\n        \"desc\": \"A tight-fitting long-sleeved black bodysuit or top that shows realistic fabric tension and slight creasing at the waist and arms.\"\n      },\n      {\n        \"type\": \"clothing\",\n        \"bbox\": [804, 53, 992, 617],\n        \"desc\": \"Faded grey denim jeans with visible texture, heavy stitching, and slight sagging around the waistline.\"\n      },\n      {\n        \"type\": \"accessory\",\n        \"bbox\": [388, 208, 529, 364],\n        \"desc\": \"Thin gold necklaces with small pendants resting against her collarbone.\"\n      }\n    ]\n  }\n}"
+      ]
+    },
+    {
+      "id": 73,
+      "type": "IdeogramStudio",
+      "pos": [
+        4170,
+        2080
+      ],
+      "size": [
+        730,
+        1090
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "overrides",
+          "shape": 7,
+          "type": "IDEOGRAM_OVERRIDE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "caption",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "name": "extras",
+          "type": "IDEOGRAM_EXTRAS",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Nynxz/ComfyUI-IdeogramHelper",
+        "ver": "0a414b15b49e897fd08bd50c60ddf27bce5da8bf",
+        "Node name for S&R": "IdeogramStudio",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        {
+          "caption": {
+            "high_level_description": "A candid, low-light smartphone mirror selfie of a young woman with curly black hair and grey eyes, looking into the camera with a neutral expression.",
+            "style_description": {
+              "aesthetics": "Candid, amateur, casual, social media aesthetic.",
+              "lighting": "Dim indoor ambient lighting; warm, low-contrast, slightly underexposed with soft shadows on the face.",
+              "photo": "Smartphone camera capture, slight digital noise in shadows, vertical portrait orientation, realistic lens distortion from close proximity to mirror.",
+              "medium": "Photograph.",
+              "color_palette": [
+                "#2B2321",
+                "#D9C5B2",
+                "#4A4540"
+              ]
+            },
+            "compositional_deconstruction": {
+              "background": "A dimly lit room with a plain, dark-colored wall and a hint of a dark door frame to the right. The background is out of focus and underexposed.",
+              "elements": [
+                {
+                  "type": "obj",
+                  "bbox": [
+                    91,
+                    0,
+                    1000,
+                    682
+                  ],
+                  "desc": "A young woman with voluminous curly black hair pulled into a high ponytail; she has grey eyes and a neutral, slightly pouty expression. Her skin shows natural texture and subtle highlights from the ambient light."
+                },
+                {
+                  "type": "obj",
+                  "bbox": [
+                    302,
+                    476,
+                    515,
+                    621
+                  ],
+                  "desc": "A smartphone with a white case decorated with black star patterns, held in her right hand to capture the reflection."
+                },
+                {
+                  "type": "obj",
+                  "bbox": [
+                    394,
+                    0,
+                    895,
+                    621
+                  ],
+                  "desc": "A tight-fitting long-sleeved black bodysuit or top that shows realistic fabric tension and slight creasing at the waist and arms."
+                },
+                {
+                  "type": "obj",
+                  "bbox": [
+                    804,
+                    53,
+                    992,
+                    617
+                  ],
+                  "desc": "Faded grey denim jeans with visible texture, heavy stitching, and slight sagging around the waistline."
+                },
+                {
+                  "type": "obj",
+                  "bbox": [
+                    388,
+                    208,
+                    529,
+                    364
+                  ],
+                  "desc": "Thin gold necklaces with small pendants resting against her collarbone."
+                }
+              ]
+            }
+          },
+          "studio": {
+            "high_level_description": "A candid, low-light smartphone mirror selfie of a young woman with curly black hair and grey eyes, looking into the camera with a neutral expression.",
+            "width": 1024,
+            "height": 1440,
+            "style": {
+              "enabled": true,
+              "mode": "photo",
+              "aesthetics": "Candid, amateur, casual, social media aesthetic.",
+              "lighting": "Dim indoor ambient lighting; warm, low-contrast, slightly underexposed with soft shadows on the face.",
+              "medium": "Photograph.",
+              "photo": "Smartphone camera capture, slight digital noise in shadows, vertical portrait orientation, realistic lens distortion from close proximity to mirror.",
+              "art_style": "",
+              "color_palette": [
+                "#2B2321",
+                "#D9C5B2",
+                "#4A4540"
+              ]
+            },
+            "background": "A dimly lit room with a plain, dark-colored wall and a hint of a dark door frame to the right. The background is out of focus and underexposed.",
+            "elements": [
+              {
+                "id": "el_187_87307",
+                "type": "obj",
+                "bbox": [
+                  91,
+                  0,
+                  1000,
+                  682
+                ],
+                "desc": "A young woman with voluminous curly black hair pulled into a high ponytail; she has grey eyes and a neutral, slightly pouty expression. Her skin shows natural texture and subtle highlights from the ambient light.",
+                "text": "",
+                "color_palette": [],
+                "boxColor": "#14B8A6",
+                "linkId": null,
+                "enabled": true
+              },
+              {
+                "id": "el_188_23068",
+                "type": "obj",
+                "bbox": [
+                  302,
+                  476,
+                  515,
+                  621
+                ],
+                "desc": "A smartphone with a white case decorated with black star patterns, held in her right hand to capture the reflection.",
+                "text": "",
+                "color_palette": [],
+                "boxColor": "#F97316",
+                "linkId": null,
+                "enabled": true
+              },
+              {
+                "id": "el_189_58829",
+                "type": "obj",
+                "bbox": [
+                  394,
+                  0,
+                  895,
+                  621
+                ],
+                "desc": "A tight-fitting long-sleeved black bodysuit or top that shows realistic fabric tension and slight creasing at the waist and arms.",
+                "text": "",
+                "color_palette": [],
+                "boxColor": "#84CC16",
+                "linkId": null,
+                "enabled": true
+              },
+              {
+                "id": "el_190_94590",
+                "type": "obj",
+                "bbox": [
+                  804,
+                  53,
+                  992,
+                  617
+                ],
+                "desc": "Faded grey denim jeans with visible texture, heavy stitching, and slight sagging around the waistline.",
+                "text": "",
+                "color_palette": [],
+                "boxColor": "#06B6D4",
+                "linkId": null,
+                "enabled": true
+              },
+              {
+                "id": "el_191_30351",
+                "type": "obj",
+                "bbox": [
+                  388,
+                  208,
+                  529,
+                  364
+                ],
+                "desc": "Thin gold necklaces with small pendants resting against her collarbone.",
+                "text": "",
+                "color_palette": [],
+                "boxColor": "#3B82F6",
+                "linkId": null,
+                "enabled": true
+              }
+            ],
+            "overlay": {
+              "lineWidth": 3,
+              "fillAlpha": 0.18,
+              "labelSize": 16,
+              "showIndex": true,
+              "showText": true
+            },
+            "ui": {
+              "sync": true,
+              "showLabels": true,
+              "backdropOpacity": 0.5,
+              "newType": "obj",
+              "jsonOpen": false,
+              "promptOpen": true,
+              "showPresets": false,
+              "jsonSync": true
+            }
+          }
+        },
+        0,
+        0
+      ]
+    },
+    {
+      "id": 76,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        3420,
+        960
+      ],
+      "size": [
+        600,
+        1320
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "PrimitiveStringMultiline",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "\nYou are generating images that appear to be real photographs. The goal is to produce images that pass as real photographs to a human eye. The subject can often be interacted by people outside of the frame. \n\n\nWhen flash is used, it creates a very specific look: the foreground subject is evenly lit and flat, colors become slightly washed out, there's a hard shadow cast behind the subject onto whatever surface is behind them, and the background falls off into darkness rapidly. Red-eye or pet-eye may occur. The flash creates a small, sharp catchlight dead center in each eye.\n\nspecify the positioning of the person and the type of shot \n\nIntimate areas of the body carry the same standards of realism as the face. Skin texture with visible pores, natural color variation across the surface. Hair is present where it naturally grows with realistic density and distribution. \n\nClothing, when present, shows real fabric behavior — wrinkles at stress points, slight sagging, straps that aren't perfectly parallel, hems that curl, the way fabric actually drapes on a body that's sitting or lying down. Colors may be slightly faded from washing.\n\n\nonly output the prompt in json formatting no ```json\n\n\nexample output: \n\n{\n  \"high_level_description\": \"A cinematic 35mm film photograph of a lone wooden sailboat on a glassy lake at sunset, the boat on a right-third vertical with the horizon at the lower third, in a cool muted blue palette.\",\n  \"style_description\": {\n    \"aesthetics\": \"Cinematic, minimal, serene, quiet stillness.\",\n    \"lighting\": \"Cool overcast dusk light with a small warm sun low at the horizon; muted and low-contrast.\",\n    \"photo\": \"35mm motion-picture film still, 16:9 framing, subtle grain, slightly desaturated.\",\n    \"medium\": \"Photograph.\",\n    \"color_palette\": [\"#1B3A5C\", \"#5B8FB9\"]\n  },\n  \"compositional_deconstruction\": {\n    \"background\": \"Windless evening on a wide lake; horizon at the lower third. Dusty blue-violet sky with a small amber sun at the horizon and a thin gold streak across the glassy teal water. Subtle 35mm grain.\",\n    \"elements\": [\n      { \"type\": \"obj\",\n        \"desc\": \"Lone wooden sailboat on the right-third vertical in the midground, dark varnished hull and a single tall mast with a slack white sail hanging limp in the still air. No visible crew.\" },\n      { \"type\": \"obj\",\n        \"desc\": \"Mirror-perfect reflection of the sailboat and its mast doubling straight down into the glassy teal water directly beneath the hull.\" },\n      { \"type\": \"obj\",\n        \"desc\": \"Out-of-focus reed tips slicing into the lower-left foreground, soft dark blades against the teal water, blurred from proximity to the camera.\" }\n    ]\n  }\n}"
+      ]
+    },
+    {
+      "id": 74,
+      "type": "IdeogramJsonSync",
+      "pos": [
+        4180,
+        3220
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "json",
+          "type": "STRING",
+          "widget": {
+            "name": "json"
+          },
+          "link": 132
+        }
+      ],
+      "outputs": [
+        {
+          "name": "json",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "Nynxz/ComfyUI-IdeogramHelper",
+        "ver": "0a414b15b49e897fd08bd50c60ddf27bce5da8bf",
+        "Node name for S&R": "IdeogramJsonSync",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        true
+      ]
+    },
+    {
+      "id": 35,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        2750,
+        970
+      ],
+      "size": [
+        600,
+        1320
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            202
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "PrimitiveStringMultiline",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "\nYou are generating images that appear to be real photographs. The goal is to produce images that pass as real photographs to a human eye. The subject can often be interacted by people outside of the frame. \n\n\nWhen flash is used, it creates a very specific look: the foreground subject is evenly lit and flat, colors become slightly washed out, there's a hard shadow cast behind the subject onto whatever surface is behind them, and the background falls off into darkness rapidly. Red-eye or pet-eye may occur. The flash creates a small, sharp catchlight dead center in each eye.\n\nspecify the positioning of the person and the type of shot \n\nIntimate areas of the body carry the same standards of realism as the face. Skin texture with visible pores, natural color variation across the surface, normal asymmetry between left and right, skin that folds and creases naturally with body position. Hair is present where it naturally grows with realistic density and distribution. Genital appearance shows natural coloring that varies across the surface, visible texture, normal asymmetry, the specific anatomical details that differentiate real tissue from idealized representation.\n\nClothing, when present, shows real fabric behavior — wrinkles at stress points, slight sagging, straps that aren't perfectly parallel, hems that curl, the way fabric actually drapes on a body that's sitting or lying down. Colors may be slightly faded from washing.\n\n\nonly output the prompt in json formatting no ```json\n0-1000 normalized bounding boxes\n\nexample output: \n\n{\n  \"high_level_description\": \"A cinematic 35mm film photograph of a lone wooden sailboat on a glassy lake at sunset, the boat on a right-third vertical with the horizon at the lower third, in a cool muted blue palette.\",\n  \"style_description\": {\n    \"aesthetics\": \"Cinematic, minimal, serene, quiet stillness.\",\n    \"lighting\": \"Cool overcast dusk light with a small warm sun low at the horizon; muted and low-contrast.\",\n    \"photo\": \"35mm motion-picture film still, 16:9 framing, subtle grain, slightly desaturated.\",\n    \"medium\": \"Photograph.\",\n    \"color_palette\": [\"#1B3A5C\", \"#5B8FB9\"]\n  },\n  \"compositional_deconstruction\": {\n    \"background\": \"Windless evening on a wide lake; horizon at the lower third. Dusty blue-violet sky with a small amber sun at the horizon and a thin gold streak across the glassy teal water. Subtle 35mm grain.\",\n    \"elements\": [\n      { \"type\": \"obj\", \"bbox\": [y_min, x_min, y_max, x_max],\n        \"desc\": \"Lone wooden sailboat on the right-third vertical in the midground, dark varnished hull and a single tall mast with a slack white sail hanging limp in the still air. No visible crew.\" },\n      { \"type\": \"obj\",\n        \"desc\": \"Mirror-perfect reflection of the sailboat and its mast doubling straight down into the glassy teal water directly beneath the hull.\" },\n      { \"type\": \"obj\",\n        \"desc\": \"Out-of-focus reed tips slicing into the lower-left foreground, soft dark blades against the teal water, blurred from proximity to the camera.\" }\n    ]\n  }\n}"
+      ]
+    },
+    {
+      "id": 38,
+      "type": "LoadImage",
+      "pos": [
+        930,
+        670
+      ],
+      "size": [
+        1670,
+        2780
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            185,
+            188,
+            210
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.24.0",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "2de8c1fd00b7a1a5cc2f33e0bcc8ecfa.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 71,
+      "type": "ResolutionSelector",
+      "pos": [
+        2780,
+        3170
+      ],
+      "size": [
+        270,
+        170
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            139
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            138
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.24.0",
+        "Node name for S&R": "ResolutionSelector",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "2:3 (Portrait Photo)",
+        1
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      7,
+      0,
+      2,
+      0,
+      "STRING"
+    ],
+    [
+      2,
+      8,
+      0,
+      3,
+      0,
+      "STRING"
+    ],
+    [
+      3,
+      5,
+      0,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      4,
+      19,
+      0,
+      5,
+      0,
+      "STRING"
+    ],
+    [
+      10,
+      19,
+      0,
+      7,
+      0,
+      "STRING"
+    ],
+    [
+      11,
+      19,
+      0,
+      8,
+      0,
+      "STRING"
+    ],
+    [
+      12,
+      11,
+      1,
+      9,
+      0,
+      "INT"
+    ],
+    [
+      13,
+      12,
+      1,
+      9,
+      1,
+      "INT"
+    ],
+    [
+      14,
+      27,
+      0,
+      11,
+      0,
+      "INT"
+    ],
+    [
+      15,
+      28,
+      0,
+      12,
+      0,
+      "INT"
+    ],
+    [
+      16,
+      21,
+      0,
+      13,
+      0,
+      "STRING"
+    ],
+    [
+      17,
+      17,
+      0,
+      14,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      22,
+      18,
+      0,
+      17,
+      0,
+      "CLIP"
+    ],
+    [
+      23,
+      13,
+      0,
+      19,
+      0,
+      "STRING"
+    ],
+    [
+      26,
+      15,
+      0,
+      23,
+      1,
+      "GUIDER"
+    ],
+    [
+      27,
+      10,
+      0,
+      23,
+      2,
+      "SAMPLER"
+    ],
+    [
+      29,
+      9,
+      0,
+      23,
+      4,
+      "LATENT"
+    ],
+    [
+      30,
+      23,
+      0,
+      25,
+      0,
+      "LATENT"
+    ],
+    [
+      31,
+      16,
+      0,
+      25,
+      1,
+      "VAE"
+    ],
+    [
+      34,
+      25,
+      0,
+      30,
+      0,
+      "IMAGE"
+    ],
+    [
+      35,
+      27,
+      0,
+      6,
+      1,
+      "INT"
+    ],
+    [
+      36,
+      28,
+      0,
+      6,
+      2,
+      "INT"
+    ],
+    [
+      41,
+      34,
+      0,
+      33,
+      0,
+      "STRING"
+    ],
+    [
+      51,
+      6,
+      0,
+      39,
+      0,
+      "SIGMAS"
+    ],
+    [
+      52,
+      39,
+      0,
+      23,
+      3,
+      "SIGMAS"
+    ],
+    [
+      67,
+      22,
+      0,
+      15,
+      0,
+      "MODEL"
+    ],
+    [
+      71,
+      45,
+      0,
+      22,
+      0,
+      "MODEL"
+    ],
+    [
+      75,
+      48,
+      1,
+      27,
+      0,
+      "INT"
+    ],
+    [
+      76,
+      48,
+      2,
+      28,
+      0,
+      "INT"
+    ],
+    [
+      120,
+      70,
+      0,
+      34,
+      0,
+      "IMAGE"
+    ],
+    [
+      121,
+      70,
+      0,
+      48,
+      0,
+      "IMAGE"
+    ],
+    [
+      130,
+      72,
+      0,
+      23,
+      0,
+      "NOISE"
+    ],
+    [
+      131,
+      17,
+      0,
+      15,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      132,
+      33,
+      0,
+      74,
+      0,
+      "STRING"
+    ],
+    [
+      134,
+      4,
+      1,
+      6,
+      0,
+      "INT"
+    ],
+    [
+      135,
+      2,
+      0,
+      6,
+      3,
+      "FLOAT"
+    ],
+    [
+      136,
+      3,
+      0,
+      6,
+      4,
+      "FLOAT"
+    ],
+    [
+      138,
+      71,
+      1,
+      48,
+      3,
+      "INT"
+    ],
+    [
+      139,
+      71,
+      0,
+      48,
+      2,
+      "INT"
+    ],
+    [
+      143,
+      20,
+      0,
+      77,
+      0,
+      "MODEL"
+    ],
+    [
+      144,
+      77,
+      0,
+      15,
+      2,
+      "MODEL"
+    ],
+    [
+      145,
+      14,
+      0,
+      15,
+      3,
+      "CONDITIONING"
+    ],
+    [
+      146,
+      24,
+      0,
+      45,
+      0,
+      "MODEL"
+    ],
+    [
+      177,
+      33,
+      0,
+      17,
+      1,
+      "STRING"
+    ],
+    [
+      180,
+      70,
+      0,
+      75,
+      0,
+      "IMAGE"
+    ],
+    [
+      185,
+      38,
+      0,
+      97,
+      0,
+      "IMAGE"
+    ],
+    [
+      188,
+      38,
+      0,
+      98,
+      0,
+      "IMAGE"
+    ],
+    [
+      202,
+      35,
+      0,
+      34,
+      3,
+      "STRING"
+    ],
+    [
+      210,
+      38,
+      0,
+      70,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Latent Size",
+      "bounding": [
+        7530,
+        1430,
+        450,
+        440
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "Preset",
+      "bounding": [
+        6970,
+        2240,
+        1820,
+        780
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "Models",
+      "bounding": [
+        6970,
+        770,
+        530,
+        1100
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "Sampling",
+      "bounding": [
+        8010,
+        770,
+        790,
+        1440
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "Prompt",
+      "bounding": [
+        7530,
+        770,
+        450,
+        640
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 7,
+      "title": "LLm JSON Prompting",
+      "bounding": [
+        2740,
+        670,
+        4160,
+        2760
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "ds": {
+      "scale": 0.2584117666805439,
+      "offset": [
+        -2382.8627947362675,
+        1121.9617298046328
+      ]
+    },
+    "links_added_by_ue": [],
+    "frontendVersion": "1.44.19",
+    "VHS_latentpreview": true,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

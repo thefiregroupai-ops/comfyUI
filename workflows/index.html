@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ComfyUI Workflow Categories — Wan, MiniMax-H3, Krea2, Qwen & Flux | FIRE AI</title>
+  <meta name="title" content="ComfyUI Workflow Categories — Wan, MiniMax-H3, Krea2, Qwen & Flux | FIRE AI">
+  <meta name="description" content="Browse free ComfyUI workflows organized by AI model family: Wan 2.1/2.2, MiniMax-H3, Krea2, Qwen, Flux 2 Klein, and LoRA dataset tools.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://thefiregroupai-ops.github.io/comfyUI/workflows/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thefiregroupai-ops.github.io/comfyUI/workflows/">
+  <meta property="og:title" content="ComfyUI Workflow Categories — Wan, MiniMax-H3, Krea2, Qwen & Flux | FIRE AI">
+  <meta property="og:description" content="Browse free ComfyUI workflows organized by AI model family: Wan 2.1/2.2, MiniMax-H3, Krea2, Qwen, Flux 2 Klein, and LoRA dataset tools.">
+  <meta property="og:image" content="https://thefiregroupai-ops.github.io/comfyUI/assets/banner.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://thefiregroupai-ops.github.io/comfyUI/workflows/">
+  <meta property="twitter:title" content="ComfyUI Workflow Categories — Wan, MiniMax-H3, Krea2, Qwen & Flux | FIRE AI">
+  <meta property="twitter:description" content="Browse free ComfyUI workflows organized by AI model family: Wan 2.1/2.2, MiniMax-H3, Krea2, Qwen, Flux 2 Klein, and LoRA dataset tools.">
+  <meta property="twitter:image" content="https://thefiregroupai-ops.github.io/comfyUI/assets/banner.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  
+
+  <style>
+    :root {
+      --bg-dark: #090a0f;
+      --bg-card: rgba(18, 20, 29, 0.8);
+      --border-card: rgba(255, 255, 255, 0.08);
+      --primary-orange: #ff5500;
+      --primary-gradient: linear-gradient(135deg, #ff5500 0%, #ff8800 100%);
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(255, 85, 0, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(255, 136, 0, 0.08) 0%, transparent 45%);
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-card);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(9, 10, 15, 0.88);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .brand span {
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-links { display: flex; gap: 1rem; align-items: center; }
+    .btn {
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .btn-skool {
+      background: var(--primary-gradient);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(255, 85, 0, 0.35);
+    }
+
+    .btn-skool:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(255, 85, 0, 0.5);
+    }
+
+    .btn-github {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-card);
+      color: #fff;
+    }
+
+    .main-wrapper {
+      max-width: 1200px;
+      margin: 2rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .breadcrumbs {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+    .breadcrumbs a { color: var(--primary-orange); text-decoration: none; }
+
+    h1, h2, h3 { font-family: 'Outfit', sans-serif; color: #fff; }
+    h1 { font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 900; line-height: 1.2; margin-bottom: 1rem; }
+    h2 { font-size: 1.75rem; font-weight: 800; margin: 2.5rem 0 1rem; border-bottom: 1px solid var(--border-card); padding-bottom: 0.4rem; }
+    h3 { font-size: 1.25rem; font-weight: 700; margin: 1.5rem 0 0.75rem; }
+
+    p { margin-bottom: 1.25rem; color: #d1d5db; font-size: 1.05rem; }
+
+    table { width: 100%; border-collapse: collapse; margin: 2rem 0; background: var(--bg-card); border-radius: 8px; overflow: hidden; }
+    th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-card); font-size: 0.95rem; }
+    th { background: rgba(255, 85, 0, 0.15); color: #fff; font-family: 'Outfit', sans-serif; }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.25rem;
+      margin: 1.5rem 0 3rem;
+    }
+
+    .workflow-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+    }
+    .workflow-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255, 85, 0, 0.4);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .workflow-card a.title-link {
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .workflow-card a.title-link:hover { color: var(--primary-orange); }
+
+    .badge-tag {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      background: rgba(255, 85, 0, 0.12);
+      color: var(--primary-orange);
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-right: 0.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .skool-callout {
+      background: linear-gradient(135deg, rgba(255, 85, 0, 0.15) 0%, rgba(20, 22, 33, 0.92) 100%);
+      border: 1px solid rgba(255, 85, 0, 0.35);
+      border-radius: 16px;
+      padding: 2.5rem;
+      text-align: center;
+      margin: 3.5rem 0;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+
+    ul, ol { margin-left: 1.5rem; margin-bottom: 1.5rem; color: #d1d5db; }
+    li { margin-bottom: 0.5rem; }
+
+    footer {
+      border-top: 1px solid var(--border-card);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    footer a { color: var(--primary-orange); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/" class="brand" data-track="brand_click">🔥 <span>FIRE ComfyUI</span></a>
+      <div class="nav-links">
+        <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/" class="btn btn-github" data-track="nav_workflows">📂 Workflows</a>
+        <a href="https://github.com/thefiregroupai-ops/comfyUI" target="_blank" class="btn btn-github" data-track="github_click">⭐ GitHub</a>
+        <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" class="btn btn-skool" data-track="skool_click">🎓 Join Skool</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://thefiregroupai-ops.github.io/comfyUI/">Home</a> &nbsp;/&nbsp; <span>Workflows</span></nav>
+    
+<h1>📂 All Free ComfyUI Workflow Categories</h1>
+<p>Explore production-ready ComfyUI workflows categorized by AI model family and primary task.</p>
+<div class="card-grid">
+
+  <div class="workflow-card">
+    <div>
+      <span class="badge-tag">Category</span>
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/ideogram-flux/" class="title-link">📂 Ideogram & Flux 2 Klein</a>
+      <p style="font-size: 0.95rem; color: var(--text-muted);">3 workflows available in this category.</p>
+    </div>
+    <div style="margin-top: 1rem;">
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/ideogram-flux/" class="btn btn-skool" style="width: 100%; justify-content: center;">Explore Ideogram & Flux 2 Klein →</a>
+    </div>
+  </div>
+
+  <div class="workflow-card">
+    <div>
+      <span class="badge-tag">Category</span>
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/" class="title-link">📂 Krea2 Workflows</a>
+      <p style="font-size: 0.95rem; color: var(--text-muted);">4 workflows available in this category.</p>
+    </div>
+    <div style="margin-top: 1rem;">
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/" class="btn btn-skool" style="width: 100%; justify-content: center;">Explore Krea2 Workflows →</a>
+    </div>
+  </div>
+
+  <div class="workflow-card">
+    <div>
+      <span class="badge-tag">Category</span>
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/lora-dataset-tools/" class="title-link">📂 LoRA Dataset Tools</a>
+      <p style="font-size: 0.95rem; color: var(--text-muted);">1 workflows available in this category.</p>
+    </div>
+    <div style="margin-top: 1rem;">
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/lora-dataset-tools/" class="btn btn-skool" style="width: 100%; justify-content: center;">Explore LoRA Dataset Tools →</a>
+    </div>
+  </div>
+
+  <div class="workflow-card">
+    <div>
+      <span class="badge-tag">Category</span>
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/minimax-h3-video/" class="title-link">📂 MiniMax-H3 Video</a>
+      <p style="font-size: 0.95rem; color: var(--text-muted);">3 workflows available in this category.</p>
+    </div>
+    <div style="margin-top: 1rem;">
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/minimax-h3-video/" class="btn btn-skool" style="width: 100%; justify-content: center;">Explore MiniMax-H3 Video →</a>
+    </div>
+  </div>
+
+  <div class="workflow-card">
+    <div>
+      <span class="badge-tag">Category</span>
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/qwen/" class="title-link">📂 Qwen AI Workflows</a>
+      <p style="font-size: 0.95rem; color: var(--text-muted);">5 workflows available in this category.</p>
+    </div>
+    <div style="margin-top: 1rem;">
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/qwen/" class="btn btn-skool" style="width: 100%; justify-content: center;">Explore Qwen AI Workflows →</a>
+    </div>
+  </div>
+
+  <div class="workflow-card">
+    <div>
+      <span class="badge-tag">Category</span>
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/upscalers-tools/" class="title-link">📂 Upscalers & Tools</a>
+      <p style="font-size: 0.95rem; color: var(--text-muted);">2 workflows available in this category.</p>
+    </div>
+    <div style="margin-top: 1rem;">
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/upscalers-tools/" class="btn btn-skool" style="width: 100%; justify-content: center;">Explore Upscalers & Tools →</a>
+    </div>
+  </div>
+
+  <div class="workflow-card">
+    <div>
+      <span class="badge-tag">Category</span>
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/wan-video/" class="title-link">📂 Wan Video</a>
+      <p style="font-size: 0.95rem; color: var(--text-muted);">2 workflows available in this category.</p>
+    </div>
+    <div style="margin-top: 1rem;">
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/wan-video/" class="btn btn-skool" style="width: 100%; justify-content: center;">Explore Wan Video →</a>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <footer>
+    <p>Maintained with 🔥 by <a href="https://github.com/thefiregroupai-ops/comfyUI" target="_blank" data-track="github_click">FIRE Group AI Ops</a> | <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" data-track="skool_click">FIRE AI Creator Lab on Skool</a></p>
+  </footer>
+
+</body>
+</html>
