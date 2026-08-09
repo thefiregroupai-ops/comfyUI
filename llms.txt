@@ -1,0 +1,10 @@
+# FIRE ComfyUI Workflows
+
+> Open-Source ComfyUI Workflow Library for AI Image & Video Generation.
+
+## Free Workflows
+https://thefiregroupai-ops.github.io/comfyUI/
+https://thefiregroupai-ops.github.io/comfyUI/workflows/
+
+## Skool Community (100% Free)
+https://www.skool.com/fire-ai-creator-lab-9667

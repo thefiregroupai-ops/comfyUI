@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Qwen Z-Base ControlNet & Sage Attention Workflow — Free ComfyUI Workflow JSON | FIRE AI</title>
+  <meta name="title" content="Qwen Z-Base ControlNet & Sage Attention Workflow — Free ComfyUI Workflow JSON | FIRE AI">
+  <meta name="description" content="Download free Qwen Z-Base ControlNet & Sage Attention Workflow for ComfyUI. Raw JSON workflow utilizing Qwen Z-Base, ControlNet AIO.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://thefiregroupai-ops.github.io/comfyUI/workflows/qwen/zbase-zit-control/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thefiregroupai-ops.github.io/comfyUI/workflows/qwen/zbase-zit-control/">
+  <meta property="og:title" content="Qwen Z-Base ControlNet & Sage Attention Workflow — Free ComfyUI Workflow JSON | FIRE AI">
+  <meta property="og:description" content="Download free Qwen Z-Base ControlNet & Sage Attention Workflow for ComfyUI. Raw JSON workflow utilizing Qwen Z-Base, ControlNet AIO.">
+  <meta property="og:image" content="https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-influencer-character-spider-hero.webp">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://thefiregroupai-ops.github.io/comfyUI/workflows/qwen/zbase-zit-control/">
+  <meta property="twitter:title" content="Qwen Z-Base ControlNet & Sage Attention Workflow — Free ComfyUI Workflow JSON | FIRE AI">
+  <meta property="twitter:description" content="Download free Qwen Z-Base ControlNet & Sage Attention Workflow for ComfyUI. Raw JSON workflow utilizing Qwen Z-Base, ControlNet AIO.">
+  <meta property="twitter:image" content="https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-influencer-character-spider-hero.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "Qwen Z-Base ControlNet & Sage Attention Workflow",
+  "description": "High-efficiency ControlNet preprocessor pipeline with Sage Attention patch for fast Qwen rendering.",
+  "programmingLanguage": "JSON",
+  "targetProduct": {
+    "@type": "SoftwareApplication",
+    "name": "ComfyUI"
+  }
+}
+</script>
+
+
+  <style>
+    :root {
+      --bg-dark: #090a0f;
+      --bg-card: rgba(18, 20, 29, 0.85);
+      --border-card: rgba(255, 255, 255, 0.08);
+      --primary-orange: #ff5500;
+      --primary-gradient: linear-gradient(135deg, #ff5500 0%, #ff8800 100%);
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(255, 85, 0, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(255, 136, 0, 0.08) 0%, transparent 45%);
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-card);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(9, 10, 15, 0.88);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .brand span {
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-links { display: flex; gap: 1rem; align-items: center; }
+    .btn {
+      padding: 0.65rem 1.3rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .btn-skool {
+      background: var(--primary-gradient);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(255, 85, 0, 0.35);
+    }
+
+    .btn-skool:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(255, 85, 0, 0.5);
+    }
+
+    .btn-github {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-card);
+      color: #fff;
+    }
+
+    .main-wrapper {
+      max-width: 1200px;
+      margin: 2rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .breadcrumbs {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+    .breadcrumbs a { color: var(--primary-orange); text-decoration: none; }
+
+    h1, h2, h3 { font-family: 'Outfit', sans-serif; color: #fff; }
+    h1 { font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 900; line-height: 1.2; margin-bottom: 1rem; }
+    h2 { font-size: 1.75rem; font-weight: 800; margin: 2.5rem 0 1rem; border-bottom: 1px solid var(--border-card); padding-bottom: 0.4rem; }
+    h3 { font-size: 1.25rem; font-weight: 700; margin: 1.5rem 0 0.75rem; }
+
+    p { margin-bottom: 1.25rem; color: #d1d5db; font-size: 1.05rem; }
+
+    table { width: 100%; border-collapse: collapse; margin: 2rem 0; background: var(--bg-card); border-radius: 8px; overflow: hidden; }
+    th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-card); font-size: 0.95rem; }
+    th { background: rgba(255, 85, 0, 0.15); color: #fff; font-family: 'Outfit', sans-serif; }
+
+    .hero-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+      margin-bottom: 3.5rem;
+    }
+
+    @media (max-width: 850px) {
+      .hero-split { grid-template-columns: 1fr; text-align: center; }
+    }
+
+    .showcase-img-frame {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 85, 0, 0.3);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+      background: var(--bg-card);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .showcase-img-frame img, .showcase-img-frame video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .showcase-img-frame:hover img, .showcase-img-frame:hover video {
+      transform: scale(1.03);
+    }
+    .showcase-caption-badge {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(9, 10, 15, 0.88);
+      border: 1px solid rgba(255, 85, 0, 0.35);
+      color: #ffaa77;
+      padding: 0.3rem 0.8rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      backdrop-filter: blur(8px);
+      z-index: 2;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0 3.5rem;
+    }
+    .gallery-grid .showcase-img-frame {
+      aspect-ratio: 9 / 13;
+      height: auto;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.25rem;
+      margin: 1.5rem 0 3rem;
+    }
+
+    .workflow-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+    }
+    .workflow-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255, 85, 0, 0.4);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .workflow-card a.title-link {
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .workflow-card a.title-link:hover { color: var(--primary-orange); }
+
+    .badge-tag {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      background: rgba(255, 85, 0, 0.12);
+      color: var(--primary-orange);
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-right: 0.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .skool-callout {
+      background: linear-gradient(135deg, rgba(255, 85, 0, 0.15) 0%, rgba(20, 22, 33, 0.92) 100%);
+      border: 1px solid rgba(255, 85, 0, 0.35);
+      border-radius: 16px;
+      padding: 2.5rem;
+      text-align: center;
+      margin: 3.5rem 0;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+
+    ul, ol { margin-left: 1.5rem; margin-bottom: 1.5rem; color: #d1d5db; }
+    li { margin-bottom: 0.5rem; }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.92);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+    }
+    .lightbox-modal.active { display: flex; }
+    .lightbox-content {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 85, 0, 0.4);
+      box-shadow: 0 0 50px rgba(255, 85, 0, 0.3);
+    }
+
+    footer {
+      border-top: 1px solid var(--border-card);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    footer a { color: var(--primary-orange); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="https://thefiregroupai-ops.github.io/comfyUI/" class="brand" data-track="brand_click">🔥 <span>FIRE ComfyUI</span></a>
+      <div class="nav-links">
+        <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/" class="btn btn-github" data-track="nav_workflows">📂 Workflows</a>
+        <a href="https://github.com/thefiregroupai-ops/comfyUI" target="_blank" class="btn btn-github" data-track="github_click">⭐ GitHub</a>
+        <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" class="btn btn-skool" data-track="skool_click">🎓 Join Free Skool (100% Free)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://thefiregroupai-ops.github.io/comfyUI/">Home</a> &nbsp;/&nbsp; <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/">Workflows</a> &nbsp;/&nbsp; <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/qwen/">Qwen AI Workflows</a> &nbsp;/&nbsp; <span>Qwen Z-Base ControlNet & Sage Attention Workflow</span></nav>
+    
+<h1>Qwen Z-Base ControlNet & Sage Attention Workflow</h1>
+<p style="font-size: 1.15rem; color: var(--primary-orange); font-weight: 600;">High-efficiency ControlNet preprocessor pipeline with Sage Attention patch for fast Qwen rendering.</p>
+
+<div style="margin: 1.5rem 0;">
+  <div class="showcase-img-frame" style="aspect-ratio: 16 / 9; height: auto;" onclick="openLightbox('https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-character-thank-you-green-cosplay.webp')">
+    <img src="https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-character-thank-you-green-cosplay.webp" alt="FIRE AI Character Cosplay Green Dress Artwork" width="1024" height="576" loading="lazy">
+  </div>
+</div>
+
+<div style="margin: 2rem 0; display: flex; gap: 1rem; flex-wrap: wrap;">
+  <a href="https://thefiregroupai-ops.github.io/comfyUI/Qwen/FIRE_zbase+zit+control_v1.json" download class="btn btn-skool" style="padding: 0.8rem 1.6rem; font-size: 1rem;" data-track="workflow_download">⬇️ Download Workflow JSON</a>
+  <a href="https://github.com/thefiregroupai-ops/comfyUI/blob/main/Qwen/FIRE_zbase+zit+control_v1.json" target="_blank" class="btn btn-github" style="padding: 0.8rem 1.6rem; font-size: 1rem;" data-track="github_click">⭐ View Source on GitHub</a>
+</div>
+
+<div style="background: var(--bg-card); border: 1px solid var(--border-card); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem;">
+  <h2>🛠️ Technical Specifications</h2>
+  <ul>
+    <li><strong>Model Family:</strong> Qwen Z-Base, ControlNet AIO</li>
+    <li><strong>Primary Tasks:</strong> controlnet-depth</li>
+    <li><strong>Node Count:</strong> 26 nodes</li>
+    <li><strong>Key ComfyUI Nodes Used:</strong> ZImageFunControlnet, PathchSageAttentionKJ, AIO_Preprocessor, Image Comparer (rgthree)</li>
+    <li><strong>Required Custom Node Packs:</strong> ComfyUI-KJNodes, ComfyUI-ControlNet-AIO</li>
+    <li><strong>Availability:</strong> Free direct public download</li>
+  </ul>
+</div>
+
+<h2>📥 Inputs & Outputs</h2>
+<ul>
+  <li><strong>Inputs:</strong> Control Image Input, Prompt</li>
+  <li><strong>Outputs:</strong> Preprocessed ControlNet Output Image</li>
+</ul>
+
+<h2>📖 How to Import & Run in ComfyUI</h2>
+<ol>
+  <li>Click <strong>Download Workflow JSON</strong> above to save <code>FIRE_zbase+zit+control_v1.json</code> to your computer.</li>
+  <li>Launch ComfyUI in your web browser.</li>
+  <li>Drag and drop the downloaded JSON file directly onto the ComfyUI canvas.</li>
+  <li>If red missing nodes appear, open <strong>ComfyUI-Manager</strong> -> click <strong>Install Missing Custom Nodes</strong> -> Restart ComfyUI.</li>
+  <li>Ensure model weights for Qwen Z-Base, ControlNet AIO are located in your <code>models/</code> folder.</li>
+  <li>Click <strong>Queue Prompt</strong>.</li>
+</ol>
+
+<h2>🔗 Related Workflows in Qwen AI Workflows</h2>
+<ul>
+  <li><a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/qwen/ai-real-skin-v5/">Qwen AI Real Skin v5 Photorealistic Workflow</a> — Ultra-realistic skin texture, micro-pore enhancement, and face mask blur pipeline using Qwen and SeedVR2 DiT.</li><li><a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/qwen/img2img-classic/">Qwen Classic Img2Img Restaging Workflow</a> — Clean image-to-image restaging and prompt conditioning workflow using Qwen diffusion model.</li><li><a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/qwen/faceswap-v1/">Qwen Faceswap & Batch Folder Workflow v1</a> — Identity preservation and batch folder face swapping workflow using Qwen text encoder and face orientation matching.</li>
+</ul>
+
+<div class="skool-callout">
+  <h2>🚀 Want More Workflows & Direct Support?</h2>
+  <p>Join <strong>FIRE AI Creator Lab on Skool</strong> (100% Free) to access full workflow templates, custom node guides, and 1-on-1 community support.</p>
+  <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" class="btn btn-skool" data-track="skool_click">🎓 Join FIRE AI Creator Lab on Skool (100% Free)</a>
+</div>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
+    <img id="lightboxImg" class="lightbox-content" src="" alt="Enlarged FIRE AI Showcase Artwork">
+  </div>
+
+  <footer>
+    <p>Maintained with 🔥 by <a href="https://github.com/thefiregroupai-ops/comfyUI" target="_blank" data-track="github_click">FIRE Group AI Ops</a> | <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" data-track="skool_click">FIRE AI Creator Lab on Skool (Free Community)</a></p>
+  </footer>
+
+  <script>
+    function openLightbox(src) {
+      const lb = document.getElementById('lightbox');
+      const img = document.getElementById('lightboxImg');
+      img.src = src;
+      lb.classList.add('active');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+  </script>
+</body>
+</html>

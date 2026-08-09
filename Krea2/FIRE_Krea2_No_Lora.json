@@ -1,0 +1,2824 @@
+{
+  "id": "711e242d-b123-4b1b-9a28-31309ce1e246",
+  "revision": 0,
+  "last_node_id": 43,
+  "last_link_id": 60,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "CR Model Input Switch",
+      "pos": [
+        -2948.024169921875,
+        662.1660766601562
+      ],
+      "size": [
+        345.6646423339844,
+        290
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "model1",
+          "name": "model1",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 1
+        },
+        {
+          "label": "model2",
+          "name": "model2",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "label": "MODEL",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": []
+        },
+        {
+          "label": "show_help",
+          "name": "show_help",
+          "type": "STRING"
+        }
+      ],
+      "title": "KREA MODEL SELECT — 1 BASE / 2 REALISM",
+      "properties": {
+        "Node name for S&R": "CR Model Input Switch",
+        "widget_ue_connectable": {
+          "Input": true
+        },
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780"
+      },
+      "widgets_values": [
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "type": "CR Image Input Switch (4 way)",
+      "pos": [
+        -5119.26806640625,
+        938.5147094726562
+      ],
+      "size": [
+        380.613037109375,
+        330
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image1",
+          "name": "image1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 3
+        },
+        {
+          "label": "image2",
+          "name": "image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 4
+        },
+        {
+          "label": "image3",
+          "name": "image3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 5
+        },
+        {
+          "label": "image4",
+          "name": "image4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 6
+        },
+        {
+          "label": "Input",
+          "name": "Input",
+          "type": "INT",
+          "widget": {
+            "name": "Input"
+          },
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            18
+          ]
+        },
+        {
+          "label": "show_help",
+          "name": "show_help",
+          "type": "STRING"
+        }
+      ],
+      "title": "SECONDARY FULL-PHOTO SELECTOR",
+      "properties": {
+        "Node name for S&R": "CR Image Input Switch (4 way)",
+        "widget_ue_connectable": {
+          "Input": true
+        },
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780"
+      },
+      "widgets_values": [
+        1
+      ]
+    },
+    {
+      "id": 3,
+      "type": "CR Image Input Switch (4 way)",
+      "pos": [
+        -5519.4384765625,
+        943.0820922851562
+      ],
+      "size": [
+        375.8390808105469,
+        329.99993896484375
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image1",
+          "name": "image1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 8
+        },
+        {
+          "label": "image2",
+          "name": "image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 9
+        },
+        {
+          "label": "image3",
+          "name": "image3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 10
+        },
+        {
+          "label": "image4",
+          "name": "image4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 11
+        },
+        {
+          "label": "Input",
+          "name": "Input",
+          "type": "INT",
+          "widget": {
+            "name": "Input"
+          },
+          "link": 12
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            17
+          ]
+        },
+        {
+          "label": "show_help",
+          "name": "show_help",
+          "type": "STRING"
+        }
+      ],
+      "title": "PRIMARY FULL-PHOTO SELECTOR",
+      "properties": {
+        "Node name for S&R": "CR Image Input Switch (4 way)",
+        "widget_ue_connectable": {
+          "Input": true
+        },
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780"
+      },
+      "widgets_values": [
+        1
+      ]
+    },
+    {
+      "id": 4,
+      "type": "LoadImage",
+      "pos": [
+        -4797.27294921875,
+        -266.6688537597656
+      ],
+      "size": [
+        746.07470703125,
+        873.6921997070312
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4,
+            9
+          ]
+        },
+        {
+          "label": "MASK",
+          "name": "MASK",
+          "type": "MASK"
+        }
+      ],
+      "title": "REFERENCE 2 — 3/4 / FULL BODY",
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.27.0"
+      },
+      "widgets_values": [
+        "e0cc5cbc939fa7c38602d73df161edcbdb1f3b83440f90cf2144fffbc6ccfaa3.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "LoadImage",
+      "pos": [
+        -4730.85205078125,
+        1123.0538330078125
+      ],
+      "size": [
+        694.3974609375,
+        791.4822998046875
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6,
+            11
+          ]
+        },
+        {
+          "label": "MASK",
+          "name": "MASK",
+          "type": "MASK"
+        }
+      ],
+      "title": "REFERENCE 4 — PORTRAIT",
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.27.0"
+      },
+      "widgets_values": [
+        "82592ca0c5366fa61cabfd5b128eb195c66da8ff50bbd10c67f5f4f3201ec7c1.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "LoadImage",
+      "pos": [
+        -5523.74365234375,
+        1118.7872314453125
+      ],
+      "size": [
+        735.8096313476562,
+        782.0560302734375
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5,
+            10
+          ]
+        },
+        {
+          "label": "MASK",
+          "name": "MASK",
+          "type": "MASK"
+        }
+      ],
+      "title": "REFERENCE 3 — FACE EXTRA IDENTITY",
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.27.0"
+      },
+      "widgets_values": [
+        "b46cd8cdba406e046984f97ae225fa3061299305d348639f43c6b7141433c455.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "VAEEncode",
+      "pos": [
+        -4206.16845703125,
+        740.9746704101562
+      ],
+      "size": [
+        250,
+        90
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "pixels",
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 13
+        },
+        {
+          "label": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 14
+        }
+      ],
+      "outputs": [
+        {
+          "label": "LATENT",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            48
+          ]
+        }
+      ],
+      "title": "PRIMARY FULL-BODY LATENT",
+      "properties": {
+        "Node name for S&R": "VAEEncode",
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.27.0"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 8,
+      "type": "VAEEncode",
+      "pos": [
+        -4242.54296875,
+        925.6758422851562
+      ],
+      "size": [
+        267.3179626464844,
+        90
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "pixels",
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 15
+        },
+        {
+          "label": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "label": "LATENT",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            49
+          ]
+        }
+      ],
+      "title": "SECONDARY FULL-BODY LATENT",
+      "properties": {
+        "Node name for S&R": "VAEEncode",
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.27.0"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 9,
+      "type": "LoadImage",
+      "pos": [
+        -5522.341796875,
+        -267.4471740722656
+      ],
+      "size": [
+        663.4994506835938,
+        1110.2442626953125
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3,
+            8
+          ]
+        },
+        {
+          "label": "MASK",
+          "name": "MASK",
+          "type": "MASK"
+        }
+      ],
+      "title": "REFERENCE 1 — FRONT / FULL BODY",
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.27.0"
+      },
+      "widgets_values": [
+        "337ebace8483e346707d243dcde1faa60117a8a82d37d158e2bd39c6316ea73a.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "ImageScaleToTotalPixels",
+      "pos": [
+        -4683.3115234375,
+        743.4736938476562
+      ],
+      "size": [
+        406.23626708984375,
+        116.63106536865234
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            13,
+            21,
+            25,
+            51
+          ]
+        }
+      ],
+      "title": "PRIMARY REFERENCE — NORMALIZE 1.25 MP",
+      "properties": {
+        "Node name for S&R": "ImageScaleToTotalPixels",
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.27.0"
+      },
+      "widgets_values": [
+        "lanczos",
+        1.25,
+        8
+      ]
+    },
+    {
+      "id": 11,
+      "type": "ImageScaleToTotalPixels",
+      "pos": [
+        -4682.79833984375,
+        927.3096313476562
+      ],
+      "size": [
+        401.0239562988281,
+        116.0873794555664
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 18
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            15,
+            22,
+            26,
+            52
+          ]
+        }
+      ],
+      "title": "SECONDARY REFERENCE — NORMALIZE 1.25 MP",
+      "properties": {
+        "Node name for S&R": "ImageScaleToTotalPixels",
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.27.0"
+      },
+      "widgets_values": [
+        "lanczos",
+        1.25,
+        8
+      ]
+    },
+    {
+      "id": 12,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        -3261.5390625,
+        1018.9082641601562
+      ],
+      "size": [
+        337.6430969238281,
+        109.9614486694336
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 19
+        }
+      ],
+      "outputs": [
+        {
+          "label": "MODEL",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            47
+          ]
+        }
+      ],
+      "title": "IDENTITY EDIT v1.2",
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.27.0"
+      },
+      "widgets_values": [
+        "krea2_identity_edit_v1_2.safetensors",
+        1
+      ]
+    },
+    {
+      "id": 13,
+      "type": "CR Value",
+      "pos": [
+        -5144.392578125,
+        1993.8350830078125
+      ],
+      "size": [
+        350,
+        110
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "FLOAT",
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": []
+        },
+        {
+          "label": "INT",
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            7
+          ]
+        },
+        {
+          "label": "show_help",
+          "name": "show_help",
+          "type": "STRING"
+        }
+      ],
+      "title": "SECONDARY REFERENCE — 1 / 2 / 3 / 4",
+      "properties": {
+        "Node name for S&R": "CR Value",
+        "widget_ue_connectable": {},
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780"
+      },
+      "widgets_values": [
+        2
+      ]
+    },
+    {
+      "id": 16,
+      "type": "UltralyticsDetectorProvider",
+      "pos": [
+        -524.75634765625,
+        684.5820922851562
+      ],
+      "size": [
+        270,
+        78
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "BBOX_DETECTOR",
+          "name": "BBOX_DETECTOR",
+          "type": "BBOX_DETECTOR",
+          "links": [
+            42
+          ]
+        },
+        {
+          "label": "SEGM_DETECTOR",
+          "name": "SEGM_DETECTOR",
+          "type": "SEGM_DETECTOR"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UltralyticsDetectorProvider",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "bbox/face_yolov8m.pt"
+      ]
+    },
+    {
+      "id": 17,
+      "type": "UNETLoader",
+      "pos": [
+        -3813.3603515625,
+        662.0332641601562
+      ],
+      "size": [
+        420,
+        100
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "MODEL",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "title": "KREA 2 TURBO",
+      "properties": {
+        "Node name for S&R": "UNETLoader",
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.8.2"
+      },
+      "widgets_values": [
+        "krea2_turbo_fp8_scaled.safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "CR Value",
+      "pos": [
+        -5530.34326171875,
+        1992.8819580078125
+      ],
+      "size": [
+        350,
+        110
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "FLOAT",
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": []
+        },
+        {
+          "label": "INT",
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            12
+          ]
+        },
+        {
+          "label": "show_help",
+          "name": "show_help",
+          "type": "STRING"
+        }
+      ],
+      "title": "PRIMARY REFERENCE — 1 / 2 / 3 / 4",
+      "properties": {
+        "Node name for S&R": "CR Value",
+        "widget_ue_connectable": {},
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780"
+      },
+      "widgets_values": [
+        3
+      ]
+    },
+    {
+      "id": 19,
+      "type": "UNETLoader",
+      "pos": [
+        -3815.7412109375,
+        656.4863891601562
+      ],
+      "size": [
+        420.3416442871094,
+        82
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "MODEL",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            53
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader",
+        "widget_ue_connectable": {
+          "weight_dtype": true,
+          "unet_name": true
+        },
+        "cnr_id": "comfy-core",
+        "hasSecondTab": false,
+        "models": [
+          {
+            "directory_invalid": true,
+            "name": "z_image_bf16.safetensors",
+            "directory": "diffusion_models",
+            "url": "https://huggingface.co/Comfy-Org/z_image/resolve/main/split_files/diffusion_models/z_image_bf16.safetensors"
+          }
+        ],
+        "ver": "0.3.73",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "secondTabOffset": 80,
+        "tabWidth": 65,
+        "secondTabWidth": 65,
+        "secondTabText": "Send Back",
+        "enableTabs": false,
+        "tabXOffset": 10
+      },
+      "widgets_values": [
+        "Krea2-Turbo-bf16.safetensors",
+        "default"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 23,
+      "type": "VAELoader",
+      "pos": [
+        -3816.99365234375,
+        1049.1104736328125
+      ],
+      "size": [
+        420,
+        90
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "VAE",
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            14,
+            16,
+            39,
+            45,
+            50
+          ]
+        }
+      ],
+      "title": "KREA VAE",
+      "properties": {
+        "Node name for S&R": "VAELoader",
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.8.2"
+      },
+      "widgets_values": [
+        "qwen_image_vae.safetensors"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "CLIPLoader",
+      "pos": [
+        -3820.0341796875,
+        825.2695922851562
+      ],
+      "size": [
+        420,
+        125
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "CLIP",
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            20,
+            24,
+            38,
+            54
+          ]
+        }
+      ],
+      "title": "KREA TEXT ENCODER",
+      "properties": {
+        "Node name for S&R": "CLIPLoader",
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.8.2"
+      },
+      "widgets_values": [
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "krea2",
+        "default"
+      ]
+    },
+    {
+      "id": 25,
+      "type": "BasicScheduler",
+      "pos": [
+        -1048.02880859375,
+        -296.9276428222656
+      ],
+      "size": [
+        270,
+        106
+      ],
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 28
+        }
+      ],
+      "outputs": [
+        {
+          "label": "SIGMAS",
+          "name": "SIGMAS",
+          "type": "SIGMAS",
+          "links": [
+            34
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BasicScheduler",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "beta",
+        7,
+        1
+      ]
+    },
+    {
+      "id": 26,
+      "type": "KSamplerSelect",
+      "pos": [
+        -1516.773681640625,
+        297.0655212402344
+      ],
+      "size": [
+        294.4927978515625,
+        70.16729736328125
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "SAMPLER",
+          "name": "SAMPLER",
+          "type": "SAMPLER",
+          "links": [
+            29
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSamplerSelect",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "er_sde"
+      ]
+    },
+    {
+      "id": 27,
+      "type": "DetailDaemonSamplerNode",
+      "pos": [
+        -1042.7158203125,
+        -139.4501190185547
+      ],
+      "size": [
+        270,
+        274
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "sampler",
+          "name": "sampler",
+          "type": "SAMPLER",
+          "link": 29
+        }
+      ],
+      "outputs": [
+        {
+          "label": "SAMPLER",
+          "name": "SAMPLER",
+          "type": "SAMPLER",
+          "links": [
+            33
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DetailDaemonSamplerNode",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        0.6000000000000001,
+        0.10000000000000002,
+        0.8500000000000002,
+        0.5,
+        1,
+        0,
+        0,
+        0,
+        false,
+        0
+      ]
+    },
+    {
+      "id": 28,
+      "type": "SamplerCustom",
+      "pos": [
+        -749.2861328125,
+        -300.2733459472656
+      ],
+      "size": [
+        299.89129638671875,
+        281.6455383300781
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 30
+        },
+        {
+          "label": "positive",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 31
+        },
+        {
+          "label": "negative",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 32
+        },
+        {
+          "label": "sampler",
+          "name": "sampler",
+          "type": "SAMPLER",
+          "link": 33
+        },
+        {
+          "label": "sigmas",
+          "name": "sigmas",
+          "type": "SIGMAS",
+          "link": 34
+        },
+        {
+          "label": "latent_image",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 35
+        }
+      ],
+      "outputs": [
+        {
+          "label": "output",
+          "name": "output",
+          "type": "LATENT",
+          "links": [
+            44
+          ]
+        },
+        {
+          "label": "denoised_output",
+          "name": "denoised_output",
+          "type": "LATENT"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SamplerCustom",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        false,
+        1100867550651194,
+        "randomize",
+        1
+      ]
+    },
+    {
+      "id": 29,
+      "type": "FaceDetailer",
+      "pos": [
+        -124.2646255493164,
+        631.8936157226562
+      ],
+      "size": [
+        372.385009765625,
+        960
+      ],
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 36
+        },
+        {
+          "label": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 37
+        },
+        {
+          "label": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 38
+        },
+        {
+          "label": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 39
+        },
+        {
+          "label": "positive",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 40
+        },
+        {
+          "label": "negative",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 41
+        },
+        {
+          "label": "bbox_detector",
+          "name": "bbox_detector",
+          "type": "BBOX_DETECTOR",
+          "link": 42
+        },
+        {
+          "label": "sam_model_opt",
+          "name": "sam_model_opt",
+          "shape": 7,
+          "type": "SAM_MODEL",
+          "link": 43
+        },
+        {
+          "label": "segm_detector_opt",
+          "name": "segm_detector_opt",
+          "shape": 7,
+          "type": "SEGM_DETECTOR",
+          "link": null
+        },
+        {
+          "label": "detailer_hook",
+          "name": "detailer_hook",
+          "shape": 7,
+          "type": "DETAILER_HOOK",
+          "link": null
+        },
+        {
+          "label": "scheduler_func_opt",
+          "name": "scheduler_func_opt",
+          "shape": 7,
+          "type": "SCHEDULER_FUNC",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            55,
+            58
+          ]
+        },
+        {
+          "label": "cropped_refined",
+          "name": "cropped_refined",
+          "shape": 6,
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "label": "cropped_enhanced_alpha",
+          "name": "cropped_enhanced_alpha",
+          "shape": 6,
+          "type": "IMAGE"
+        },
+        {
+          "label": "mask",
+          "name": "mask",
+          "type": "MASK"
+        },
+        {
+          "label": "detailer_pipe",
+          "name": "detailer_pipe",
+          "type": "DETAILER_PIPE",
+          "links": []
+        },
+        {
+          "label": "cnet_images",
+          "name": "cnet_images",
+          "shape": 6,
+          "type": "IMAGE"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FaceDetailer",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        1024,
+        true,
+        1024,
+        440616111299136,
+        "randomize",
+        4,
+        1,
+        "euler",
+        "beta",
+        0.30000000000000004,
+        5,
+        true,
+        true,
+        0.5,
+        10,
+        3,
+        "center-1",
+        0,
+        0.93,
+        0,
+        0.7,
+        "False",
+        10,
+        "",
+        1,
+        false,
+        20,
+        false,
+        false
+      ]
+    },
+    {
+      "id": 30,
+      "type": "SAMLoader",
+      "pos": [
+        -518.505859375,
+        817.6768188476562
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "SAM_MODEL",
+          "name": "SAM_MODEL",
+          "type": "SAM_MODEL",
+          "links": [
+            43
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SAMLoader",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "sam_vit_b_01ec64.pth",
+        "AUTO"
+      ]
+    },
+    {
+      "id": 31,
+      "type": "VAEDecode",
+      "pos": [
+        -422.6415710449219,
+        -301.2367248535156
+      ],
+      "size": [
+        362.35894775390625,
+        68.96305847167969
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "samples",
+          "name": "samples",
+          "type": "LATENT",
+          "link": 44
+        },
+        {
+          "label": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 45
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            36,
+            46,
+            56
+          ]
+        }
+      ],
+      "title": "2 KREA DECODE",
+      "properties": {
+        "Node name for S&R": "VAEDecode",
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.27.0"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 32,
+      "type": "SaveImage",
+      "pos": [
+        -420.9384460449219,
+        -178.8798065185547
+      ],
+      "size": [
+        357.96441650390625,
+        348.8971252441406
+      ],
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 46
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image_urls",
+          "name": "image_urls",
+          "type": "STRING"
+        },
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE"
+        }
+      ],
+      "title": "2 KREA SAVE",
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.27.0"
+      },
+      "widgets_values": [
+        "Character_LoRA"
+      ]
+    },
+    {
+      "id": 33,
+      "type": "Krea2EditModelPatch",
+      "pos": [
+        -1519.74560546875,
+        -303.7889709472656
+      ],
+      "size": [
+        440,
+        350
+      ],
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 47
+        },
+        {
+          "label": "source_latent",
+          "name": "source_latent",
+          "type": "LATENT",
+          "link": 48
+        },
+        {
+          "label": "source_latent_b",
+          "name": "source_latent_b",
+          "shape": 7,
+          "type": "LATENT",
+          "link": 49
+        },
+        {
+          "label": "ref_boost_mask",
+          "name": "ref_boost_mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "label": "vae",
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": 50
+        },
+        {
+          "label": "source_image",
+          "name": "source_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 51
+        },
+        {
+          "label": "source_image_b",
+          "name": "source_image_b",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 52
+        }
+      ],
+      "outputs": [
+        {
+          "label": "MODEL",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            28,
+            30,
+            37
+          ]
+        }
+      ],
+      "title": "2 KREA -  REF BOOST 2.50",
+      "properties": {
+        "Node name for S&R": "Krea2EditModelPatch",
+        "widget_ue_connectable": {},
+        "ver": "latest",
+        "aux_id": "lbouaraba/comfyui-krea2edit"
+      },
+      "widgets_values": [
+        2.5,
+        1,
+        "fit"
+      ]
+    },
+    {
+      "id": 34,
+      "type": "Power Lora Loader (rgthree)",
+      "pos": [
+        -3346.9921875,
+        655.8984985351562
+      ],
+      "size": [
+        340.5199279785156,
+        286
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "dir": 3,
+          "label": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 53
+        },
+        {
+          "dir": 3,
+          "label": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 54
+        }
+      ],
+      "outputs": [
+        {
+          "dir": 4,
+          "label": "MODEL",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1,
+            19
+          ]
+        },
+        {
+          "dir": 4,
+          "label": "CLIP",
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Power Lora Loader (rgthree)",
+        "widget_ue_connectable": {},
+        "hasSecondTab": false,
+        "cnr_id": "rgthree-comfy",
+        "ver": "8ff50e4521881eca1fe26aec9615fc9362474931",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        },
+        "secondTabOffset": 80,
+        "tabWidth": 65,
+        "secondTabWidth": 65,
+        "Show Strengths": "Single Strength",
+        "secondTabText": "Send Back",
+        "enableTabs": false,
+        "tabXOffset": 10
+      },
+      "widgets_values": [
+        1.0000000000000002,
+        0,
+        "RawGirlV3.safetensors",
+        0,
+        0,
+        "krea2filterbypass3.safetensors",
+        1.0000000000000002,
+        0,
+        "RealisticSnapshotKrea2.safetensors"
+      ]
+    },
+    {
+      "id": 35,
+      "type": "SaveImage",
+      "pos": [
+        315.6162414550781,
+        637.4229125976562
+      ],
+      "size": [
+        584.8843994140625,
+        421.3346252441406
+      ],
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 55
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image_urls",
+          "name": "image_urls",
+          "type": "STRING"
+        },
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 37,
+      "type": "Label (rgthree)",
+      "pos": [
+        -2284.969482421875,
+        -731.7875366210938
+      ],
+      "size": [
+        680.2734375,
+        80
+      ],
+      "flags": {
+        "allow_interaction": false,
+        "pinned": true
+      },
+      "order": 13,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [],
+      "title": "Fire AI Creator Lab",
+      "properties": {
+        "fontSize": 80,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0,
+        "widget_ue_connectable": {}
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 38,
+      "type": "Label (rgthree)",
+      "pos": [
+        -2215.30224609375,
+        -647.2689819335938
+      ],
+      "size": [
+        610.224609375,
+        30
+      ],
+      "flags": {
+        "allow_interaction": false,
+        "pinned": true
+      },
+      "order": 14,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [],
+      "title": "https://www.skool.com/fire-ai-creator-lab-9667",
+      "properties": {
+        "fontSize": 30,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0,
+        "widget_ue_connectable": {}
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 39,
+      "type": "Label (rgthree)",
+      "pos": [
+        -1830.3125,
+        -518.8197631835938
+      ],
+      "size": [
+        218.1396484375,
+        25
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Created by RUSSO",
+      "properties": {
+        "fontSize": 25,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0,
+        "widget_ue_connectable": {},
+        "hasSecondTab": false,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        },
+        "secondTabOffset": 80,
+        "tabWidth": 65,
+        "secondTabWidth": 65,
+        "secondTabText": "Send Back",
+        "angle": 0,
+        "enableTabs": false,
+        "tabXOffset": 10
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 40,
+      "type": "Image Comparer (rgthree)",
+      "pos": [
+        308.1709289550781,
+        632.1465454101562
+      ],
+      "size": [
+        818.9967651367188,
+        966.8753051757812
+      ],
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "dir": 3,
+          "label": "image_a",
+          "name": "image_a",
+          "type": "IMAGE",
+          "link": 57
+        },
+        {
+          "dir": 3,
+          "label": "image_b",
+          "name": "image_b",
+          "type": "IMAGE",
+          "link": 58
+        }
+      ],
+      "outputs": [
+        {
+          "dir": 4,
+          "label": "image_urls",
+          "name": "image_urls",
+          "shape": 3,
+          "type": "STRING"
+        },
+        {
+          "dir": 4,
+          "label": "images",
+          "name": "images",
+          "shape": 3,
+          "type": "IMAGE"
+        }
+      ],
+      "properties": {
+        "comparer_mode": "Slide",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        [
+          {
+            "name": "A1",
+            "selected": true,
+            "url": "/view?filename=rgthree.compare._temp_iqxvq_00001_fzukq_1785612662.jpg&type=temp&subfolder=&rand=0.354030332444365&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkZDFjYjlkNzIwMmY5NmYyMjdiNWUxNmYwYjM2NmRiOSIsInNpZ25FeHBpcmUiOjE3ODYyMDQ4MDE2NTIsInRzIjoxNzg1NjAwMDAxNjUyLCJzaWduIjoiZWMwZWIzY2EyMmNiZGQwN2RhNTg1MjU2ZmNkNGYwMTcifQ==&Rh-Identify=dd1cb9d7202f96f227b5e16f0b366db9"
+          },
+          {
+            "name": "A2",
+            "selected": false,
+            "url": "/view?filename=rgthree.compare._temp_iqxvq_00002_llyeg_1785612662.jpg&type=temp&subfolder=&rand=0.7569877792900712&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkZDFjYjlkNzIwMmY5NmYyMjdiNWUxNmYwYjM2NmRiOSIsInNpZ25FeHBpcmUiOjE3ODYyMDQ4MDE2NTIsInRzIjoxNzg1NjAwMDAxNjUyLCJzaWduIjoiZWMwZWIzY2EyMmNiZGQwN2RhNTg1MjU2ZmNkNGYwMTcifQ==&Rh-Identify=dd1cb9d7202f96f227b5e16f0b366db9"
+          },
+          {
+            "name": "B1",
+            "selected": true,
+            "url": "/view?filename=rgthree.compare._temp_iqxvq_00003_zagnn_1785612669.jpg&type=temp&subfolder=&rand=0.7084080358791509&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkZDFjYjlkNzIwMmY5NmYyMjdiNWUxNmYwYjM2NmRiOSIsInNpZ25FeHBpcmUiOjE3ODYyMDQ4MDE2NTIsInRzIjoxNzg1NjAwMDAxNjUyLCJzaWduIjoiZWMwZWIzY2EyMmNiZGQwN2RhNTg1MjU2ZmNkNGYwMTcifQ==&Rh-Identify=dd1cb9d7202f96f227b5e16f0b366db9"
+          },
+          {
+            "name": "B2",
+            "selected": false,
+            "url": "/view?filename=rgthree.compare._temp_iqxvq_00004_tgpkh_1785612669.jpg&type=temp&subfolder=&rand=0.6926485963052831&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkZDFjYjlkNzIwMmY5NmYyMjdiNWUxNmYwYjM2NmRiOSIsInNpZ25FeHBpcmUiOjE3ODYyMDQ4MDE2NTIsInRzIjoxNzg1NjAwMDAxNjUyLCJzaWduIjoiZWMwZWIzY2EyMmNiZGQwN2RhNTg1MjU2ZmNkNGYwMTcifQ==&Rh-Identify=dd1cb9d7202f96f227b5e16f0b366db9"
+          }
+        ]
+      ]
+    },
+    {
+      "id": 41,
+      "type": "Label (rgthree)",
+      "pos": [
+        -2021.415771484375,
+        -562.6801147460938
+      ],
+      "size": [
+        412.97607421875,
+        35
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 16,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [],
+      "title": "UPDATES EVERY WEEK ",
+      "properties": {
+        "fontSize": 35,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0,
+        "widget_ue_connectable": {}
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 42,
+      "type": "Label (rgthree)",
+      "pos": [
+        -1602.037353515625,
+        -841.2719116210938
+      ],
+      "size": [
+        400,
+        400
+      ],
+      "flags": {
+        "allow_interaction": false,
+        "pinned": true
+      },
+      "order": 17,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [],
+      "title": "💃🏼",
+      "properties": {
+        "fontSize": 400,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0,
+        "widget_ue_connectable": {}
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 43,
+      "type": "Label (rgthree)",
+      "pos": [
+        -2814.03759765625,
+        -887.1166381835938
+      ],
+      "size": [
+        1213.671875,
+        130
+      ],
+      "flags": {
+        "allow_interaction": false,
+        "pinned": true
+      },
+      "order": 18,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [],
+      "title": "🧨 KREA2 NO LORA",
+      "properties": {
+        "fontSize": 130,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0,
+        "widget_ue_connectable": {}
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 14,
+      "type": "Krea2EditGroundedEncode",
+      "pos": [
+        -2119.426025390625,
+        -301.3915100097656
+      ],
+      "size": [
+        550,
+        340
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 20
+        },
+        {
+          "label": "image",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 21
+        },
+        {
+          "label": "image_b",
+          "name": "image_b",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 22
+        },
+        {
+          "label": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 59
+        }
+      ],
+      "outputs": [
+        {
+          "label": "CONDITIONING",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            31,
+            40
+          ]
+        }
+      ],
+      "title": "POSITIVE GROUNDED ENCODE",
+      "properties": {
+        "Node name for S&R": "Krea2EditGroundedEncode",
+        "widget_ue_connectable": {
+          "prompt": true
+        },
+        "ver": "latest",
+        "aux_id": "lbouaraba/comfyui-krea2edit"
+      },
+      "widgets_values": [
+        "Photorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a cozy bedroom beside an unmade bed, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a red-and-blue Spider-Man-inspired bikini bodysuit with a deep V neckline, high-cut hips, thin side straps, and glossy web-pattern fabric that hugs the body closely while providing complete coverage. Her pose is a confident sideways hip shift with one knee slightly bent. Her left hand holds a small plain cardboard sign displaying the handwritten message:\n\n“MAKE MILLIONS\n+18 CONTENT”\n\nThe lettering must look genuinely handwritten by a person using a thick black marker, with slightly uneven letter sizes, imperfect spacing, irregular alignment, natural pressure variation, and subtle ink inconsistencies. Her body proportions, hairstyle, phone model, and phone case remain identical throughout the series. Background shows tangled charging cables, a hoodie hanging from a chair, a half-finished iced coffee, slightly wrinkled bedding, and faint fingerprints across the mirror. Soft late-morning window light falls naturally across the room, creating gentle shadows and realistic highlights on the glossy fabric. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric and cardboard textures, casual imperfect composition, and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone and not visible from any angle; this is mandatory.",
+        768,
+        "You are an identity-preserving character restaging editor. Preserve only the person's identity-defining facial anatomy, natural asymmetry, skin tone, apparent age, body proportions, hair color and length, and genuine permanent features. Fully replace the original expression, hairstyle arrangement, outfit, pose, camera angle, lighting and background whenever requested. Execute every requested change literally. Do not copy unchanged variable attributes from the source image. Produce one coherent realistic photograph of one adult person."
+      ]
+    },
+    {
+      "id": 15,
+      "type": "Krea2EditGroundedEncode",
+      "pos": [
+        -2117.976806640625,
+        83.21883392333984
+      ],
+      "size": [
+        550,
+        340
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 24
+        },
+        {
+          "label": "image",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 25
+        },
+        {
+          "label": "image_b",
+          "name": "image_b",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 26
+        },
+        {
+          "label": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 60
+        }
+      ],
+      "outputs": [
+        {
+          "label": "CONDITIONING",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            32,
+            41
+          ]
+        }
+      ],
+      "title": "OFFICIAL EMPTY NEGATIVE",
+      "properties": {
+        "Node name for S&R": "Krea2EditGroundedEncode",
+        "widget_ue_connectable": {
+          "prompt": true
+        },
+        "ver": "latest",
+        "aux_id": "lbouaraba/comfyui-krea2edit"
+      },
+      "widgets_values": [
+        "Different person, mixed identity, identity drift, face redesign, beautified face, glamour retouching, idealized facial symmetry, changed apparent age, changed ethnicity, changed skin tone, changed permanent features, changed hair color, changed hairline, changed hair density, artificially lengthened hair, shortened hair, changed hair texture, generic fashion-model face, generic fitness-model body, changed shoulder width, changed ribcage, changed chest proportions, changed torso length, changed waist shape, changed abdominal structure, changed hip width, changed pelvis, changed glute shape, changed arm length, changed thigh volume, changed calf proportions, changed leg length, thinner body, heavier body, exaggerated curves, reduced curves, enlarged chest, reduced chest, enlarged glutes, reduced glutes, artificial muscle definition, artificial body enhancement, duplicate person, extra limbs, missing limbs, fused anatomy, malformed hands, malformed feet, extra fingers, missing fingers, extra toes, missing toes, waxy skin, plastic skin, airbrushed skin, fake freckles, invented moles, invented scars, acne, pimples, blemishes, text, logo, watermark, blurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject",
+        768,
+        ""
+      ]
+    },
+    {
+      "id": 36,
+      "type": "PreviewImage",
+      "pos": [
+        0.19143137335777283,
+        -295.2010803222656
+      ],
+      "size": [
+        1143.535888671875,
+        708.0172729492188
+      ],
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 56
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image_urls",
+          "name": "image_urls",
+          "type": "STRING"
+        },
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            57
+          ]
+        }
+      ],
+      "title": "2 KREA PREVIEW",
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.27.0"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 21,
+      "type": "CR Prompt List",
+      "pos": [
+        -3824.141845703125,
+        -298.4569396972656
+      ],
+      "size": [
+        820,
+        720
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "prompt",
+          "name": "prompt",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            59
+          ]
+        },
+        {
+          "label": "body_text",
+          "name": "body_text",
+          "shape": 6,
+          "type": "STRING"
+        },
+        {
+          "label": "show_help",
+          "name": "show_help",
+          "type": "STRING"
+        }
+      ],
+      "title": "1 KREA FULL BODY BIQUINI DATASET — 20 — POSITIVE EDIT INSTRUCTIONS",
+      "properties": {
+        "Node name for S&R": "CR Prompt List",
+        "widget_ue_connectable": {},
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780"
+      },
+      "widgets_values": [
+        "Use all imported reference photographs jointly as the sole and authoritative source for the identity and body of the same adult woman. Preserve her exact facial structure, natural facial asymmetry, eye shape and spacing, nose, lips, jawline, ears, skin tone, apparent age and every permanent identifying feature. Preserve her exact shoulder width, ribcage width, chest proportions, torso length, waist shape, abdominal structure, hip width, pelvic proportions, glute shape, arm length, thigh volume, calf proportions, leg length, height impression and overall distribution of muscle and soft tissue. Preserve the original hair color, hairline, density, texture and approximate length; change only the hairstyle arrangement requested, adapting it naturally when the original length does not support the exact hairstyle. Do not copy the original expression, pose, outfit, hairstyle arrangement, camera angle, lighting or background unless explicitly requested. Replace those variable attributes with the instructions in the selected prompt. Do not beautify, idealize, slim, enlarge, feminize, masculinize or redesign her. Do not substitute a generic fashion, fitness or social-media model body. Show one adult woman only. Produce an anatomically believable, unretouched, photorealistic image with authentic skin, realistic camera behavior and stable identity.",
+        "Photorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a cozy bedroom beside an unmade bed, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a red-and-blue Spider-Man-inspired bikini bodysuit with a deep V neckline, high-cut hips, thin side straps, and glossy web-pattern fabric that hugs the body closely while providing complete coverage. Her pose is a confident sideways hip shift with one knee slightly bent, her free hand holding an unopened oversized delivery package as though she has no idea what she ordered. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows tangled charging cables, a hoodie hanging from a chair, a half-finished iced coffee, slightly wrinkled bedding and faint fingerprints across the mirror. Soft late-morning window light falls naturally across the room, creating gentle shadows and realistic highlights on the glossy fabric. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a narrow apartment hallway outside her bedroom, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a red-and-blue Spider-Man-inspired bikini bodysuit with a deep V neckline, high-cut hips, thin side straps, and glossy web-pattern fabric that hugs the body closely while providing complete coverage. Her pose is a playful caught-sneaking-out stance, shoulders slightly raised, one foot frozen mid-step and her free hand gripping a takeaway coffee carrier. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows several mismatched shoes near the doorway, a tote bag slipping from a wall hook, unopened mail on a console table and a small mirror with visible cleaning streaks. Cool daylight enters from the open bedroom door and mixes with warm hallway lighting, creating believable mixed-color illumination. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a lived-in bedroom work corner, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a cropped football jersey tied underneath the bust, creating a deep neckline, paired with extremely short fitted shorts that fully cover the body and knee-high athletic socks. Her pose is a mock-serious working stance with reading glasses held in her free hand, one hip resting against the desk and one sock slightly lower than the other. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows an open laptop with an unreadable editing timeline, a ring light switched off, sticky notes without legible writing, beauty products beside the keyboard and an overflowing laundry basket. Neutral afternoon light enters through partially closed blinds, casting soft horizontal shadows across the wall and outfit. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a compact apartment kitchen, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a cropped football jersey tied underneath the bust, creating a deep neckline, paired with extremely short fitted shorts that fully cover the body and knee-high athletic socks. Her pose is a dramatic referee-inspired stance with her free hand raised as though calling a penalty on someone, her weight shifted onto one leg and a kitchen towel tucked awkwardly into the waistband at one side. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows an open cereal box, a single dirty plate, takeaway containers, a football resting beside the refrigerator and a reusable water bottle on the counter. Bright natural kitchen light enters from a side window, producing crisp but realistic shadows and subtle highlights along the jersey fabric. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a clean bedroom with slightly chaotic personal details, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a glossy black faux-leather corset top with a dramatic push-up neckline, paired with a tiny pleated mini skirt sitting high on the thighs while maintaining complete coverage. Her pose is a playful before-going-out stance with one hand adjusting the outer edge of the skirt, never touching an intimate area, while one foot points toward a pair of heels she has clearly decided not to wear. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows rejected outfit options across the bed, a curling iron cooling on a heat-resistant mat, an open makeup bag and one sneaker beside one high heel. Warm early-evening window light mixes with a dim bedside lamp, creating soft reflective highlights on the faux leather without appearing professionally lit. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing inside a small walk-in wardrobe, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a glossy black faux-leather corset top with a dramatic push-up neckline, paired with a tiny pleated mini skirt sitting high on the thighs while maintaining complete coverage. Her pose is a chaotic indecision stance with her free arm carrying five different jackets, one hip pushed sideways and her shoulders tilted as though the wardrobe choice has become a personal crisis. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows crowded clothing rails, an open drawer, a handbag hanging from the wrong shelf, folded clothes beginning to collapse and subtle fingerprints on the mirror. Warm overhead wardrobe lighting creates uneven but believable illumination, with natural reflections across the corset and deeper shadows between hanging clothes. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a softly decorated pink-and-cream bedroom, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a pink Barbie-inspired mini dress with a tight bodycon fit, a plunging neckline, thin shoulder straps, and an extremely short hemline that still provides secure complete coverage. Her pose is a confident doll-like stance disrupted by an oversized trash bag held in her free hand, with one knee bent and her body angled elegantly despite the mundane task. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows pastel bedding left slightly messy, a hairbrush on the floor, two empty water bottles, a small vanity crowded with cosmetics and a charging cable running across the rug. Soft cloudy daylight fills the room evenly, creating flattering but realistic skin tones and gentle shadows around the furniture. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in an apartment elevator with brushed-metal walls, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a pink Barbie-inspired mini dress with a tight bodycon fit, a plunging neckline, thin shoulder straps, and an extremely short hemline that still provides secure complete coverage. Her pose is a playful running-late stance with her free hand holding one loose shoe, the other shoe already worn, while her body leans slightly toward the elevator buttons. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows realistic smudges on the elevator mirror, a small parcel on the floor, softly reflected ceiling lights and a tote bag sliding down her arm. Cool overhead elevator lighting creates imperfect reflections, mild metallic color casts and authentic smartphone exposure. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a bright bedroom beside an open wardrobe, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a tiny white tennis skirt with built-in fitted shorts, paired with a cropped polo top left partially unbuttoned to create a deep neckline while maintaining full coverage. Her pose is a playful pre-match stance with one foot resting on a low stool as she ties a clean tennis shoe, her free elbow angled outward and a racket tucked under her arm. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows a second racket leaning against the bed, loose tennis balls beneath a chair, an unmade duvet, sunscreen and an oversized insulated cup on the bedside table. Clear morning sunlight enters from a large window, creating bright natural highlights and soft-edged shadows across the floor. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a small laundry room, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a tiny white tennis skirt with built-in fitted shorts, paired with a cropped polo top left partially unbuttoned to create a deep neckline while maintaining full coverage. Her pose is an exaggerated defeated stance with her free arm wrapped around an enormous pile of clean towels, one towel falling toward the floor and her hips shifted to balance the load. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows an open washing machine, a detergent bottle placed sideways, one missing sock on top of the dryer and a basket overflowing with clothes. Cool daylight from a small window mixes with flat ceiling light, producing an ordinary domestic look with realistic shadows and slightly uneven exposure. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in an apartment entryway decorated with subtle motorsport details, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a red-and-black racing outfit featuring a cropped zip-up top opened low at the front while remaining secure, tiny fitted shorts with full coverage, thigh-high boots, and motorsport-inspired patches. Her pose is a confident race-start stance with one boot slightly forward, her free hand holding a set of ordinary car keys and her torso tilted as though waiting for someone who claimed they were already outside. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows a motorcycle-style helmet on a bench, a delivery box, a jacket hanging from the door handle and realistic scuffs near the baseboard. Late-afternoon sunlight enters through the doorway, creating directional highlights on the glossy outfit and long natural shadows across the floor. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a cluttered home office converted into a content-editing space, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a red-and-black racing outfit featuring a cropped zip-up top opened low at the front while remaining secure, tiny fitted shorts with full coverage, thigh-high boots, and motorsport-inspired patches. Her pose is a playful pit-stop stance with one hand gripping the back of an office chair, one knee bent and her body leaning forward slightly as she pretends to inspect a tiny toy car on the desk. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows an editing laptop, several memory cards, an empty snack wrapper, tangled headphones, a cold coffee and a small desk fan pointed in the wrong direction. Bright monitor light mixes with muted daylight through curtains, creating believable cool highlights and uneven ambient illumination. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a dim cozy bedroom at night, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a black cat costume with a tight high-cut bodysuit offering complete coverage, a deep sweetheart neckline, sheer thigh-high stockings, cat ears, and a thin decorative tail. Her pose is a playful caught-knocking-something-over stance with one hand frozen above a tilted bedside lamp, one hip shifted and her shoulders raised in fake innocence. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows a rumpled blanket, a fallen cushion, beauty products scattered near the mirror, a half-open snack bag and the decorative tail resting visibly behind her without suggestive positioning. Warm bedside lighting creates soft amber shadows, subtle stocking texture and realistic low-light smartphone grain. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing beside a kitchen counter during a late-night snack run, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a black cat costume with a tight high-cut bodysuit offering complete coverage, a deep sweetheart neckline, sheer thigh-high stockings, cat ears, and a thin decorative tail. Her pose is a casual guilty stance with one hand holding an open cereal box, one leg crossed loosely in front of the other and her shoulders angled as if she has been discovered at 2 a.m. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows an open refrigerator casting light across the floor, a spoon beside an empty bowl, several magnets without readable text and a phone charger plugged in far from the counter. Refrigerator light and a single warm ceiling bulb create dramatic but believable mixed lighting with natural smartphone noise. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a bedroom beside a compact vanity, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a clearly adult preppy costume featuring a very short pleated skirt with secure built-in coverage, a fitted white blouse tied underneath the bust, and an intentionally loose necktie. Her pose is a humorous pretending-to-study stance with oversized reading glasses in her free hand, one hip against the vanity and a closed notebook balanced awkwardly on her forearm. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows a laptop displaying an unreadable document, three pens without caps, an untouched planner, an iced coffee and clothes hanging over the back of a chair. Soft midday daylight enters through sheer curtains, creating natural low-contrast illumination and realistic folds in the blouse and skirt. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a small apartment living room after opening several packages, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a clearly adult preppy costume featuring a very short pleated skirt with secure built-in coverage, a fitted white blouse tied underneath the bust, and an intentionally loose necktie. Her pose is a dramatic overwhelmed stance with her free hand pointing accusingly toward an absurdly oversized cardboard box, one knee bent and her body leaning away from it. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows packing paper across the rug, scissors on the coffee table, a sofa covered with unopened parcels, a crooked cushion and a handwritten shipping label too blurred to read. Clear side-window daylight creates realistic directional shadows, highlighting the size of the package and the slightly uneven room arrangement. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a bright bathroom before filming, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a red-and-blue Spider-Man-inspired bikini bodysuit with a deep V neckline, high-cut hips, thin side straps, and glossy web-pattern fabric that hugs the body closely while providing complete coverage. Her pose is a playful hair-adjusting stance with her free hand raised above her head, one hip angled toward the mirror and a shower cap accidentally hanging from her wrist. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows skincare bottles, a damp towel on the radiator, toothpaste without its cap, water spots on the mirror and a charging cable kept safely away from the sink. Bright diffused bathroom daylight combines with neutral vanity bulbs, producing realistic reflective highlights and clean but imperfect illumination. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a cozy bedroom immediately after receiving a surprising notification, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a cropped football jersey tied underneath the bust, creating a deep neckline, paired with extremely short fitted shorts that fully cover the body and knee-high athletic socks. Her pose is an exaggerated silent reaction with her free hand pressed against her upper chest, shoulders pulled backward and one foot lifted slightly as though the message stopped her mid-step. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows a blanket partly falling from the bed, a laptop left open, a snack bowl balanced on a stack of books and a small tripod leaning crookedly against the wall. Warm sunset light enters through blinds, creating orange bands across the room and a believable glow around the outfit. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a softly lit dressing area after apparently recording several takes, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a glossy black faux-leather corset top with a dramatic push-up neckline, paired with a tiny pleated mini skirt sitting high on the thighs while maintaining complete coverage. Her pose is an exhausted but confident end-of-day stance with her free hand holding a small handwritten sign reading “that was take 27,” one knee relaxed inward and one shoulder lower than the other. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows a switched-off ring light, several discarded hair clips, a half-empty water bottle, makeup tissues on the desk and slippers placed beneath the mirror. Dim warm lamp light mixes with faint blue evening light from the window, creating natural color contrast and realistic low-light grain. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.\nPhotorealistic candid mirror selfie of a clearly adult woman in her mid-20s standing in a messy bedroom doorway after finishing a content session, holding her phone in front of her face while taking the photo. The phone completely covers her face from every visible angle. She is wearing a pink Barbie-inspired mini dress with a tight bodycon fit, a plunging neckline, thin shoulder straps, and an extremely short hemline that still provides secure complete coverage. Her pose is a playful secretive farewell stance with her free hand reaching toward the mirror as though covering the viewer’s camera, her hips angled away and one bare foot stepping toward a pair of fluffy slippers. Her body proportions, hairstyle, phone model and phone case remain identical throughout the series. Background shows the unmade bed, a ring light partly hidden behind the door, several outfit bags, an empty takeaway cup and an extension cable running safely along the wall. Soft predawn blue light enters through the window while a warm bedside lamp remains on, creating a candid end-of-night atmosphere with realistic smartphone exposure. Authentic smartphone photography, subtle lens distortion, slight film grain, realistic skin texture, natural body proportions, believable fabric texture, casual imperfect composition and an effortless UGC aesthetic. The image feels spontaneous rather than professionally staged. High-resolution photorealistic detail. Her face must be completely blocked by the phone, not visible from any angle, this is mandatory.",
+        "",
+        0,
+        1
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 22,
+      "type": "CR Prompt List",
+      "pos": [
+        -2987.9833984375,
+        -296.28277587890625
+      ],
+      "size": [
+        820,
+        720
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "prompt",
+          "name": "prompt",
+          "shape": 6,
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "label": "body_text",
+          "name": "body_text",
+          "shape": 6,
+          "type": "STRING"
+        },
+        {
+          "label": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "links": [
+            60
+          ]
+        }
+      ],
+      "title": "1 KREA FULL BODY BIQUINI DATASET — 20 — NEGATIVE EDIT INSTRUCTIONS",
+      "properties": {
+        "Node name for S&R": "CR Prompt List",
+        "widget_ue_connectable": {},
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780"
+      },
+      "widgets_values": [
+        "Different person, mixed identity, identity drift, face redesign, beautified face, glamour retouching, idealized facial symmetry, changed apparent age, changed ethnicity, changed skin tone, changed permanent features, changed hair color, changed hairline, changed hair density, artificially lengthened hair, shortened hair, changed hair texture, generic fashion-model face, generic fitness-model body, changed shoulder width, changed ribcage, changed chest proportions, changed torso length, changed waist shape, changed abdominal structure, changed hip width, changed pelvis, changed glute shape, changed arm length, changed thigh volume, changed calf proportions, changed leg length, thinner body, heavier body, exaggerated curves, reduced curves, enlarged chest, reduced chest, enlarged glutes, reduced glutes, artificial muscle definition, artificial body enhancement, duplicate person, extra limbs, missing limbs, fused anatomy, malformed hands, malformed feet, extra fingers, missing fingers, extra toes, missing toes, waxy skin, plastic skin, airbrushed skin, fake freckles, invented moles, invented scars, acne, pimples, blemishes, text, logo, watermark.",
+        "blurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject\nblurry, low resolution, low quality image, distorted limbs, eerie appearance, ugly, AI feel, noise, grid artifacts, JPEG compression stripes, abnormal limbs, watermark, garbled text, meaningless characters, bluish tint, two women, duplicate woman, cloned subject",
+        "",
+        0,
+        1
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 20,
+      "type": "EmptySD3LatentImage",
+      "pos": [
+        -1519.88037109375,
+        100.39656829833984
+      ],
+      "size": [
+        300,
+        140
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "LATENT",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            35
+          ]
+        }
+      ],
+      "title": "1024×1280 OUTPUT",
+      "properties": {
+        "Node name for S&R": "EmptySD3LatentImage",
+        "widget_ue_connectable": {
+          "batch_size": true,
+          "width": true,
+          "height": true
+        },
+        "cnr_id": "comfy-core",
+        "ver": "0.27.0"
+      },
+      "widgets_values": [
+        1440,
+        2560,
+        1
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      34,
+      0,
+      1,
+      0,
+      "MODEL"
+    ],
+    [
+      2,
+      17,
+      0,
+      1,
+      1,
+      "MODEL"
+    ],
+    [
+      3,
+      9,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      4,
+      4,
+      0,
+      2,
+      1,
+      "IMAGE"
+    ],
+    [
+      5,
+      6,
+      0,
+      2,
+      2,
+      "IMAGE"
+    ],
+    [
+      6,
+      5,
+      0,
+      2,
+      3,
+      "IMAGE"
+    ],
+    [
+      7,
+      13,
+      1,
+      2,
+      4,
+      "INT"
+    ],
+    [
+      8,
+      9,
+      0,
+      3,
+      0,
+      "IMAGE"
+    ],
+    [
+      9,
+      4,
+      0,
+      3,
+      1,
+      "IMAGE"
+    ],
+    [
+      10,
+      6,
+      0,
+      3,
+      2,
+      "IMAGE"
+    ],
+    [
+      11,
+      5,
+      0,
+      3,
+      3,
+      "IMAGE"
+    ],
+    [
+      12,
+      18,
+      1,
+      3,
+      4,
+      "INT"
+    ],
+    [
+      13,
+      10,
+      0,
+      7,
+      0,
+      "IMAGE"
+    ],
+    [
+      14,
+      23,
+      0,
+      7,
+      1,
+      "VAE"
+    ],
+    [
+      15,
+      11,
+      0,
+      8,
+      0,
+      "IMAGE"
+    ],
+    [
+      16,
+      23,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      17,
+      3,
+      0,
+      10,
+      0,
+      "IMAGE"
+    ],
+    [
+      18,
+      2,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      19,
+      34,
+      0,
+      12,
+      0,
+      "MODEL"
+    ],
+    [
+      20,
+      24,
+      0,
+      14,
+      0,
+      "CLIP"
+    ],
+    [
+      21,
+      10,
+      0,
+      14,
+      1,
+      "IMAGE"
+    ],
+    [
+      22,
+      11,
+      0,
+      14,
+      2,
+      "IMAGE"
+    ],
+    [
+      24,
+      24,
+      0,
+      15,
+      0,
+      "CLIP"
+    ],
+    [
+      25,
+      10,
+      0,
+      15,
+      1,
+      "IMAGE"
+    ],
+    [
+      26,
+      11,
+      0,
+      15,
+      2,
+      "IMAGE"
+    ],
+    [
+      28,
+      33,
+      0,
+      25,
+      0,
+      "MODEL"
+    ],
+    [
+      29,
+      26,
+      0,
+      27,
+      0,
+      "SAMPLER"
+    ],
+    [
+      30,
+      33,
+      0,
+      28,
+      0,
+      "MODEL"
+    ],
+    [
+      31,
+      14,
+      0,
+      28,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      32,
+      15,
+      0,
+      28,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      33,
+      27,
+      0,
+      28,
+      3,
+      "SAMPLER"
+    ],
+    [
+      34,
+      25,
+      0,
+      28,
+      4,
+      "SIGMAS"
+    ],
+    [
+      35,
+      20,
+      0,
+      28,
+      5,
+      "LATENT"
+    ],
+    [
+      36,
+      31,
+      0,
+      29,
+      0,
+      "IMAGE"
+    ],
+    [
+      37,
+      33,
+      0,
+      29,
+      1,
+      "MODEL"
+    ],
+    [
+      38,
+      24,
+      0,
+      29,
+      2,
+      "CLIP"
+    ],
+    [
+      39,
+      23,
+      0,
+      29,
+      3,
+      "VAE"
+    ],
+    [
+      40,
+      14,
+      0,
+      29,
+      4,
+      "CONDITIONING"
+    ],
+    [
+      41,
+      15,
+      0,
+      29,
+      5,
+      "CONDITIONING"
+    ],
+    [
+      42,
+      16,
+      0,
+      29,
+      6,
+      "BBOX_DETECTOR"
+    ],
+    [
+      43,
+      30,
+      0,
+      29,
+      7,
+      "SAM_MODEL"
+    ],
+    [
+      44,
+      28,
+      0,
+      31,
+      0,
+      "LATENT"
+    ],
+    [
+      45,
+      23,
+      0,
+      31,
+      1,
+      "VAE"
+    ],
+    [
+      46,
+      31,
+      0,
+      32,
+      0,
+      "IMAGE"
+    ],
+    [
+      47,
+      12,
+      0,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      48,
+      7,
+      0,
+      33,
+      1,
+      "LATENT"
+    ],
+    [
+      49,
+      8,
+      0,
+      33,
+      2,
+      "LATENT"
+    ],
+    [
+      50,
+      23,
+      0,
+      33,
+      4,
+      "VAE"
+    ],
+    [
+      51,
+      10,
+      0,
+      33,
+      5,
+      "IMAGE"
+    ],
+    [
+      52,
+      11,
+      0,
+      33,
+      6,
+      "IMAGE"
+    ],
+    [
+      53,
+      19,
+      0,
+      34,
+      0,
+      "MODEL"
+    ],
+    [
+      54,
+      24,
+      0,
+      34,
+      1,
+      "CLIP"
+    ],
+    [
+      55,
+      29,
+      0,
+      35,
+      0,
+      "IMAGE"
+    ],
+    [
+      56,
+      31,
+      0,
+      36,
+      0,
+      "IMAGE"
+    ],
+    [
+      57,
+      36,
+      1,
+      40,
+      0,
+      "IMAGE"
+    ],
+    [
+      58,
+      29,
+      0,
+      40,
+      1,
+      "IMAGE"
+    ],
+    [
+      59,
+      21,
+      0,
+      14,
+      3,
+      "STRING"
+    ],
+    [
+      60,
+      22,
+      2,
+      15,
+      3,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "MODEL RACK — KREA 2 + REALISM LoRA + EDIT LoRA",
+      "bounding": [
+        -3864.673095703125,
+        550.6406860351562,
+        1677.1116943359375,
+        689.0863037109375
+      ],
+      "color": "#b58b2a",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "INFLUENCER IMAGE",
+      "bounding": [
+        -5622.56982421875,
+        -370.3065490722656,
+        1684.53369140625,
+        2546.428955078125
+      ],
+      "color": "#b06634",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "STAGE — 6 KREA2 T2I (NO REQUIRED LoRA)",
+      "bounding": [
+        -3864.3251953125,
+        -366.3319396972656,
+        5036.271484375,
+        876.5132446289062
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "Face detailer",
+      "bounding": [
+        -636.25341796875,
+        539.1709594726562,
+        1809.61181640625,
+        1127.3330078125
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "0246.VERSION": [
+      0,
+      0,
+      4
+    ],
+    "links_added_by_ue": [],
+    "ds": {
+      "scale": 0.25401326852420036,
+      "offset": [
+        4288.718271956846,
+        1977.5013083244012
+      ]
+    },
+    "ue_links": [],
+    "frontendVersion": "1.23.0",
+    "KKvideo_latentpreview": false,
+    "KKvideo_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true,
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0
+  },
+  "version": 0.4
+}
