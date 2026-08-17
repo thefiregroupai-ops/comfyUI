@@ -4,29 +4,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Wan 2.1 & 2.2 Image-to-Video ComfyUI Workflow Guide | FIRE AI ComfyUI Guides</title>
-  <meta name="title" content="Wan 2.1 & 2.2 Image-to-Video ComfyUI Workflow Guide | FIRE AI ComfyUI Guides">
+  <title>Wan Video ComfyUI Guide: Image to Video | FIRE AI</title>
+  <meta name="title" content="Wan Video ComfyUI Guide: Image to Video | FIRE AI">
   <meta name="description" content="Master Wan 2.1 and Wan 2.2 Image-to-Video generation in ComfyUI, including infinite video extension, overlap frames, and talking head setups.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://thefiregroupai-ops.github.io/comfyUI/guides/comfyui-wan-video-guide/">
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2026-08-09">
+  <meta property="article:modified_time" content="2026-08-17">
   <meta property="og:url" content="https://thefiregroupai-ops.github.io/comfyUI/guides/comfyui-wan-video-guide/">
-  <meta property="og:title" content="Wan 2.1 & 2.2 Image-to-Video ComfyUI Workflow Guide | FIRE AI ComfyUI Guides">
+  <meta property="og:title" content="Wan Video ComfyUI Guide: Image to Video | FIRE AI">
   <meta property="og:description" content="Master Wan 2.1 and Wan 2.2 Image-to-Video generation in ComfyUI, including infinite video extension, overlap frames, and talking head setups.">
   <meta property="og:image" content="https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-influencer-character-spider-hero.webp">
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://thefiregroupai-ops.github.io/comfyUI/guides/comfyui-wan-video-guide/">
-  <meta property="twitter:title" content="Wan 2.1 & 2.2 Image-to-Video ComfyUI Workflow Guide | FIRE AI ComfyUI Guides">
-  <meta property="twitter:description" content="Master Wan 2.1 and Wan 2.2 Image-to-Video generation in ComfyUI, including infinite video extension, overlap frames, and talking head setups.">
-  <meta property="twitter:image" content="https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-influencer-character-spider-hero.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://thefiregroupai-ops.github.io/comfyUI/guides/comfyui-wan-video-guide/">
+  <meta name="twitter:title" content="Wan Video ComfyUI Guide: Image to Video | FIRE AI">
+  <meta name="twitter:description" content="Master Wan 2.1 and Wan 2.2 Image-to-Video generation in ComfyUI, including infinite video extension, overlap frames, and talking head setups.">
+  <meta name="twitter:image" content="https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-influencer-character-spider-hero.webp">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta property="og:site_name" content="FIRE ComfyUI Workflows">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="576">
+  <meta property="og:image:alt" content="Wan 2.1 &amp; 2.2 Image-to-Video ComfyUI Workflow Guide">
+  <meta name="twitter:image:alt" content="Wan 2.1 &amp; 2.2 Image-to-Video ComfyUI Workflow Guide">
+  <meta name="author" content="FIRE Group AI Ops">
+  <meta name="theme-color" content="#090a0f">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="sitemap" href="../../sitemap.xml" type="application/xml" title="Sitemap">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "@id": "https://thefiregroupai-ops.github.io/comfyUI/guides/comfyui-wan-video-guide/#article",
+      "url": "https://thefiregroupai-ops.github.io/comfyUI/guides/comfyui-wan-video-guide/",
+      "mainEntityOfPage": "https://thefiregroupai-ops.github.io/comfyUI/guides/comfyui-wan-video-guide/",
+      "headline": "Wan 2.1 & 2.2 Image-to-Video ComfyUI Workflow Guide",
+      "description": "Master Wan 2.1 and Wan 2.2 Image-to-Video generation in ComfyUI, including infinite video extension, overlap frames, and talking head setups.",
+      "image": "https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-influencer-character-spider-hero.webp",
+      "datePublished": "2026-08-09",
+      "dateModified": "2026-08-17",
+      "author": {
+        "@id": "https://thefiregroupai-ops.github.io/comfyUI/#organization"
+      },
+      "publisher": {
+        "@id": "https://thefiregroupai-ops.github.io/comfyUI/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://thefiregroupai-ops.github.io/comfyUI/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://thefiregroupai-ops.github.io/comfyUI/guides/comfyui-wan-video-guide/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://thefiregroupai-ops.github.io/comfyUI/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wan 2.1 & 2.2 Image-to-Video ComfyUI Workflow Guide",
+          "item": "https://thefiregroupai-ops.github.io/comfyUI/guides/comfyui-wan-video-guide/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
 
   
 
@@ -292,21 +354,23 @@
     }
     footer a { color: var(--primary-orange); text-decoration: none; }
   </style>
+<link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header>
     <div class="nav-container">
       <a href="https://thefiregroupai-ops.github.io/comfyUI/" class="brand" data-track="brand_click">🔥 <span>FIRE ComfyUI</span></a>
       <div class="nav-links">
         <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/" class="btn btn-github" data-track="nav_workflows">📂 Workflows</a>
-        <a href="https://github.com/thefiregroupai-ops/comfyUI" target="_blank" class="btn btn-github" data-track="github_click">⭐ GitHub</a>
-        <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" class="btn btn-skool" data-track="skool_click">🎓 Join Free Skool (100% Free)</a>
+        <a href="https://github.com/thefiregroupai-ops/comfyUI" target="_blank" class="btn btn-github" data-track="github_click" rel="noopener noreferrer">⭐ GitHub</a>
+        <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" class="btn btn-skool" data-track="skool_click" rel="noopener noreferrer">🎓 FIRE AI Community</a>
       </div>
     </div>
   </header>
 
-  <main class="main-wrapper">
+  <main id="main-content" class="main-wrapper">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://thefiregroupai-ops.github.io/comfyUI/">Home</a> &nbsp;/&nbsp; <span>Guides</span> &nbsp;/&nbsp; <span>Wan 2.1 & 2.2 Image-to-Video ComfyUI Workflow Guide</span></nav>
     
 
@@ -314,30 +378,64 @@
 <p style="font-size: 1.15rem; color: var(--primary-orange); font-weight: 600;">Master Wan 2.1 and Wan 2.2 Image-to-Video generation in ComfyUI, including infinite video extension, overlap frames, and talking head setups.</p>
 
 <div style="margin: 1.5rem 0;">
-  <div class="showcase-img-frame" style="aspect-ratio: 16 / 9; height: auto;" onclick="openLightbox('https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-character-green-corset-warrior.webp')">
-    <img src="https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-character-green-corset-warrior.webp" alt="FIRE AI Character Warrior Corset Artwork" width="1024" height="576" loading="lazy">
-  </div>
+  <button type="button" class="showcase-img-frame image-button" style="aspect-ratio: 16 / 9; height: auto;" onclick="openLightbox('https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-character-green-corset-warrior.webp')" aria-label="Open image preview: FIRE AI Character Warrior Corset Artwork">
+    <img src="https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-character-green-corset-warrior.webp" alt="FIRE AI Character Warrior Corset Artwork" width="1024" height="576" loading="lazy" decoding="async">
+  </button>
 </div>
 
 
-<h2>🌟 Technical Overview & Requirements</h2>
-<p>Learn how to configure, optimize, and execute Wan 2.1 & 2.2 Image-to-Video ComfyUI Workflow Guide inside ComfyUI with step-by-step node connections, recommended weights, and memory management tips.</p>
+<p><strong>Choose the Wan workflow by output structure, not simply by the model number.</strong> The Wan 2.2 extender turns a start image into repeated, overlapping video sections; the Wan 2.1 podcast graph pairs a speaker image with audio and assembles multiple talking-head sections. Both are image-to-video workflows, but their inputs, timing controls, and failure modes are different.</p>
+
+<h2>Which Wan workflow should you use?</h2>
+
+<h3>Wan 2.2 I2V Infinite Extender</h3>
+<p>Use the <a href="../../workflows/wan-video/i2v-infinite-extender/">Wan 2.2 I2V Infinite Extender workflow</a> when you have one starting image and want to build a longer animation from connected sections. The saved graph includes a start-image loader, positive and negative text conditioning, CLIP vision encoding, two sampling stages, and image-batch extension nodes. Its visible controls include animation length, frame rate, frame split, and overlap. One branch uses a linear blend at the overlap and another uses a cut, so inspect which output branch is connected to the video-combine node you intend to save. <a href="../../Wan_Video/FIRE_I2V_Infinite_extender_v1.json" download>Download the Wan 2.2 Extender JSON</a>.</p>
+
+<h3>Wan 2.1 Podcast Basic 34s</h3>
+<p>Use the <a href="../../workflows/wan-video/podcast-basic-img-to-vid-34s/">Wan 2.1 Podcast Basic 34s workflow</a> for a single-speaker image and an uploaded audio file. The graph repeats <code>WanInfiniteTalkToVideo</code>, sampler, decode, batch, and video-combine stages, then joins the sections. It provides width and height controls, a duration selector made from labeled bypass controls, and a final save note inside the canvas. This is a large, purpose-built graph; first test its shortest active duration path before attempting the complete sequence. <a href="../../Wan_Video/FIRE_PodcastBasic_img_to_vid_34s.json" download>Download the Wan 2.1 Podcast JSON</a>.</p>
+
+<h2>Import and run a Wan image-to-video graph</h2>
+<ol>
+  <li>Download the JSON from the relevant workflow page and drag it onto an open ComfyUI canvas.</li>
+  <li>Resolve every missing-node warning, restart ComfyUI, and reload the JSON. The extender uses video-helper, image-resize, math, and rgthree-style utility nodes; the podcast graph also relies on its InfiniteTalk and audio-processing nodes.</li>
+  <li>Check each model, CLIP, VAE, vision, patch, and LoRA loader already present in the graph. Select files that exist in the corresponding ComfyUI model folders; an installed custom node does not supply a missing model file.</li>
+  <li>Replace the example start or speaker image. For the podcast graph, also replace the example audio upload. Set width and height to the same orientation as the source image rather than stretching a portrait into landscape or the reverse.</li>
+  <li>Write motion instructions that describe observable action, camera behavior, and scene continuity. Keep the first test simple so you can tell whether a problem comes from conditioning, timing, or the graph setup.</li>
+  <li>Queue a short test and inspect the preview or first saved section. Only then increase animation length, activate more podcast sections, or change the overlap.</li>
+</ol>
+
+<h2>How to improve continuity between sections</h2>
+<p>Start from an image with a clear subject, stable lighting, and enough room for the requested movement. In the extender, the overlap is the handoff between generated sections: too little shared material can reveal a jump, while a blend can still show double edges if the subject changes position sharply. Compare the cut and blend branches already present in the graph. Keep the prompt consistent across the test, change only one timing control, and watch the seam frame by frame before producing a longer result.</p>
+
+<p>For the podcast workflow, crop and size the speaker image before the long run, then verify that mouth area, head position, and framing remain usable in the first section. Listen to the source audio for silence, clipping, or an incorrect file before blaming the video stage. The graph includes multiple intermediate video-combine nodes; identify the final active node and follow the embedded saving note so you do not mistake an intermediate segment for the assembled output.</p>
+
+<h2>Troubleshooting Wan video workflows</h2>
+<ul>
+  <li><strong>Nothing queues:</strong> look for red nodes and unresolved loader selections. Fix the first reported dependency, restart, and reload before diagnosing downstream nodes.</li>
+  <li><strong>The output has the wrong shape:</strong> confirm the loaded image’s aspect ratio and the graph’s width, height, or resize controls. Do not judge motion from a visibly stretched input.</li>
+  <li><strong>A seam flashes or duplicates the subject:</strong> shorten the test, compare the cut and linear-blend outputs, and adjust overlap while leaving the prompt and seed unchanged.</li>
+  <li><strong>The podcast output ends early:</strong> inspect the labeled duration bypass controls and make sure the intended chain of repeated sections is active.</li>
+  <li><strong>The final file has no expected audio:</strong> confirm the upload node contains the intended file and that you are saving from the final video-combine node, not an intermediate preview.</li>
+  <li><strong>Generation runs out of memory:</strong> stop the queue, reduce the active duration or image dimensions for diagnosis, close other GPU work, and retest before restoring the full settings.</li>
+</ul>
+
+<p style="color: var(--text-muted); margin: 2rem 0 1rem;"><strong>Maintained by FIRE Group AI Ops · Updated 17 August 2026</strong></p>
 
 <div class="skool-callout">
-  <h2>🎓 Master ComfyUI — Join FIRE AI Creator Lab (100% Free)</h2>
-  <p>Get instant access to full video masterclasses, workflow JSONs, and 1-on-1 troubleshooting inside the free <strong>FIRE AI Creator Lab</strong> on Skool.</p>
-  <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" class="btn btn-skool" data-track="skool_click">🚀 Join FIRE AI Creator Lab on Skool (100% Free)</a>
+  <h2>🎓 Discuss workflows in FIRE AI Creator Lab</h2>
+  <p>Discuss workflow setup, troubleshooting notes, and creator techniques with the <strong>FIRE AI Creator Lab</strong> community on Skool.</p>
+  <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" class="btn btn-skool" data-track="skool_click" rel="noopener noreferrer">🚀 Open FIRE AI Creator Lab on Skool</a>
 </div>
 
   </main>
 
   <!-- Lightbox Modal -->
-  <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
-    <img id="lightboxImg" class="lightbox-content" src="" alt="Enlarged FIRE AI Showcase Artwork">
+  <div id="lightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true" onclick="closeLightbox()">
+    <img id="lightboxImg" class="lightbox-content" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Enlarged FIRE AI showcase artwork" width="1024" height="576" decoding="async">
   </div>
 
   <footer>
-    <p>Maintained with 🔥 by <a href="https://github.com/thefiregroupai-ops/comfyUI" target="_blank" data-track="github_click">FIRE Group AI Ops</a> | <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" data-track="skool_click">FIRE AI Creator Lab on Skool (Free Community)</a></p>
+    <p>Maintained with 🔥 by <a href="https://github.com/thefiregroupai-ops/comfyUI" target="_blank" data-track="github_click" rel="noopener noreferrer">FIRE Group AI Ops</a> | <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" data-track="skool_click" rel="noopener noreferrer">FIRE AI Creator Lab on Skool</a></p>
   </footer>
 
   <script>
@@ -346,9 +444,12 @@
       const img = document.getElementById('lightboxImg');
       img.src = src;
       lb.classList.add('active');
+      lb.setAttribute('aria-hidden', 'false');
     }
     function closeLightbox() {
-      document.getElementById('lightbox').classList.remove('active');
+      const lb = document.getElementById('lightbox');
+      lb.classList.remove('active');
+      lb.setAttribute('aria-hidden', 'true');
     }
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
   </script>

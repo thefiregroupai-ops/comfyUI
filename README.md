@@ -1,100 +1,83 @@
-# 🔥 FIRE ComfyUI Workflows — Open Source Starter Library
+# FIRE ComfyUI Workflows
 
-[![GitHub Stars](https://img.shields.io/github/stars/thefiregroupai-ops/comfyUI?style=for-the-badge&color=ff5500)](https://github.com/thefiregroupai-ops/comfyUI/stargazers)
-[![Live Site](https://img.shields.io/badge/Live_Website-GitHub_Pages-ff7700?style=for-the-badge)](https://thefiregroupai-ops.github.io/comfyUI/)
-[![Skool Community](https://img.shields.io/badge/Skool-FIRE_AI_Creator_Lab-blue?style=for-the-badge)](https://www.skool.com/fire-ai-creator-lab-9667)
+Free ComfyUI workflow JSONs for AI image generation, image editing, character consistency, video generation, LoRA dataset creation, and upscaling.
 
-Welcome to the official **FIRE ComfyUI Workflows** repository! A curated, production-ready collection of free ComfyUI workflows for AI video generation, image editing, character swapping, LoRA dataset creation, and upscaling.
+[![Site validation](https://github.com/thefiregroupai-ops/comfyUI/actions/workflows/validate-site.yml/badge.svg)](https://github.com/thefiregroupai-ops/comfyUI/actions/workflows/validate-site.yml)
+[![GitHub stars](https://img.shields.io/github/stars/thefiregroupai-ops/comfyUI?style=flat-square&color=ff5500)](https://github.com/thefiregroupai-ops/comfyUI/stargazers)
+[![Browse workflows](https://img.shields.io/badge/Browse-GitHub%20Pages-ff7700?style=flat-square)](https://thefiregroupai-ops.github.io/comfyUI/)
 
-🌐 **Browse the Web Library**: [https://thefiregroupai-ops.github.io/comfyUI/](https://thefiregroupai-ops.github.io/comfyUI/)
+## Start here
 
----
+1. [Browse the visual workflow library](https://thefiregroupai-ops.github.io/comfyUI/) or choose a family below.
+2. Download the workflow's `.json` file.
+3. Open [ComfyUI](https://github.com/Comfy-Org/ComfyUI), then drag the JSON file onto the canvas.
+4. If nodes are missing, use [ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager) to identify them and review the workflow page before installing third-party code.
 
-## 📘 Step-by-Step Technical Guides & Decision Matrix
+New to workflow files? Read the [ComfyUI workflow JSON installation guide](https://thefiregroupai-ops.github.io/comfyUI/guides/how-to-install-comfyui-workflow-json/).
 
-- 🎬 **MiniMax H3 Video Guide**: [MiniMax H3 ComfyUI Setup, Models & Workflows](https://thefiregroupai-ops.github.io/comfyUI/guides/minimax-h3-comfyui/)
-- 👤 **Krea2 Character Consistency Guide**: [Krea2 Identity Edit v1.2 & ControlNet Depth](https://thefiregroupai-ops.github.io/comfyUI/guides/krea2-comfyui-character-consistency/)
-- 🎭 **Qwen Face Swap Guide**: [Qwen Image Edit Plus & Skin Realism Guide](https://thefiregroupai-ops.github.io/comfyUI/guides/qwen-comfyui-faceswap-guide/)
-- 📊 **Character Consistency Matrix**: [Compare All Character Consistency Workflows](https://thefiregroupai-ops.github.io/comfyUI/workflows/tasks/character-consistency/)
+## Workflow library
 
----
+| Model or tool family | Workflows | Typical tasks | Browse |
+|---|---:|---|---|
+| Ideogram & Flux 2 Klein | 3 | Text-to-image, reference conditioning, prompt refinement | [Open family](https://thefiregroupai-ops.github.io/comfyUI/workflows/ideogram-flux/) |
+| Krea2 | 4 | Identity editing, depth control, multi-reference generation | [Open family](https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/) |
+| LoRA Dataset Tools | 1 | Character dataset preparation | [Open family](https://thefiregroupai-ops.github.io/comfyUI/workflows/lora-dataset-tools/) |
+| MiniMax-H3 Video | 3 | First/last-frame video, auto-aspect video, cinema/audio reference | [Open family](https://thefiregroupai-ops.github.io/comfyUI/workflows/minimax-h3-video/) |
+| Qwen | 5 | Image editing, face swap, skin realism, ControlNet | [Open family](https://thefiregroupai-ops.github.io/comfyUI/workflows/qwen/) |
+| Upscalers & Tools | 2 | Image upscaling and finishing | [Open family](https://thefiregroupai-ops.github.io/comfyUI/workflows/upscalers-tools/) |
+| Wan Video | 2 | Image-to-video extension and talking-head video | [Open family](https://thefiregroupai-ops.github.io/comfyUI/workflows/wan-video/) |
 
-## 🎓 Join FIRE AI Creator Lab on Skool — 100% Free
+You can also [browse all 20 workflows by task](https://thefiregroupai-ops.github.io/comfyUI/workflows/).
 
-> ### 🎓 **Join FIRE AI Creator Lab on Skool (100% Free)**
-> **Get Workflows, Full-Body Multi-Ref Pipelines & AI Creator Masterclasses**
->
-> 🌟 **Free Community Benefits:**
-> - 🚀 **Complete Workflow Library**: Multi-Pass Identity Swaps, V6.2 Fullbody Multi-Ref LoRA Datasets, Advanced Scail 2 Background Transfer, Two-Pass Outfit Replacement, and Advanced MiniMax-H3 Collections.
-> - 🎥 **A-to-Z Masterclasses**: Step-by-step video tutorials on custom nodes, flux model training, and AI influencer creation.
-> - 💬 **1-on-1 ComfyUI Support**: Live troubleshooting, custom workflow modifications, and node setup help.
-> - 💰 **Creator Playbooks**: Turn your AI creations into viral content — drive traffic, optimize workflows, and scale your AI channel from home.
->
-> 👉 **[Click Here to Join FIRE AI Creator Lab on Skool (100% Free)](https://www.skool.com/fire-ai-creator-lab-9667)**
+## Technical guides
 
----
+- [Import and load a ComfyUI workflow JSON](https://thefiregroupai-ops.github.io/comfyUI/guides/how-to-install-comfyui-workflow-json/)
+- [Choose a character-consistency workflow](https://thefiregroupai-ops.github.io/comfyUI/guides/comfyui-character-consistency-guide/)
+- [Krea2 identity and depth workflows](https://thefiregroupai-ops.github.io/comfyUI/guides/krea2-comfyui-character-consistency/)
+- [MiniMax H3 video workflows](https://thefiregroupai-ops.github.io/comfyUI/guides/minimax-h3-comfyui/)
+- [Qwen face swap and skin realism](https://thefiregroupai-ops.github.io/comfyUI/guides/qwen-comfyui-faceswap-guide/)
+- [Wan image-to-video workflows](https://thefiregroupai-ops.github.io/comfyUI/guides/comfyui-wan-video-guide/)
 
-## 📁 Free Public Workflows
+## What is included
 
-### 📂 [Ideogram_Flux](./Ideogram_Flux)
-Image generation, upscaling, and prompt control workflows with Ideogram and Flux 2 Klein.
+- ComfyUI workflow graphs in JSON format
+- Static workflow detail pages with direct downloads
+- Model-family and task-based comparison pages
+- Technical guides, `robots.txt`, an XML sitemap, and structured data
 
-- [`FIRE_Flux_2_Klein_FP8_3.json`](./Ideogram_Flux/FIRE_Flux_2_Klein_FP8_3.json)
-- [`FIRE_IDEO+LORA_Single_Reference_2.json`](./Ideogram_Flux/FIRE_IDEO+LORA_Single_Reference_2.json)
-- [`FIRE_ideogramDirector_v10.json`](./Ideogram_Flux/FIRE_ideogramDirector_v10.json)
+Model weights, custom-node packages, and ComfyUI itself are not bundled. A workflow may reference third-party components that need to be downloaded separately.
 
-### 📂 [Krea2](./Krea2)
-Image editing, identity swapping, and depth control workflows using Krea2.
+## Repository structure
 
-- [`FIRE_KERA_2_CONTROLNET_WORKFLOW_1.json`](./Krea2/FIRE_KERA_2_CONTROLNET_WORKFLOW_1.json)
-- [`FIRE_Krea2_Depth_Control_1.json`](./Krea2/FIRE_Krea2_Depth_Control_1.json)
-- [`FIRE_Krea2_Identity_Edit_V1.json`](./Krea2/FIRE_Krea2_Identity_Edit_V1.json)
-- [`FIRE_Krea2_No_Lora.json`](./Krea2/FIRE_Krea2_No_Lora.json)
+```text
+<model-family>/       Workflow JSON files and a family README
+workflows/            Search-friendly family, task, and workflow pages
+guides/               Technical guides
+assets/               Site images and shared styles
+index.html            GitHub Pages homepage
+sitemap.xml           Published-page inventory
+scripts/              Local validation tools
+```
 
-### 📂 [LoRA_Dataset_Tools](./LoRA_Dataset_Tools)
-Influencer dataset generation and character LoRA training tools.
+## Safety and compatibility
 
-- [`FIRE_INFLUENCER_Dataset_AIO_v1.1.json`](./LoRA_Dataset_Tools/FIRE_INFLUENCER_Dataset_AIO_v1.1.json)
+ComfyUI workflows can reference arbitrary custom nodes. Review each missing-node package and its source before installation. Keep ComfyUI, custom nodes, and model files in an isolated environment, and do not load workflow files from sources you do not trust.
 
-### 📂 [MiniMax_H3_Video](./MiniMax_H3_Video)
-Video generation and first/last frame control workflows with MiniMax-H3.
+Names such as ComfyUI, Flux, Ideogram, Krea, MiniMax, Qwen, SeedVR2, and Wan belong to their respective owners. Their inclusion describes compatibility; it does not imply affiliation or endorsement. Showcase imagery illustrates creative use cases and is not a guarantee that every workflow will reproduce an identical result.
 
-- [`FIRE_MINIMAX_H3_FIRSTLASTFRAME.json`](./MiniMax_H3_Video/FIRE_MINIMAX_H3_FIRSTLASTFRAME.json)
-- [`FIRE_MiniMax_H3_V3_AutoAspect_FP8_AB.json`](./MiniMax_H3_Video/FIRE_MiniMax_H3_V3_AutoAspect_FP8_AB.json)
-- [`FIRE_minimax_top.json`](./MiniMax_H3_Video/FIRE_minimax_top.json)
+## Contributing
 
-### 📂 [Qwen](./Qwen)
-AI skin realism, face swapping, and image manipulation workflows powered by Qwen.
+Corrections, compatibility notes, and new public workflows are welcome. Read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening an issue or pull request. Every change is checked for valid JSON, local links, page metadata, structured data, and sitemap coverage.
 
-- [`FIRE_AI_Real_Skin_V5_ComfyUI_Free.json`](./Qwen/FIRE_AI_Real_Skin_V5_ComfyUI_Free.json)
-- [`FIRE_IMG2IMG_CLASSIC.json`](./Qwen/FIRE_IMG2IMG_CLASSIC.json)
-- [`FIRE_QWEN_Faceswap_v1.json`](./Qwen/FIRE_QWEN_Faceswap_v1.json)
-- [`FIRE_QWEN_IMAGE_UNLEASHED_v2.json`](./Qwen/FIRE_QWEN_IMAGE_UNLEASHED_v2.json)
-- [`FIRE_zbase+zit+control_v1.json`](./Qwen/FIRE_zbase+zit+control_v1.json)
+## License status
 
-### 📂 [Upscalers_Tools](./Upscalers_Tools)
-High-resolution image and video upscaling pipelines.
+This repository does not currently include a repository-wide license. Public access does not by itself grant permission to copy, redistribute, or create derivative works. The repository owner should add an explicit license before describing the project as open source.
 
-- [`FIRE_Ideogram_4_Additional_Upscaling_Workflow_1.json`](./Upscalers_Tools/FIRE_Ideogram_4_Additional_Upscaling_Workflow_1.json)
-- [`FIRE_Upscaler.json`](./Upscalers_Tools/FIRE_Upscaler.json)
+Referenced models, custom nodes, fonts, and other third-party components retain their own licenses and terms.
 
-### 📂 [Wan_Video](./Wan_Video)
-Image-to-video conversion and podcast workflows using Wan 2.1 & 2.2.
+## Community and support
 
-- [`FIRE_I2V_Infinite_extender_v1.json`](./Wan_Video/FIRE_I2V_Infinite_extender_v1.json)
-- [`FIRE_PodcastBasic_img_to_vid_34s.json`](./Wan_Video/FIRE_PodcastBasic_img_to_vid_34s.json)
+- [FIRE AI Creator Lab on Skool — free community](https://www.skool.com/fire-ai-creator-lab-9667)
+- [FIRE Group AI Ops on GitHub](https://github.com/thefiregroupai-ops)
 
----
-
-⭐ **Enjoying these free workflows? Click the Star button at the top of the repository to support new workflow releases!**
-
----
-
-## 🌐 Connect With Us
-
-- 🏫 **Skool Community (100% Free)**: [FIRE AI Creator Lab](https://www.skool.com/fire-ai-creator-lab-9667)
-- 🔥 **GitHub Organization**: [FIRE Group AI Ops](https://github.com/thefiregroupai-ops)
-
----
-
-*Maintained with 🔥 by FIRE Group AI Ops*
+Maintained by FIRE Group AI Ops.
