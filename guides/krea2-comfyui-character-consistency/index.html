@@ -4,29 +4,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Krea2 ComfyUI Guide — Identity Editing, Depth & Character Consistency | FIRE AI ComfyUI Guides</title>
-  <meta name="title" content="Krea2 ComfyUI Guide — Identity Editing, Depth & Character Consistency | FIRE AI ComfyUI Guides">
+  <title>Krea2 ComfyUI Guide: Identity &amp; Depth | FIRE AI</title>
+  <meta name="title" content="Krea2 ComfyUI Guide: Identity &amp; Depth | FIRE AI">
   <meta name="description" content="Master identity preservation in ComfyUI using Krea2 Identity Edit v1.2 LoRA, dual-path Qwen3-VL grounding, and Depth Anything V3 ControlNet.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://thefiregroupai-ops.github.io/comfyUI/guides/krea2-comfyui-character-consistency/">
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2026-08-09">
+  <meta property="article:modified_time" content="2026-08-17">
   <meta property="og:url" content="https://thefiregroupai-ops.github.io/comfyUI/guides/krea2-comfyui-character-consistency/">
-  <meta property="og:title" content="Krea2 ComfyUI Guide — Identity Editing, Depth & Character Consistency | FIRE AI ComfyUI Guides">
+  <meta property="og:title" content="Krea2 ComfyUI Guide: Identity &amp; Depth | FIRE AI">
   <meta property="og:description" content="Master identity preservation in ComfyUI using Krea2 Identity Edit v1.2 LoRA, dual-path Qwen3-VL grounding, and Depth Anything V3 ControlNet.">
   <meta property="og:image" content="https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-influencer-character-spider-hero.webp">
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://thefiregroupai-ops.github.io/comfyUI/guides/krea2-comfyui-character-consistency/">
-  <meta property="twitter:title" content="Krea2 ComfyUI Guide — Identity Editing, Depth & Character Consistency | FIRE AI ComfyUI Guides">
-  <meta property="twitter:description" content="Master identity preservation in ComfyUI using Krea2 Identity Edit v1.2 LoRA, dual-path Qwen3-VL grounding, and Depth Anything V3 ControlNet.">
-  <meta property="twitter:image" content="https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-influencer-character-spider-hero.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://thefiregroupai-ops.github.io/comfyUI/guides/krea2-comfyui-character-consistency/">
+  <meta name="twitter:title" content="Krea2 ComfyUI Guide: Identity &amp; Depth | FIRE AI">
+  <meta name="twitter:description" content="Master identity preservation in ComfyUI using Krea2 Identity Edit v1.2 LoRA, dual-path Qwen3-VL grounding, and Depth Anything V3 ControlNet.">
+  <meta name="twitter:image" content="https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-influencer-character-spider-hero.webp">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta property="og:site_name" content="FIRE ComfyUI Workflows">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="576">
+  <meta property="og:image:alt" content="Krea2 ComfyUI Guide — Identity Editing, Depth &amp; Character Consistency">
+  <meta name="twitter:image:alt" content="Krea2 ComfyUI Guide — Identity Editing, Depth &amp; Character Consistency">
+  <meta name="author" content="FIRE Group AI Ops">
+  <meta name="theme-color" content="#090a0f">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="sitemap" href="../../sitemap.xml" type="application/xml" title="Sitemap">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "@id": "https://thefiregroupai-ops.github.io/comfyUI/guides/krea2-comfyui-character-consistency/#article",
+      "url": "https://thefiregroupai-ops.github.io/comfyUI/guides/krea2-comfyui-character-consistency/",
+      "mainEntityOfPage": "https://thefiregroupai-ops.github.io/comfyUI/guides/krea2-comfyui-character-consistency/",
+      "headline": "Krea2 ComfyUI Guide — Identity Editing, Depth & Character Consistency",
+      "description": "Master identity preservation in ComfyUI using Krea2 Identity Edit v1.2 LoRA, dual-path Qwen3-VL grounding, and Depth Anything V3 ControlNet.",
+      "image": "https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-influencer-character-spider-hero.webp",
+      "datePublished": "2026-08-09",
+      "dateModified": "2026-08-17",
+      "author": {
+        "@id": "https://thefiregroupai-ops.github.io/comfyUI/#organization"
+      },
+      "publisher": {
+        "@id": "https://thefiregroupai-ops.github.io/comfyUI/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://thefiregroupai-ops.github.io/comfyUI/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://thefiregroupai-ops.github.io/comfyUI/guides/krea2-comfyui-character-consistency/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://thefiregroupai-ops.github.io/comfyUI/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Krea2 ComfyUI Guide — Identity Editing, Depth & Character Consistency",
+          "item": "https://thefiregroupai-ops.github.io/comfyUI/guides/krea2-comfyui-character-consistency/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
 
   
 
@@ -292,21 +354,23 @@
     }
     footer a { color: var(--primary-orange); text-decoration: none; }
   </style>
+<link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header>
     <div class="nav-container">
       <a href="https://thefiregroupai-ops.github.io/comfyUI/" class="brand" data-track="brand_click">🔥 <span>FIRE ComfyUI</span></a>
       <div class="nav-links">
         <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/" class="btn btn-github" data-track="nav_workflows">📂 Workflows</a>
-        <a href="https://github.com/thefiregroupai-ops/comfyUI" target="_blank" class="btn btn-github" data-track="github_click">⭐ GitHub</a>
-        <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" class="btn btn-skool" data-track="skool_click">🎓 Join Free Skool (100% Free)</a>
+        <a href="https://github.com/thefiregroupai-ops/comfyUI" target="_blank" class="btn btn-github" data-track="github_click" rel="noopener noreferrer">⭐ GitHub</a>
+        <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" class="btn btn-skool" data-track="skool_click" rel="noopener noreferrer">🎓 FIRE AI Community</a>
       </div>
     </div>
   </header>
 
-  <main class="main-wrapper">
+  <main id="main-content" class="main-wrapper">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://thefiregroupai-ops.github.io/comfyUI/">Home</a> &nbsp;/&nbsp; <span>Guides</span> &nbsp;/&nbsp; <span>Krea2 ComfyUI Guide — Identity Editing, Depth & Character Consistency</span></nav>
     
 
@@ -314,30 +378,69 @@
 <p style="font-size: 1.15rem; color: var(--primary-orange); font-weight: 600;">Master identity preservation in ComfyUI using Krea2 Identity Edit v1.2 LoRA, dual-path Qwen3-VL grounding, and Depth Anything V3 ControlNet.</p>
 
 <div style="margin: 1.5rem 0;">
-  <div class="showcase-img-frame" style="aspect-ratio: 16 / 9; height: auto;" onclick="openLightbox('https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-character-1face-100poses-yellow-dress.webp')">
-    <img src="https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-character-1face-100poses-yellow-dress.webp" alt="FIRE AI Character 1 Face 100 Poses Artwork" width="1024" height="576" loading="lazy">
-  </div>
+  <button type="button" class="showcase-img-frame image-button" style="aspect-ratio: 16 / 9; height: auto;" onclick="openLightbox('https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-character-1face-100poses-yellow-dress.webp')" aria-label="Open image preview: FIRE AI Character 1 Face 100 Poses Artwork">
+    <img src="https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-character-1face-100poses-yellow-dress.webp" alt="FIRE AI Character 1 Face 100 Poses Artwork" width="1024" height="576" loading="lazy" decoding="async">
+  </button>
 </div>
 
 
-<h2>🌟 Technical Overview & Requirements</h2>
-<p>Learn how to configure, optimize, and execute Krea2 ComfyUI Guide — Identity Editing, Depth & Character Consistency inside ComfyUI with step-by-step node connections, recommended weights, and memory management tips.</p>
+<p><strong>Use identity conditioning to preserve who the subject is, and depth conditioning to preserve where forms are in the frame.</strong> The Krea2 workflows in this library separate those goals: Identity Edit uses two images and grounded edit conditioning, while the depth graphs derive or apply structural guidance. The multi-reference selector is useful when several views are needed to describe one subject.</p>
+
+<h2>Pick the Krea2 graph that matches the edit</h2>
+
+<h3>Restage a known person: Identity Edit v1.2</h3>
+<p>The <a href="../../workflows/krea2/identity-edit-v1/">Krea2 Identity Edit v1.2 workflow</a> accepts two images: a source-person photo and a target-scene photo. In the saved graph, each image is resized and encoded, positive and negative instructions pass through <code>Krea2EditGroundedEncode</code>, and the identity-edit LoRA is applied to the Krea2 model. An image comparer sits near the output. Use this when the target composition is already useful and the identity is the main change. <a href="../../Krea2/FIRE_Krea2_Identity_Edit_V1.json" download>Download the Identity Edit JSON</a>.</p>
+
+<h3>Follow a reference image’s structure: Depth Anything v3</h3>
+<p>The <a href="../../workflows/krea2/controlnet-depth/">Krea2 ControlNet Depth Anything v3 workflow</a> loads one structural reference, produces a depth representation with Depth Anything v3, encodes the control image, and applies Krea2 depth control before sampling. It exposes both a depth preview and a saved final image, which makes it easier to tell whether a bad result begins with the depth estimate or the generation. Choose it for layout, body position, or foreground/background structure rather than exact facial identity. <a href="../../Krea2/FIRE_KERA_2_CONTROLNET_WORKFLOW_1.json" download>Download the Depth Anything JSON</a>.</p>
+
+<h3>Compare source and result: Depth Control</h3>
+<p>The <a href="../../workflows/krea2/depth-control-compare/">Krea2 Depth Control &amp; Image Compare workflow</a> applies Krea2 control conditioning to a loaded image and routes the source and generated result into an rgthree image comparer. This is the compact choice when visual A/B review matters. <a href="../../Krea2/FIRE_Krea2_Depth_Control_1.json" download>Download the Depth Control JSON</a>.</p>
+
+<h3>Use several reference views: Multi-Reference Selector</h3>
+<p>The <a href="../../workflows/krea2/no-lora-t2i/">Krea2 Multi-Reference Selector workflow</a> contains four labeled image loaders, primary and secondary four-way selectors, model switching, prompt lists, and a face-detailing branch with SAM and an object detector. Use it when a portrait and a wider view together describe the subject better than either one alone. The graph retains example images and switch positions, so replace all four slots you plan to use and verify the active primary and secondary choices. <a href="../../Krea2/FIRE_Krea2_No_Lora.json" download>Download the Multi-Reference JSON</a>.</p>
+
+<h2>Set up a Krea2 workflow step by step</h2>
+<ol>
+  <li>Download one JSON above and drag it onto the ComfyUI canvas. Do not combine graphs until each one runs independently.</li>
+  <li>Resolve missing node types, restart ComfyUI, and reload the JSON. The graphs use Krea2-specific nodes plus utilities such as image comparison; the multi-reference graph also contains face-detailing and SAM nodes.</li>
+  <li>Inspect every UNet, CLIP, VAE, LoRA, detector, SAM, and depth-model loader. Select files actually installed for that loader rather than relying on the example filename.</li>
+  <li>Replace example images. For Identity Edit, keep the source-person and target-scene roles distinct. For depth work, use a reference whose silhouette and depth separation are readable.</li>
+  <li>Start with a direct instruction: identify what should change and what should remain. Avoid stacking unrelated style, wardrobe, camera, background, and identity changes into the first test.</li>
+  <li>Queue once, inspect previews and the comparer, then modify one input or instruction at a time.</li>
+</ol>
+
+<h2>Reference and prompt practices that improve consistency</h2>
+<p>A useful identity reference shows the face without heavy occlusion, extreme blur, or lighting that hides its geometry. A useful secondary reference adds information—such as a wider body view or another angle—instead of contradicting the first. For depth control, judge the generated depth preview before the final image: merged limbs, missing foreground objects, or a confused silhouette will pass weak structure downstream.</p>
+
+<p>Phrase edits as a small transformation with explicit invariants. For example, name the desired scene or style, then state that identity, facial features, clothing, lighting, or composition should remain only when those elements truly must be preserved. If all of them must change at once, make successive edits and approve each stage instead of asking one generation to solve every constraint.</p>
+
+<h2>Troubleshooting Krea2 outputs</h2>
+<ul>
+  <li><strong>The result follows the pose but loses the person:</strong> depth is structural guidance, not an identity guarantee. Switch to Identity Edit or add appropriate multi-reference inputs.</li>
+  <li><strong>Identity Edit changes the wrong image:</strong> recheck the two loader roles and trace each connection into its grounded encoder.</li>
+  <li><strong>The comparer shows no meaningful change:</strong> confirm that the generated output, not a duplicated source preview, is connected to its second input.</li>
+  <li><strong>Multi-reference output resembles the wrong photo:</strong> inspect both four-way selector values and simplify the reference set to two known images.</li>
+  <li><strong>A depth node fails:</strong> separate a missing node implementation from a missing depth-model file; installing one does not automatically provide the other.</li>
+</ul>
+
+<p style="color: var(--text-muted); margin: 2rem 0 1rem;"><strong>Maintained by FIRE Group AI Ops · Updated 17 August 2026</strong></p>
 
 <div class="skool-callout">
-  <h2>🎓 Master ComfyUI — Join FIRE AI Creator Lab (100% Free)</h2>
-  <p>Get instant access to full video masterclasses, workflow JSONs, and 1-on-1 troubleshooting inside the free <strong>FIRE AI Creator Lab</strong> on Skool.</p>
-  <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" class="btn btn-skool" data-track="skool_click">🚀 Join FIRE AI Creator Lab on Skool (100% Free)</a>
+  <h2>🎓 Discuss workflows in FIRE AI Creator Lab</h2>
+  <p>Discuss workflow setup, troubleshooting notes, and creator techniques with the <strong>FIRE AI Creator Lab</strong> community on Skool.</p>
+  <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" class="btn btn-skool" data-track="skool_click" rel="noopener noreferrer">🚀 Open FIRE AI Creator Lab on Skool</a>
 </div>
 
   </main>
 
   <!-- Lightbox Modal -->
-  <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
-    <img id="lightboxImg" class="lightbox-content" src="" alt="Enlarged FIRE AI Showcase Artwork">
+  <div id="lightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true" onclick="closeLightbox()">
+    <img id="lightboxImg" class="lightbox-content" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Enlarged FIRE AI showcase artwork" width="1024" height="576" decoding="async">
   </div>
 
   <footer>
-    <p>Maintained with 🔥 by <a href="https://github.com/thefiregroupai-ops/comfyUI" target="_blank" data-track="github_click">FIRE Group AI Ops</a> | <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" data-track="skool_click">FIRE AI Creator Lab on Skool (Free Community)</a></p>
+    <p>Maintained with 🔥 by <a href="https://github.com/thefiregroupai-ops/comfyUI" target="_blank" data-track="github_click" rel="noopener noreferrer">FIRE Group AI Ops</a> | <a href="https://www.skool.com/fire-ai-creator-lab-9667" target="_blank" data-track="skool_click" rel="noopener noreferrer">FIRE AI Creator Lab on Skool</a></p>
   </footer>
 
   <script>
@@ -346,9 +449,12 @@
       const img = document.getElementById('lightboxImg');
       img.src = src;
       lb.classList.add('active');
+      lb.setAttribute('aria-hidden', 'false');
     }
     function closeLightbox() {
-      document.getElementById('lightbox').classList.remove('active');
+      const lb = document.getElementById('lightbox');
+      lb.classList.remove('active');
+      lb.setAttribute('aria-hidden', 'true');
     }
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
   </script>

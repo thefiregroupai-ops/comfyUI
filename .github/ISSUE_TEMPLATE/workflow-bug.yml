@@ -1,0 +1,45 @@
+name: Workflow problem
+description: Report a reproducible problem with a public workflow JSON.
+title: "[Workflow bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Please remove credentials, private prompts, and personal images before submitting.
+  - type: input
+    id: workflow
+    attributes:
+      label: Workflow
+      description: Link to the workflow page or JSON file.
+      placeholder: https://thefiregroupai-ops.github.io/comfyUI/workflows/...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the visible error and the node where it occurred.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: List the smallest sequence that reproduces the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: ComfyUI version, operating system, GPU, and relevant custom-node versions.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed credentials, private data, and personal media from this report.
+          required: true

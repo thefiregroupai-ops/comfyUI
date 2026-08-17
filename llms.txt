@@ -1,10 +1,37 @@
 # FIRE ComfyUI Workflows
 
-> Open-Source ComfyUI Workflow Library for AI Image & Video Generation.
+> A maintained collection of 20 downloadable ComfyUI workflow JSON files for local AI image generation, video generation, identity editing, dataset preparation, and upscaling.
 
-## Free Workflows
-https://thefiregroupai-ops.github.io/comfyUI/
-https://thefiregroupai-ops.github.io/comfyUI/workflows/
+Canonical site: https://thefiregroupai-ops.github.io/comfyUI/
+Source repository: https://github.com/thefiregroupai-ops/comfyUI
 
-## Skool Community (100% Free)
-https://www.skool.com/fire-ai-creator-lab-9667
+## Start here
+
+- Workflow catalog: https://thefiregroupai-ops.github.io/comfyUI/workflows/
+- Import guide: https://thefiregroupai-ops.github.io/comfyUI/guides/how-to-install-comfyui-workflow-json/
+- Repository README: https://github.com/thefiregroupai-ops/comfyUI#readme
+
+## Workflow families
+
+- Ideogram and Flux: https://thefiregroupai-ops.github.io/comfyUI/workflows/ideogram-flux/
+- Krea2: https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/
+- LoRA dataset tools: https://thefiregroupai-ops.github.io/comfyUI/workflows/lora-dataset-tools/
+- MiniMax H3 video: https://thefiregroupai-ops.github.io/comfyUI/workflows/minimax-h3-video/
+- Qwen: https://thefiregroupai-ops.github.io/comfyUI/workflows/qwen/
+- Upscalers and tools: https://thefiregroupai-ops.github.io/comfyUI/workflows/upscalers-tools/
+- Wan video: https://thefiregroupai-ops.github.io/comfyUI/workflows/wan-video/
+
+## Practical guides
+
+- Character consistency: https://thefiregroupai-ops.github.io/comfyUI/guides/comfyui-character-consistency-guide/
+- Wan image-to-video: https://thefiregroupai-ops.github.io/comfyUI/guides/comfyui-wan-video-guide/
+- Krea2 identity and depth: https://thefiregroupai-ops.github.io/comfyUI/guides/krea2-comfyui-character-consistency/
+- MiniMax H3: https://thefiregroupai-ops.github.io/comfyUI/guides/minimax-h3-comfyui/
+- Qwen face swap: https://thefiregroupai-ops.github.io/comfyUI/guides/qwen-comfyui-faceswap-guide/
+
+## Usage notes
+
+- Workflow JSON files are starting points. Model files, custom nodes, and hardware requirements vary by workflow.
+- Review model and custom-node licenses before commercial use.
+- The repository does not currently declare a software license; see NOTICE.md for the practical effect.
+- Community support: https://www.skool.com/fire-ai-creator-lab-9667

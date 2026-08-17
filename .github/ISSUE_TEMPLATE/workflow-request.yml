@@ -1,0 +1,32 @@
+name: Workflow request
+description: Suggest a task or model family for a future public workflow.
+title: "[Workflow request]: "
+labels:
+  - enhancement
+body:
+  - type: input
+    id: task
+    attributes:
+      label: Goal
+      description: What should the workflow help a user create or automate?
+    validations:
+      required: true
+  - type: textarea
+    id: inputs_outputs
+    attributes:
+      label: Expected inputs and outputs
+      description: Describe the source media, controls, and desired output.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Relevant models or nodes
+      description: Link only to official or maintainer-owned sources when possible.
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Existing library check
+      options:
+        - label: I searched the current workflow library for an equivalent workflow.
+          required: true
