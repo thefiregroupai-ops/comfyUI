@@ -443,7 +443,7 @@
           "params": {
             "filename": "mmh3_20260805_123538_00001-audio.mp4",
             "workflow": "mmh3_20260805_123538_00001.png",
-            "fullpath": "C:\\Users\\Tristan\\Desktop\\GenerativeAI\\output\\mmh3_20260805_123538_00001-audio.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "",
             "type": "output",

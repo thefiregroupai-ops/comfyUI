@@ -56,9 +56,9 @@
       "url": "https://thefiregroupai-ops.github.io/comfyUI/workflows/ideogram-flux/ideogram-lora-single-reference/",
       "codeRepository": "https://github.com/thefiregroupai-ops/comfyUI",
       "runtimePlatform": "ComfyUI",
-      "dateCreated": "2026-08-09",
+      "datePublished": "2026-08-09",
       "dateModified": "2026-08-17",
-      "author": {
+      "publisher": {
         "@id": "https://thefiregroupai-ops.github.io/comfyUI/#organization"
       },
       "isPartOf": {
@@ -423,7 +423,7 @@
 <section>
   <h2>Reference, Endpoint, and Custom-Node Checks</h2>
   <p>Replace the bundled sample image first, then verify the two UNET selections, CLIP loader, VAE, and both LoRA filenames. A reference image does not include those weights, and the JSON does not grant access to them. Some Ideogram-specific nodes in the file do not record a registry package identifier, so an automatic missing-node installer may not resolve every red node; use the displayed node names to identify the required extension.</p>
-  <p>The multimodal prompt node is stored with the private-network endpoint <code>http://192.168.2.20:1234</code>. That address belongs to the original local network and will not work on another machine. Replace it with your own reachable LM Studio or compatible endpoint, or bypass that refinement path if you are supplying JSON manually. Confirm the reference preview, selected resolution, prompt fields, and save destination before queueing. For a clean import procedure, see the <a href="https://thefiregroupai-ops.github.io/comfyUI/guides/how-to-install-comfyui-workflow-json/">ComfyUI JSON workflow guide</a>.</p>
+  <p>The multimodal prompt node uses a configurable local-model endpoint. Set it to your own reachable LM Studio or compatible service, or bypass that refinement path if you are supplying JSON manually. Confirm the reference preview, selected resolution, prompt fields, and save destination before queueing. For a clean import procedure, see the <a href="https://thefiregroupai-ops.github.io/comfyUI/guides/how-to-install-comfyui-workflow-json/">ComfyUI JSON workflow guide</a>.</p>
 </section>
 
 <h2>📖 How to Import & Run in ComfyUI</h2>

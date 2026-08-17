@@ -404,7 +404,7 @@
 
 <section aria-labelledby="choose-krea2-workflow">
   <h2 id="choose-krea2-workflow">Choose Krea2 by the constraint you need to preserve</h2>
-  <p>Use <a href="identity-edit-v1/">Identity Edit v1.2</a> when you have both a source-person image and a target-scene image. Its two grounded encoders, identity-edit LoRA, resizing stages, and image comparer are arranged around restaging identity. Use the <a href="no-lora-t2i/">Multi-Reference Selector</a> when several views describe the subject better: the saved graph exposes four image slots, primary and secondary selectors, prompt lists, and a face-detailing branch.</p>
+  <p>Use <a href="identity-edit-v1/">Identity Edit v1.2</a> for a grounded edit of one active source image. Its two grounded encoders, identity-edit LoRA, resizing stages, and image comparer support controlled restaging; a second image branch is present but bypassed in the saved graph. Use the <a href="no-lora-t2i/">Multi-Reference Selector</a> when several views describe the subject better: the saved graph exposes four image slots, primary and secondary selectors, prompt lists, a face-detailing branch, and explicit LoRA loaders that must be checked.</p>
   <p>Choose a depth workflow when structure matters more than exact identity. <a href="controlnet-depth/">ControlNet Depth Anything v3</a> derives a depth representation from the supplied image, previews that representation, and applies Krea2 depth control before sampling. <a href="depth-control-compare/">Depth Control &amp; Image Compare</a> is the more compact A/B route, with the loaded source and generated result feeding an image comparer.</p>
   <p>Do not treat identity and depth as interchangeable controls: a depth map can guide silhouette and spatial layout without defining a person. Import only one JSON for the first test, replace every example image, check the active selectors, and verify all Krea2, VAE, text-encoder, LoRA, detector, or depth loaders present in that specific graph. Compare the first output against the input constraint you chose before adjusting prompts or adding more references.</p>
 </section>
@@ -448,7 +448,7 @@
       </button>
       <span class="badge-tag">Krea2 Workflows</span>
       <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/identity-edit-v1/" class="title-link">Krea2 Identity Edit v1.2 Grounded Encode Workflow</a>
-      <p style="font-size: 0.95rem; color: var(--text-muted);">Grounded identity restaging and facial feature editing workflow using Krea2 identity edit LoRA and dual image inputs.</p>
+      <p style="font-size: 0.95rem; color: var(--text-muted);">Grounded single-image restaging and facial editing with a Krea2 identity-edit LoRA and an optional bypassed second-image branch.</p>
     </div>
     <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
       <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/identity-edit-v1/" class="btn btn-github" style="flex: 1; justify-content: center;">View Details</a>
@@ -463,7 +463,7 @@
       </button>
       <span class="badge-tag">Krea2 Workflows</span>
       <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/no-lora-t2i/" class="title-link">Krea2 T2I Multi-Reference Selector Workflow</a>
-      <p style="font-size: 0.95rem; color: var(--text-muted);">Multi-reference 4-photo selector pipeline for Krea2 Turbo text-to-image and face detailer refinement without extra LoRAs.</p>
+      <p style="font-size: 0.95rem; color: var(--text-muted);">Four-photo reference selector for Krea2 text-to-image generation with face-detail refinement and explicit LoRA loaders to review.</p>
     </div>
     <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
       <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/no-lora-t2i/" class="btn btn-github" style="flex: 1; justify-content: center;">View Details</a>

@@ -1538,12 +1538,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/view?filename=rgthree.compare._temp_gpnpv_00001_rplxj_1774195668.jpg&type=temp&subfolder=&rand=0.4964870384435459&Rh-Comfy-Auth=eyJ1c2VySWQiOiJlNzM3M2YwY2Q0YTFlZmNhM2U2OGQwNDhkYjFjMjk1ZCIsInNpZ25FeHBpcmUiOjE3NzQ3NzY0NTA4ODIsInRzIjoxNzc0MTcxNjUwODgyLCJzaWduIjoiNDZiZGZjODcyNjJlZGUzMTM1YWU5MTY2OTRmMTU2MDYifQ==&Rh-Identify=e7373f0cd4a1efca3e68d048db1c295d"
+            "url": ""
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/view?filename=rgthree.compare._temp_gpnpv_00002_ahnyp_1774195670.jpg&type=temp&subfolder=&rand=0.1680728107345162&Rh-Comfy-Auth=eyJ1c2VySWQiOiJlNzM3M2YwY2Q0YTFlZmNhM2U2OGQwNDhkYjFjMjk1ZCIsInNpZ25FeHBpcmUiOjE3NzQ3NzY0NTA4ODIsInRzIjoxNzc0MTcxNjUwODgyLCJzaWduIjoiNDZiZGZjODcyNjJlZGUzMTM1YWU5MTY2OTRmMTU2MDYifQ==&Rh-Identify=e7373f0cd4a1efca3e68d048db1c295d"
+            "url": ""
           }
         ]
       ],
@@ -1630,7 +1630,7 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "📌 FOLLOW SKY AI WORKFLOWS\n\n  🔵  Telegram : https://t.me/skyloras\n\n  💜  Discord  : https://discord.gg/loras"
+        "Qwen image-to-image workflow"
       ],
       "color": "#e6e6e6",
       "bgcolor": "#ffffff"

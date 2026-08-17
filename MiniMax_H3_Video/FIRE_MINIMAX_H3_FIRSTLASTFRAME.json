@@ -1682,7 +1682,7 @@
           "params": {
             "filename": "MiniMax_H3_00060-audio.mp4",
             "workflow": "MiniMax_H3_00060.png",
-            "fullpath": "C:\\Users\\drbaph\\Documents\\ComfyUI\\output\\video\\MiniMax_H3_00060-audio.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "video",
             "type": "output",
