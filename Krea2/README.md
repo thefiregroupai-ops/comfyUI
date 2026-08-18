@@ -9,7 +9,7 @@ This folder contains ComfyUI workflows for Krea2 depth control, identity editing
 | Krea2 ControlNet Depth Anything v3 | Uses depth guidance for image generation and structural control. | [FIRE_KERA_2_CONTROLNET_WORKFLOW_1.json](./FIRE_KERA_2_CONTROLNET_WORKFLOW_1.json) | [View workflow details](https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/controlnet-depth/) |
 | Krea2 Depth Control and Image Compare | Applies depth conditioning and provides a before-and-after image comparison. | [FIRE_Krea2_Depth_Control_1.json](./FIRE_Krea2_Depth_Control_1.json) | [View workflow details](https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/depth-control-compare/) |
 | Krea2 Identity Edit v1.2 Grounded Encode | Restages identity and edits facial features from two image inputs. | [FIRE_Krea2_Identity_Edit_V1.json](./FIRE_Krea2_Identity_Edit_V1.json) | [View workflow details](https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/identity-edit-v1/) |
-| Krea2 T2I Multi-Reference Selector | Selects from multiple reference photos for text-to-image generation and face-detail refinement without an additional LoRA. | [FIRE_Krea2_No_Lora.json](./FIRE_Krea2_No_Lora.json) | [View workflow details](https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/no-lora-t2i/) |
+| Krea2 T2I Multi-Reference Selector | Selects from multiple reference photos for text-to-image generation and face-detail refinement with explicit LoRA loaders to review. | [FIRE_Krea2_No_Lora.json](./FIRE_Krea2_No_Lora.json) | [View workflow details](https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/no-lora-t2i/) |
 
 ## Quick start
 

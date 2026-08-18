@@ -1466,7 +1466,7 @@
         "tabXOffset": 10
       },
       "widgets_values": [
-        "extra arms, extra limbs, multiple arms, third arm, mutated arms, deformed hands, poorly drawn hands, extra fingers, missing fingers, fused fingers, bad anatomy, malformed limbs, duplicate limbs, extra body parts, visible phone, smartphone in frame, phone in corner, holding phone visible, device in shot, floating phone, second phone, camera visible, out of frame elements, cropped limbs, disconnected arms, extra person, mutant, disfigured, ugly anatomy, reference clothing, same outfit as reference, inherited garments from reference, copied top from input image, defaulting to reference attire, replicating reference fabric or style, small breasts, flat chest, reduced bust size, flattened silhouette, chunky body, thick proportions, overweight, chubby, soft midsection, wide waist, thick waist, no definition, extra body fat, bulky arms, heavy thighs, unflattering figure, average build, non-hourglass, loss of perky shape, sagging breasts, dull physique, green tint, green artifacts, green shading, green hue on hair, green patches on skin/body, color bleeding, chromatic aberration, unnatural green tones, teal/green cast, artifact noise in hair, weird skin texture, unnatural skin, excessive pores, acne, blemishes, rough skin, dull skin, too many imperfections, matte skin, dry skin, pale skin, non-summer season, winter clothing, modest outfits, baggy clothing, full coverage, cartoon, anime, illustration, smoke, haze, fog, harsh sunset lighting, strong orange sunset glow on face, overexposed sunset highlights, dramatic harsh golden hour shadows, heavy sunset warmth dominating image"
+        "extra arms, extra limbs, multiple arms, mutated hands, deformed hands, extra fingers, missing fingers, fused fingers, bad anatomy, malformed limbs, duplicate limbs, extra body parts, cropped limbs, disconnected arms, extra person, disfigured anatomy, color bleeding, chromatic aberration, compression artifacts, unnatural color cast, oversharpening, excessive noise, rough edges, halos, blur, haze, fog, overexposed highlights, crushed shadows"
       ]
     },
     {
@@ -1851,12 +1851,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/view?filename=rgthree.compare._temp_rnhos_00001_eebgu_1785460806.jpg&type=temp&subfolder=&rand=0.30269695881719827&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkZDFjYjlkNzIwMmY5NmYyMjdiNWUxNmYwYjM2NmRiOSIsInNpZ25FeHBpcmUiOjE3ODYwNjM5NTU2OTUsInRzIjoxNzg1NDU5MTU1Njk1LCJzaWduIjoiZGIyZGE5ZWEzZWNjNzczNTg4NTlkOTYwMmFiNWQ4YmUifQ==&Rh-Identify=dd1cb9d7202f96f227b5e16f0b366db9"
+            "url": ""
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/view?filename=rgthree.compare._temp_rnhos_00002_trqsj_1785460809.jpg&type=temp&subfolder=&rand=0.005585416395251119&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkZDFjYjlkNzIwMmY5NmYyMjdiNWUxNmYwYjM2NmRiOSIsInNpZ25FeHBpcmUiOjE3ODYwNjM5NTU2OTUsInRzIjoxNzg1NDU5MTU1Njk1LCJzaWduIjoiZGIyZGE5ZWEzZWNjNzczNTg4NTlkOTYwMmFiNWQ4YmUifQ==&Rh-Identify=dd1cb9d7202f96f227b5e16f0b366db9"
+            "url": ""
           }
         ]
       ]
@@ -1932,12 +1932,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/view?filename=rgthree.compare._temp_vgvqn_00001_oigry_1785460861.jpg&type=temp&subfolder=&rand=0.5631695004895956&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkZDFjYjlkNzIwMmY5NmYyMjdiNWUxNmYwYjM2NmRiOSIsInNpZ25FeHBpcmUiOjE3ODYwNjM5NTU2OTUsInRzIjoxNzg1NDU5MTU1Njk1LCJzaWduIjoiZGIyZGE5ZWEzZWNjNzczNTg4NTlkOTYwMmFiNWQ4YmUifQ==&Rh-Identify=dd1cb9d7202f96f227b5e16f0b366db9"
+            "url": ""
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/view?filename=rgthree.compare._temp_vgvqn_00002_fnhtl_1785460864.jpg&type=temp&subfolder=&rand=0.43990306708920457&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkZDFjYjlkNzIwMmY5NmYyMjdiNWUxNmYwYjM2NmRiOSIsInNpZ25FeHBpcmUiOjE3ODYwNjM5NTU2OTUsInRzIjoxNzg1NDU5MTU1Njk1LCJzaWduIjoiZGIyZGE5ZWEzZWNjNzczNTg4NTlkOTYwMmFiNWQ4YmUifQ==&Rh-Identify=dd1cb9d7202f96f227b5e16f0b366db9"
+            "url": ""
           }
         ]
       ]

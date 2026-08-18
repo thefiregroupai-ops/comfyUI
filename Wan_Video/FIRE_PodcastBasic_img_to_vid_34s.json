@@ -1175,9 +1175,9 @@
           "params": {
             "score": "0",
             "filename": "InfiniteTalk_00001_p83-audio_jhcgt_1781538584.mp4",
-            "cos_url": "https://rh-images.xiaoyaoyou.com//dd1cb9d7202f96f227b5e16f0b366db9/temp/InfiniteTalk_00001_p83-audio_jhcgt_1781538584.mp4",
+            "cos_url": "",
             "workflow": "InfiniteTalk_00001_p83.png",
-            "fullpath": "/data/ComfyUI/personal/dd1cb9d7202f96f227b5e16f0b366db9/temp/InfiniteTalk_00001_p83-audio.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "",
             "label": "Normal",
@@ -1773,9 +1773,9 @@
           "params": {
             "score": "0",
             "filename": "InfiniteTalk_00002_p80-audio_mtezd_1771596560.mp4",
-            "cos_url": "https://rh-images-1252422369.cos.ap-beijing.myqcloud.com//3ab03ce7464f36c18a93d338b4f17aae/temp/InfiniteTalk_00002_p80-audio_mtezd_1771596560.mp4",
+            "cos_url": "",
             "workflow": "InfiniteTalk_00002_p80.png",
-            "fullpath": "/data/ComfyUI/personal/3ab03ce7464f36c18a93d338b4f17aae/temp/InfiniteTalk_00002_p80-audio.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "",
             "label": "Normal",
@@ -2122,7 +2122,7 @@
           "params": {
             "filename": "InfiniteTalk_00018-audio.mp4",
             "workflow": "InfiniteTalk_00018.png",
-            "fullpath": "Z:\\ComfyZ\\ComfyUI-Easy-Install\\ComfyUI\\output\\InfiniteTalk_00018-audio.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "",
             "type": "output",
@@ -4309,7 +4309,7 @@
           "params": {
             "filename": "InfiniteTalk_00013-audio.mp4",
             "workflow": "InfiniteTalk_00013.png",
-            "fullpath": "Z:\\ComfyZ\\ComfyUI-Easy-Install\\ComfyUI\\temp\\InfiniteTalk_00013-audio.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "",
             "type": "temp",
@@ -4454,7 +4454,7 @@
           "params": {
             "filename": "InfiniteTalk_00014-audio.mp4",
             "workflow": "InfiniteTalk_00014.png",
-            "fullpath": "Z:\\ComfyZ\\ComfyUI-Easy-Install\\ComfyUI\\temp\\InfiniteTalk_00014-audio.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "",
             "type": "temp",
@@ -4599,7 +4599,7 @@
           "params": {
             "filename": "InfiniteTalk_00015-audio.mp4",
             "workflow": "InfiniteTalk_00015.png",
-            "fullpath": "Z:\\ComfyZ\\ComfyUI-Easy-Install\\ComfyUI\\temp\\InfiniteTalk_00015-audio.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "",
             "type": "temp",
@@ -4744,7 +4744,7 @@
           "params": {
             "filename": "InfiniteTalk_00016-audio.mp4",
             "workflow": "InfiniteTalk_00016.png",
-            "fullpath": "Z:\\ComfyZ\\ComfyUI-Easy-Install\\ComfyUI\\temp\\InfiniteTalk_00016-audio.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "",
             "type": "temp",
@@ -4889,7 +4889,7 @@
           "params": {
             "filename": "InfiniteTalk_00017-audio.mp4",
             "workflow": "InfiniteTalk_00017.png",
-            "fullpath": "Z:\\ComfyZ\\ComfyUI-Easy-Install\\ComfyUI\\temp\\InfiniteTalk_00017-audio.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "",
             "type": "temp",
@@ -5830,7 +5830,7 @@
           "params": {
             "filename": "InfiniteTalk_00018-audio.mp4",
             "workflow": "InfiniteTalk_00018.png",
-            "fullpath": "Z:\\ComfyZ\\ComfyUI-Easy-Install\\ComfyUI\\temp\\InfiniteTalk_00018-audio.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "",
             "type": "temp",
@@ -6425,7 +6425,7 @@
           "params": {
             "filename": "InfiniteTalk_00019-audio.mp4",
             "workflow": "InfiniteTalk_00019.png",
-            "fullpath": "Z:\\ComfyZ\\ComfyUI-Easy-Install\\ComfyUI\\temp\\InfiniteTalk_00019-audio.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "",
             "type": "temp",
@@ -7152,7 +7152,7 @@
           "params": {
             "filename": "InfiniteTalk_00020-audio.mp4",
             "workflow": "InfiniteTalk_00020.png",
-            "fullpath": "Z:\\ComfyZ\\ComfyUI-Easy-Install\\ComfyUI\\temp\\InfiniteTalk_00020-audio.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "",
             "type": "temp",
@@ -11104,7 +11104,7 @@
           "params": {
             "filename": "InfiniteTalk_00012-audio.mp4",
             "workflow": "InfiniteTalk_00012.png",
-            "fullpath": "Z:\\ComfyZ\\ComfyUI-Easy-Install\\ComfyUI\\temp\\InfiniteTalk_00012-audio.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "",
             "type": "temp",

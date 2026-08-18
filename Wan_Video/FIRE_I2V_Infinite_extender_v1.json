@@ -23,7 +23,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "Ultra simplified WAN 2.2 I2V ICEKIUB v2",
+      "title": "Simplified WAN 2.2 I2V workflow",
       "properties": {
         "fontSize": 50,
         "fontFamily": "Arial",
@@ -1693,7 +1693,7 @@
             "score": "0",
             "filename": "WanVideo_OneToAllAnimation_00013.mp4",
             "workflow": "WanVideo_OneToAllAnimation_00013.png",
-            "fullpath": "E:\\ComfyUI\\temp\\WanVideo_OneToAllAnimation_00013.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "",
             "label": "Normal",
@@ -1914,7 +1914,7 @@
             "score": "0",
             "filename": "WanVideo_OneToAllAnimation_00028.mp4",
             "workflow": "WanVideo_OneToAllAnimation_00028.png",
-            "fullpath": "E:\\ComfyUI\\output\\WanVideo_OneToAllAnimation_00028.mp4",
+            "fullpath": "",
             "format": "video/h264-mp4",
             "subfolder": "",
             "label": "Normal",
@@ -2127,7 +2127,7 @@
             "format": "video/h264-mp4",
             "frame_rate": 16,
             "workflow": "AnimateDiff_00181.png",
-            "fullpath": "E:\\ComfyUI\\output\\AnimateDiff_00181.mp4"
+            "fullpath": ""
           }
         }
       },

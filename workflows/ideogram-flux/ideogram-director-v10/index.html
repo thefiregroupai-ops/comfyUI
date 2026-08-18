@@ -56,9 +56,9 @@
       "url": "https://thefiregroupai-ops.github.io/comfyUI/workflows/ideogram-flux/ideogram-director-v10/",
       "codeRepository": "https://github.com/thefiregroupai-ops/comfyUI",
       "runtimePlatform": "ComfyUI",
-      "dateCreated": "2026-08-09",
+      "datePublished": "2026-08-09",
       "dateModified": "2026-08-17",
-      "author": {
+      "publisher": {
         "@id": "https://thefiregroupai-ops.github.io/comfyUI/#organization"
       },
       "isPartOf": {
@@ -411,19 +411,19 @@
 <h2>📥 Inputs & Outputs</h2>
 <ul>
   <li><strong>Inputs:</strong> Raw Text Prompt, Resolution Preset</li>
-  <li><strong>Outputs:</strong> Refined Prompt Output, Generated Image</li>
+  <li><strong>Outputs:</strong> Refined prompt data and a generated image preview; add a <code>SaveImage</code> node for persistent files</li>
 </ul>
 
 <section>
-  <h2>Use Ideogram Director as a Planning Graph</h2>
-  <p>Ideogram Director v10 is a preparation workflow, not a complete image-generation pipeline. The JSON contains 14 nodes in two prompt-input groups. Its <code>DenoIdeogramDirector</code> node turns a backdrop and optional imported JSON into a prompt, width, height, seed, and bounding-box data. Two <code>DenoResolutionSetup</code> nodes normalize an image and expose matching dimensions, while <code>PreviewAny</code> and <code>PreviewImage</code> nodes let you inspect intermediate text or imagery. There is no sampler, diffusion-model loader, VAE decode, or save-image node in this graph.</p>
-  <p>That design is useful for composing a layout and refining instructions before handing the result to a separate Ideogram generation graph. It also lets you compare a direct director path with a local-LLM-assisted path without mixing that planning step into sampling. Open the <a href="https://thefiregroupai-ops.github.io/comfyUI/Ideogram_Flux/FIRE_ideogramDirector_v10.json">Ideogram Director JSON source</a> to review the two groups, or return to the <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/ideogram-flux/">Ideogram and Flux workflow family</a> when you need a workflow that renders an image.</p>
+  <h2>Plan, Generate, and Preview with Ideogram Director</h2>
+  <p>Ideogram Director v10 contains 14 top-level nodes in two prompt-input groups. Its <code>DenoIdeogramDirector</code> node turns a backdrop and optional imported JSON into a prompt, width, height, seed, and bounding-box data. The prompt, dimensions, and seed feed an embedded <code>Text to Image (Ideogram v4)</code> subgraph, whose image output reaches <code>PreviewImage</code>. The sampler, model-loader, and VAE logic are encapsulated inside that subgraph rather than exposed on the outer canvas.</p>
+  <p>This layout supports composition planning and a generated preview in the same workflow, while the second group provides a local-LLM-assisted prompt-refinement path for comparison. The top-level graph does not include a <code>SaveImage</code> node, so add one after the embedded generator if you need persistent output. Open the <a href="https://thefiregroupai-ops.github.io/comfyUI/Ideogram_Flux/FIRE_ideogramDirector_v10.json">Ideogram Director JSON source</a> to review the two groups, or compare other options on the <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/ideogram-flux/">Ideogram and Flux workflow family</a>.</p>
 </section>
 
 <section>
   <h2>Local LLM Setup and Output Handoff</h2>
   <p>The optional refinement route uses <code>DenoLocalLLMRefiner</code> and is stored with local-provider settings, including a loopback URL at <code>http://127.0.0.1:8000/v1</code>. The JSON does not start an LLM server or install a model for you. Choose the provider and model that are actually available on your computer, update the endpoint if necessary, and test that service independently before queueing the graph. The Deno nodes are custom nodes, so ComfyUI must recognize them after import.</p>
-  <p>Once the previewed prompt, dimensions, seed, and boxes look correct, copy or connect those outputs into the generator you intend to use. Do not expect the Director graph alone to produce a final downloadable image. Keep the generated layout JSON with the output if you want the composition to be reproducible later. The <a href="https://thefiregroupai-ops.github.io/comfyUI/guides/how-to-install-comfyui-workflow-json/">workflow import and missing-node guide</a> covers the initial drag-and-drop and extension checks.</p>
+  <p>Once the prompt, dimensions, seed, and boxes look correct, run the embedded Ideogram v4 generator and inspect its preview. Because the outer graph has no <code>SaveImage</code> node, connect an explicit save step to the generated image when you need a downloadable file. Keep the generated layout JSON with the output if you want the composition to be reproducible later. The <a href="https://thefiregroupai-ops.github.io/comfyUI/guides/how-to-install-comfyui-workflow-json/">workflow import and missing-node guide</a> covers the initial drag-and-drop and extension checks.</p>
 </section>
 
 <h2>📖 How to Import & Run in ComfyUI</h2>

@@ -46,7 +46,7 @@
     {
       "@type": "SoftwareSourceCode",
       "name": "Krea2 T2I Multi-Reference Selector Workflow",
-      "description": "Multi-reference 4-photo selector pipeline for Krea2 Turbo text-to-image and face detailer refinement without extra LoRAs.",
+      "description": "Four-photo Krea2 reference selector with face-detail refinement and explicit LoRA loaders that must be reviewed after import.",
       "programmingLanguage": "JSON",
       "targetProduct": {
         "@type": "SoftwareApplication",
@@ -56,9 +56,9 @@
       "url": "https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/no-lora-t2i/",
       "codeRepository": "https://github.com/thefiregroupai-ops/comfyUI",
       "runtimePlatform": "ComfyUI",
-      "dateCreated": "2026-08-09",
+      "datePublished": "2026-08-09",
       "dateModified": "2026-08-17",
-      "author": {
+      "publisher": {
         "@id": "https://thefiregroupai-ops.github.io/comfyUI/#organization"
       },
       "isPartOf": {
@@ -383,7 +383,7 @@
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://thefiregroupai-ops.github.io/comfyUI/">Home</a> &nbsp;/&nbsp; <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/">Workflows</a> &nbsp;/&nbsp; <a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/">Krea2 Workflows</a> &nbsp;/&nbsp; <span>Krea2 T2I Multi-Reference Selector Workflow</span></nav>
     
 <h1>Krea2 T2I Multi-Reference Selector Workflow</h1>
-<p style="font-size: 1.15rem; color: var(--primary-orange); font-weight: 600;">Multi-reference 4-photo selector pipeline for Krea2 Turbo text-to-image and face detailer refinement without extra LoRAs.</p>
+<p style="font-size: 1.15rem; color: var(--primary-orange); font-weight: 600;">Four-photo reference selector for Krea2 text-to-image generation with face-detail refinement and explicit LoRA loaders to review.</p>
 
 <div style="margin: 1.5rem 0;">
   <button type="button" class="showcase-img-frame image-button" style="aspect-ratio: 16 / 9; height: auto;" onclick="openLightbox('https://thefiregroupai-ops.github.io/comfyUI/assets/fire-showcase/fire-ai-character-subscribe-pink-shorts.webp')" aria-label="Open image preview: FIRE AI Character Closet Subscribe Artwork">
@@ -410,7 +410,7 @@
 
 <h2>📥 Inputs & Outputs</h2>
 <ul>
-  <li><strong>Inputs:</strong> Reference Photo 1 (Portrait), Reference Photo 2 (Full Body), Prompts</li>
+  <li><strong>Inputs:</strong> Four Reference Photos, Primary/Secondary Selectors, Prompts</li>
   <li><strong>Outputs:</strong> Detailed Face Output Image</li>
 </ul>
 
@@ -438,7 +438,7 @@
 
 <h2>🔗 Related Workflows in Krea2 Workflows</h2>
 <ul>
-  <li><a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/controlnet-depth/">Krea2 ControlNet Depth Anything v3 Workflow</a> — Depth-guided image generation and structural pose control using Krea2 UNet and Depth Anything V3 preprocessor.</li><li><a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/depth-control-compare/">Krea2 Depth Control & Image Compare Workflow</a> — Depth conditioning pipeline with real-time Before/After image comparison powered by Krea2 Control Apply.</li><li><a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/identity-edit-v1/">Krea2 Identity Edit v1.2 Grounded Encode Workflow</a> — Grounded identity restaging and facial feature editing workflow using Krea2 identity edit LoRA and dual image inputs.</li>
+  <li><a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/controlnet-depth/">Krea2 ControlNet Depth Anything v3 Workflow</a> — Depth-guided image generation and structural pose control using Krea2 UNet and Depth Anything V3 preprocessor.</li><li><a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/depth-control-compare/">Krea2 Depth Control & Image Compare Workflow</a> — Depth conditioning pipeline with real-time Before/After image comparison powered by Krea2 Control Apply.</li><li><a href="https://thefiregroupai-ops.github.io/comfyUI/workflows/krea2/identity-edit-v1/">Krea2 Identity Edit v1.2 Grounded Encode Workflow</a> — Grounded single-image restaging and facial editing with a Krea2 identity-edit LoRA and an optional bypassed second-image branch.</li>
 </ul>
 
 <div class="skool-callout">

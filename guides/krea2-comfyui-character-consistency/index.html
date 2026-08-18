@@ -384,12 +384,12 @@
 </div>
 
 
-<p><strong>Use identity conditioning to preserve who the subject is, and depth conditioning to preserve where forms are in the frame.</strong> The Krea2 workflows in this library separate those goals: Identity Edit uses two images and grounded edit conditioning, while the depth graphs derive or apply structural guidance. The multi-reference selector is useful when several views are needed to describe one subject.</p>
+<p><strong>Use identity conditioning to preserve who the subject is, and depth conditioning to preserve where forms are in the frame.</strong> The Krea2 workflows in this library separate those goals: Identity Edit uses one active source-image path with grounded edit conditioning, while the depth graphs derive or apply structural guidance. The multi-reference selector is useful when several views are needed to describe one subject.</p>
 
 <h2>Pick the Krea2 graph that matches the edit</h2>
 
 <h3>Restage a known person: Identity Edit v1.2</h3>
-<p>The <a href="../../workflows/krea2/identity-edit-v1/">Krea2 Identity Edit v1.2 workflow</a> accepts two images: a source-person photo and a target-scene photo. In the saved graph, each image is resized and encoded, positive and negative instructions pass through <code>Krea2EditGroundedEncode</code>, and the identity-edit LoRA is applied to the Krea2 model. An image comparer sits near the output. Use this when the target composition is already useful and the identity is the main change. <a href="../../Krea2/FIRE_Krea2_Identity_Edit_V1.json" download>Download the Identity Edit JSON</a>.</p>
+<p>The <a href="../../workflows/krea2/identity-edit-v1/">Krea2 Identity Edit v1.2 workflow</a> has one active source-image path. That image is resized and encoded, positive and negative instructions pass through <code>Krea2EditGroundedEncode</code>, and the identity-edit LoRA is applied to the Krea2 model. A second image branch exists in the saved graph but is bypassed; leave it disabled unless you deliberately configure its role. An image comparer sits near the output for reviewing the grounded edit. <a href="../../Krea2/FIRE_Krea2_Identity_Edit_V1.json" download>Download the Identity Edit JSON</a>.</p>
 
 <h3>Follow a reference image’s structure: Depth Anything v3</h3>
 <p>The <a href="../../workflows/krea2/controlnet-depth/">Krea2 ControlNet Depth Anything v3 workflow</a> loads one structural reference, produces a depth representation with Depth Anything v3, encodes the control image, and applies Krea2 depth control before sampling. It exposes both a depth preview and a saved final image, which makes it easier to tell whether a bad result begins with the depth estimate or the generation. Choose it for layout, body position, or foreground/background structure rather than exact facial identity. <a href="../../Krea2/FIRE_KERA_2_CONTROLNET_WORKFLOW_1.json" download>Download the Depth Anything JSON</a>.</p>
@@ -405,7 +405,7 @@
   <li>Download one JSON above and drag it onto the ComfyUI canvas. Do not combine graphs until each one runs independently.</li>
   <li>Resolve missing node types, restart ComfyUI, and reload the JSON. The graphs use Krea2-specific nodes plus utilities such as image comparison; the multi-reference graph also contains face-detailing and SAM nodes.</li>
   <li>Inspect every UNet, CLIP, VAE, LoRA, detector, SAM, and depth-model loader. Select files actually installed for that loader rather than relying on the example filename.</li>
-  <li>Replace example images. For Identity Edit, keep the source-person and target-scene roles distinct. For depth work, use a reference whose silhouette and depth separation are readable.</li>
+  <li>Replace the active source image in Identity Edit and leave the bypassed second-image branch disabled unless you intentionally configure it. For depth work, use a reference whose silhouette and depth separation are readable.</li>
   <li>Start with a direct instruction: identify what should change and what should remain. Avoid stacking unrelated style, wardrobe, camera, background, and identity changes into the first test.</li>
   <li>Queue once, inspect previews and the comparer, then modify one input or instruction at a time.</li>
 </ol>
@@ -418,7 +418,7 @@
 <h2>Troubleshooting Krea2 outputs</h2>
 <ul>
   <li><strong>The result follows the pose but loses the person:</strong> depth is structural guidance, not an identity guarantee. Switch to Identity Edit or add appropriate multi-reference inputs.</li>
-  <li><strong>Identity Edit changes the wrong image:</strong> recheck the two loader roles and trace each connection into its grounded encoder.</li>
+  <li><strong>Identity Edit changes the wrong image:</strong> recheck the active first loader and confirm that the optional second-image branch remains bypassed unless you configured it.</li>
   <li><strong>The comparer shows no meaningful change:</strong> confirm that the generated output, not a duplicated source preview, is connected to its second input.</li>
   <li><strong>Multi-reference output resembles the wrong photo:</strong> inspect both four-way selector values and simplify the reference set to two known images.</li>
   <li><strong>A depth node fails:</strong> separate a missing node implementation from a missing depth-model file; installing one does not automatically provide the other.</li>
